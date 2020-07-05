@@ -1,0 +1,763 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block content %}
+<div class="govuk-breadcrumbs govuk-!-margin-top-0 govuk-!-margin-bottom-9">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Housing and local services</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Affordable home ownership schemes</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Help to Buy equity loan</li>
+  </ol>
+</div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <span class="govuk-caption-xl gem-c-title__context">
+        Guidance
+      </span>
+      <h1 class="govuk-heading-xl">Find out about a Help to Buy: Equity Loan</h1>
+
+
+      <p style="margin-bottom: 5px;">Contents</p>
+      <ul id="contents" class="govuk-list dash-list">
+        <!-- <li>Overview of an equity loan</li> -->
+        <li><a class="govuk-link" href="#who-can-apply">Who can apply</a></li>
+        <li><a class="govuk-link" href="#how-it-works">How it works</a></li>
+        <li><a class="govuk-link" href="#what-you-cannot-do">What you cannot do</a></li>
+        <li><a class="govuk-link" href="#paying-back-the-loan">What you need to pay</a></li>
+        <li><a class="govuk-link" href="#how-to-apply">How to apply</a></li>
+      </ul>
+
+    </div>
+      <div class="govuk-grid-column-two-thirds">
+      
+        <!-- START: Overview of an equity loan -->
+      
+      <h2 class="govuk-heading-l" >Overview of an equity loan</h2>
+
+      
+      <p> With a Help to Buy: Equity Loan you can get help from the government to buy your first home.</p> 
+         
+         <h3 class="govuk-heading-m">What is an equity loan</h3>
+      <p>An equity loan is not like a normal loan, where you get money in the bank. It allows borrowing against a property’s market value (what it is worth).</p>
+     
+         <p>With an equity loan, the amount:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li> you borrow is based on a percentage of what the property is worth (its market value) </li>
+        <li> you owe goes up and down with the market value of the property</li>
+     </ul>
+        <h3 class="govuk-heading-m">Property you can buy</h3>
+       <p> With an equity loan, the home you buy must be:</p> 
+      <ul class="govuk-list govuk-list--bullet">
+        <li>a new build. This is a newly built home that has not been lived in before </li>
+        <li>from a registered Help to Buy house builder</li>
+     </ul>
+        
+      <p>Homebuyers can use an equity loan to buy a home in England (there are different schemes for <a href="#">Wales</a> and <a href="#">Scotland</a>).</p> 
+      
+
+         <!-- START: Who can apply -->
+
+         <h2 class="govuk-heading-l" id="who-can-apply">Who can apply</h2>
+         <p>You must be:</p>
+         <ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-7">
+           <li>a first-time buyer</li>
+           <li>aged 18 years-old or over</li>
+           <!-- <li>buying a property in England </li> -->
+         </ul>
+         
+         
+         <!-- <p>The home you buy must:</p>
+         <ul class="govuk-list govuk-list--bullet">
+           <li>be a new build (this is a newly completed residential property) </li>
+           <li>be the first residential property owned (anywhere in the world) by you or any other person who is buying with you (if you’re applying in England) </li>
+           <li>be from a registered Help to Buy housebuilder</a></li>
+         </ul> -->
+         
+         <p>If you’re buying with someone else, they must also be a first-time buyer.</p>
+                 
+          <div class="govuk-inset-text">
+           A first-time buyer is someone who has never owned a residential property or land anywhere in the world.
+         </div>       
+         
+         <p>You cannot apply if you are married to someone who owns or has owned a residential property or land anywhere in the world.</p>
+          
+          <p>You must live in the home you buy with an equity loan. It needs to be your only place of residence.</p>
+        
+         <!-- START: How it works -->
+
+        <h2 class="govuk-heading-l" id="how-it-works">How it works</h2>
+  
+
+        <p>An equity loan is used together with your mortgage and deposit to make up the property price. </p>
+    <p>What you can get with an equity loan depends on the region where the property is located.</p>
+       
+          <!-- <h3 class="govuk-heading-m govuk-!-margin-bottom-3">Conditions</h3>  -->
+            <p class="govuk-!-margin-bottom-3">To buy a home with an equity loan, you need:</p>
+          <ul class="govuk-list govuk-list--bullet">
+          <li>a deposit of at least 5% of the property price</li> 
+          <li>a mortgage of at least 25% of the property price</li>
+          
+        </ul>
+    
+        <p></p>
+    
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-2">England (except London)</h3> 
+        <!-- <p class="govuk-!-margin-bottom-2">Your mortgage and deposit together must add up to at least 60% of the property price for homes in a London borough.</p> -->
+        <p>When buying a property in England:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>your mortgage and deposit together must add up to at least 80% of the property price</li>
+          <li>you can get an equity loan between 5% and 20%</li>
+        </ul>
+    
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-2">London</h3> 
+         <p>When buying a property in London:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>your mortgage and deposit together must add up to at least 60% of the property price</li>
+          <li>you can get an equity loan between 5% and 40%</li>
+        </ul>
+           
+          <!-- <h3 class="govuk-heading-m govuk-!-margin-bottom-2">London</h3> 
+        <p class="govuk-!-margin-bottom-2">Your mortgage and deposit together must add up to at least 60% of the property price for homes in a London borough.</p>
+      
+          <ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-5">
+    
+          <li>at least 5% deposit</li> 
+          <li>up to 55% mortgage</li>
+          <li>between 5% to 40% equity loan</li>
+        </ul> -->
+           
+          <!-- <h4 class="govuk-heading-s">Examples</h4> 
+        <p>For a property with a price of £200,000 in England, outside of London: </p>
+        <li>The maximum mortgage of 75% is £150,000 </li>
+          <li>Add the minimum deposit of 5%, which is £10,000 </li>
+          <li>Add the maximum equity loan of 20%, which is £40,000</li> 
+           
+        <p>For a property with a price of £200,000 in a London borough: </p>
+        <li>The maximum mortgage of 55% is £110,000</li> 
+          <li>Add the minimum deposit of 5%, which is £10,000 </li>
+          <li>Add the maximum equity loan of 40%, which is £80,000 </li> -->
+          
+    
+    
+    
+    
+    
+    
+    
+          <!-- <p>With an equity loan: </p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>you need at least a 5% deposit (of the property price)</li>
+            <li>the government will lend you up to 20% (up to 40% in London)</li>
+            <li>you need a mortgage of at a least 25% or up to 75% in England (up to 55% in London)</a></li>
+            <li>it takes 3 working days to receive a decision if your application is approved</li>
+          </ul> -->
+    
+    
+          <h4 class="govuk-heading-m">Examples</h4> 
+    
+    
+          <div class="govuk-tabs govuk-!-margin-bottom-9" data-module="govuk-tabs">
+            <h2 class="govuk-tabs__title">
+              Examples
+            </h2>
+            <ul class="govuk-tabs__list">
+              <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                <a class="govuk-tabs__tab" href="#past-day">
+                  England (except London)
+                </a>
+              </li>
+              <li class="govuk-tabs__list-item">
+                <a class="govuk-tabs__tab" href="#past-week">
+                  London borough
+                </a>
+              </li>
+              
+            </ul>
+            <div class="govuk-tabs__panel" id="past-day">
+              <p>This example shows the minimum deposit percentage amount and maximum equity loan percentage amounts to buy a home in England, outside of London. This is based on a property price of £200,000.</p>
+              <table class="govuk-table govuk-!-margin-bottom-2">
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row">
+                    <td scope="row" class="govuk-table__header govuk-!-width-one-third"></td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric">Percentage</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric govuk-!-width-one-third">Amount</td>
+                    
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td scope="row" class="govuk-table__header" style="border: 0;">Deposit</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric" style="border: 0;">5%</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric" style="border: 0;">£10,000</td>
+                    
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td scope="row" class="govuk-table__header" style="border: 0;">Mortgage</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric" style="border: 0;">75%</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric" style="border: 0;">£150,000</td>
+                    
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td scope="row" class="govuk-table__header">Equity loan</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric">20%</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric">£40,000</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td scope="row" class="govuk-table__header">Property price</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric">100%</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric">£200,000</td>
+                  </tr>
+                </tbody>
+              </table>
+          
+            </div>
+            <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
+              <table class="govuk-table govuk-!-margin-bottom-2">
+                <p>This example shows the minimum deposit percentage amount and maximum equity loan percentage amounts to buy a home in a London borough. This is based on a property price of £200,000.</p>
+                <table class="govuk-table govuk-!-margin-bottom-2">
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                      <td scope="row" class="govuk-table__header govuk-!-width-one-third"></td>
+                      <td class="govuk-table__cell govuk-table__cell--numeric">Percentage</td>
+                      <td class="govuk-table__cell govuk-table__cell--numeric govuk-!-width-one-third">Amount</td>
+                      
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <td scope="row" class="govuk-table__header" style="border: 0;">Deposit</td>
+                      <td class="govuk-table__cell govuk-table__cell--numeric" style="border: 0;">5%</td>
+                      <td class="govuk-table__cell govuk-table__cell--numeric" style="border: 0;">£10,000</td>
+                      
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <td scope="row" class="govuk-table__header" style="border: 0;">Mortgage</td>
+                      <td class="govuk-table__cell govuk-table__cell--numeric" style="border: 0;">55%</td>
+                      <td class="govuk-table__cell govuk-table__cell--numeric" style="border: 0;">£110,000</td>
+                      
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <td scope="row" class="govuk-table__header">Equity loan</td>
+                      <td class="govuk-table__cell govuk-table__cell--numeric">40%</td>
+                      <td class="govuk-table__cell govuk-table__cell--numeric">£80,000</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <td scope="row" class="govuk-table__header">Property price</td>
+                      <td class="govuk-table__cell govuk-table__cell--numeric">100%</td>
+                      <td class="govuk-table__cell govuk-table__cell--numeric">£200,000</td>
+                    </tr>
+                  </tbody>
+                </table>
+          
+            </div>
+           
+           
+          </div>
+    
+    
+    
+    
+          <!-- end tabs -->
+         
+    
+     <!-- <table class="govuk-table">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header" colspan="3">Equity loan example for a £200,000 property outside of London</th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__header"></td>
+                <td class="govuk-table__cell">Amount</td>
+                <td class="govuk-table__cell">Percentage</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__header">Cash deposit</td>
+                <td class="govuk-table__cell">£10,000</td>
+                <td class="govuk-table__cell">5%</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__header">Equity loan</td>
+                <td class="govuk-table__cell">£40,000</td>
+                <td class="govuk-table__cell">20%</td>
+              </tr>
+            </tbody>
+          </table> -->
+    
+          <h2 class="govuk-heading-l">Property price limits</h2>
+    
+          <p>There is a price limit on the home that you buy. The limit is different for each region in the UK. These limits are shown below:</p>
+    
+          <table class="govuk-table govuk-!-margin-bottom-9" >
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header">Region</th>
+                <th scope="col" class="govuk-table__header">Full property price limit</th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__header">East</td>
+                <td class="govuk-table__cell">£407,400  </td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__header">East Midlands</td>
+                <td class="govuk-table__cell">£261,900  </td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__header">London</td>
+                <td class="govuk-table__cell">£600,000  </td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__header">North East</td>
+                <td class="govuk-table__cell">£186,100  </td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__header">North West  </td>
+                <td class="govuk-table__cell">£224,400</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__header">South East  </td>
+                <td class="govuk-table__cell">£437,600  </td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__header">South West  </td>
+                <td class="govuk-table__cell">£349,000  </td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__header">West Midlands</td>
+                <td class="govuk-table__cell">£255,600  </td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__header">Yorkshire and The Humber</td>
+                <td class="govuk-table__cell">£228,100  </td>
+              </tr>
+            </tbody>
+          </table>
+    
+         
+     <h3 class="govuk-heading-m">If you have a Help to Buy ISA</h3>
+    
+    <p>If you have a Help to Buy ISA, you can use it to buy any property worth up to £250,000 (or up to £450,000 in London). You must be an existing holder to use a Help to Buy ISA because it closed in November 2019 and is no longer accepting new applications.</p> 
+
+<!-- START: What you cannot do -->
+  <h2 class="govuk-heading-l govuk-!-margin-bottom-7" id="what-you-cannot-do"> What you cannot do</h2>
+        
+        <!-- <p>You must not:</p>
+<ul class="govuk-list govuk-list--bullet">
+  <li>rent out your home without written consent. It can only be agreed in exceptional circumstances, for example, if you are a member of the armed forces</li>
+  <li>buy or own a second home </li>
+  <li>make major alterations without consent </li>
+</ul> -->
+
+<h3 class="govuk-heading-m govuk-!-margin-bottom-2">Own a second home</h3>   
+<p>Your Help to Buy home must be the only home you own. You cannot buy or own a second home. You must pay back the equity loan before  other major expediture such as buying another property.</p>
+
+
+<h3 class="govuk-heading-m govuk-!-margin-bottom-2">Rent out your home</h3>
+<p>You cannot rent out your home, unless you've written permission from Help To Buy. It can only be agreed in exceptional circumstances, for example, if you are a member of the armed forces.</p> 
+<p>Renting a room in your home to a tenant is allowed, as long as you continue to live in the home.</p>
+        
+<h3 class="govuk-heading-m govuk-!-margin-bottom-2">Make alterations</h3>
+             
+<p>You must pay back the equity loan before  other major expediture such as  making substantial changes to your home. You can only make alterations if you have written permission from Help to Buy. This is only provided in exceptional circumstances, such as for medical reasons.</p>
+  
+<p> </p>
+
+
+<p>If you have permission and the alterations increase what the property is worth, this increase is not included in the property's value when it is time to sell the property.</p>
+<p>If alterations made without written permission increase the property’s value, the repayments are based on a percentage of the property’s value, as usual.</p>
+
+<!-- START: Paying back the equity loan -->
+   <h2 class="govuk-heading-l" id="paying-back-the-loan">What you need to pay</h2>
+
+   <h2 class="govuk-heading-m">Paying back the equity loan</h2>
+
+   <p>You can make a repayment in full or in part.</p>
+   
+   <p>You must pay back in portions of at least 10% of the property valuation. The repayment amount you make depends on how much your home is worth at the time.</p>
+   <p class="govuk-!-margin-bottom-1">You must have the money available to repay your equity loan. To prepare for this, you can:</p>
+   <ul class="govuk-list govuk-list--bullet">
+   <li>use savings</li>
+   <li>re-mortgage your home</li>
+   <li>sell your home</li>
+    </ul> 
+   <p class="govuk-!-margin-bottom-1">At the latest, you must repay the equity loan at whichever comes first: </p>
+   <ul class="govuk-list govuk-list--bullet">
+       <li>when you sell your home</li>
+       <li>when repaying your mortgage in full</li>
+       <li>within 25 years</li>
+   </ul>
+   
+        <h3 class="govuk-heading-m">Monthly management fee</h3>
+   <p>You'll be charged a monthly £1 management fee, which is paid by direct debit from the start of owning your home until the loan is repaid.</p> 
+   
+   <h3 class="govuk-heading-m">Interest fees</h3>
+     <p>You do not have to pay interest for the first 5 years. Then from the fifth anniversary of owning your home (exactly 5 years to the date you bought your home), you’ll be charged an interest fee of 1.75%.</p>
+        <p>This fee then increases in line with the inflation rate, set by the Consumer Price Index including owner occupiers’ housing costs  (CPIH). There is also an additional 2%, which is added together with the inflation rate. </p>
+         
+    <!-- <p>This interest rate is charged from the next 1 April, except if you bought your home between 1 January to 31 March. Then the interest rate increase begins from the 1 April of the following year.</p> -->
+          
+    <details class="govuk-details" data-module="govuk-details">
+     <summary class="govuk-details__summary">
+       <span class="govuk-details__summary-text">
+         What could the monthly interest charges look like?
+       </span>
+     </summary>
+     <div class="govuk-details__text" style="margin-right: 80px;">
+   <h4 class="govuk-heading-s">Based on an Equity Loan of £30,000 and inflation (CPIH) of 2.5%.</h4>
+   <p>Inflation varies from year to year, so this example is for illustration only.</p>
+   
+   <table class="govuk-table">
+   
+   <thead class="govuk-table__head">
+   <tr class="govuk-table__row">
+     <th scope="col" class="govuk-table__header govuk-!-width-three-quarters">Fees and interest details</th>
+     
+     <th scope="col" class="govuk-table__header govuk-!-width-one-quarter govuk-table__header--numeric">Monthly payments</th>
+   </tr>
+   </thead>
+   
+   <tbody class="govuk-table__body">
+   
+   <tr class="govuk-table__row">
+     <th scope="row" class="govuk-table__header" style="border-bottom: 0;">Year 1 to 5</th>
+     <th class="govuk-table__header govuk-table__header--numeric" style="border-bottom: 0;">£1.00</th>
+   </tr>
+   <tr class="govuk-table__row">
+     <td scope="row" class="govuk-table__cell">No interest payments</td>
+     <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+   </tr>
+   <tr class="govuk-table__row">
+     <td scope="row" class="govuk-table__cell" style="border-bottom: solid #b1b4b6 3px; ">Management fee</td>
+     <td class="govuk-table__cell  govuk-table__cell--numeric" style="border-bottom: solid #b1b4b6 3px;">£1.00</td>
+   </tr>
+   <!-- <tr class="govuk-table__row">
+     <td scope="row" class="govuk-table__cell" style="border-bottom: solid #b1b4b6 3px;"></td>
+     <th class="govuk-table__header govuk-table__header--numeric"  style="border-bottom: solid #b1b4b6 3px;">Total: £1.00</th>
+   </tr> -->
+   <!-- row -->
+   <tr class="govuk-table__row">
+     <th scope="row" class="govuk-table__header" style="border-bottom: 0; padding-top: 30px;">Year 6</th>
+     <th class="govuk-table__header govuk-table__header--numeric" style="border-bottom: 0; padding-top: 30px;">£44.83</th>
+   </tr>
+   <tr class="govuk-table__row">
+     <td scope="row" class="govuk-table__cell">1.75% = £525 per year</td>
+     <td class="govuk-table__cell govuk-table__cell--numeric">£43.83</td>
+   </tr>
+   <tr class="govuk-table__row">
+     <td scope="row" class="govuk-table__cell" style="border-bottom: solid #b1b4b6 3px; ">Management fee</td>
+     <td class="govuk-table__cell govuk-table__cell--numeric" style="border-bottom: solid #b1b4b6 3px;">£1.00</td>
+   </tr>
+   <!-- <tr class="govuk-table__row">
+     <td scope="row" class="govuk-table__cell" style="border-bottom: solid #b1b4b6 3px;"></td>
+     <td class="govuk-table__header govuk-table__header--numeric" style="border-bottom: solid #b1b4b6 3px;">Total: £44.83</td>
+   </tr> -->
+    <!-- row -->
+    <tr class="govuk-table__row">
+     <th scope="row" class="govuk-table__header" style="border-bottom: 0; padding-top: 30px;">Year 7</th>
+     <th class="govuk-table__header govuk-table__header--numeric" style="border-bottom: 0; padding-top: 30px;">46.75</th>
+   </tr>
+   <tr class="govuk-table__row">
+     <td scope="row" class="govuk-table__cell">1.75% + 2.5% CPIH + 2% = 1.83%
+   <br>= £549 per year</td>
+     <td class="govuk-table__cell govuk-table__cell--numeric">£45.75</td>
+   </tr>
+   <tr class="govuk-table__row">
+     <td scope="row" class="govuk-table__cell" style="border-bottom: solid #b1b4b6 3px;">Management fee</td>
+     <td class="govuk-table__cell govuk-table__cell--numeric" style="border-bottom: solid #b1b4b6 3px;">£1.00</td>
+   </tr>
+   
+    <!-- row -->
+    <tr class="govuk-table__row">
+     <th scope="row" class="govuk-table__header" style="border-bottom: 0; padding-top: 30px;">Year 8</th>
+     <th class="govuk-table__header govuk-table__header--numeric" style="border-bottom: 0; padding-top: 30px;">£48.75</th>
+   </tr>
+   <tr class="govuk-table__row">
+     <td scope="row" class="govuk-table__cell">1.83% (Previous interest rate) + 2.5% CPIH + 2% = 1.91% <br>= £573 per year</td>
+     <td class="govuk-table__cell govuk-table__cell--numeric">£47.75</td>
+   </tr>
+   <tr class="govuk-table__row">
+     <td scope="row" class="govuk-table__cell" style="border-bottom: solid #b1b4b6 3px;">Management fee</td>
+     <td class="govuk-table__cell govuk-table__cell--numeric" style="border-bottom: solid #b1b4b6 3px;">£1.00</td>
+   </tr>
+   
+   </tbody>
+   </table>
+   <p class="govuk-body">The interest will keep increasing along with the CPIH plus 2% for 25 years or until your mortgage ends. After 25 years you must pay off the full amount or ask for an extension.
+   </p>
+   
+   <p class="govuk-body">
+    Year 6 starts on the next 1 April, 5 years after you buy your home. If you buy between January to March, then it starts in April from the following year.</p>
+   </details>
+            
+     <h3 class="govuk-heading-m">Repayment administration fee</h3> 
+     
+     <p>You will need to apply for a repayment quote to make a repayment. This includes a £200 administration fee each time you apply.<a href="https://htb-alpha-uj3.herokuapp.com/redemption/uj4/iteration-2/application/application-overview"> </p>
+       <p>Find out how to manage and pay your loan</a> once you own a home with an equity loan.</p> 
+   <!-- <p>Repayment arrangements can be discussed with your Help to Buy mortgage administrator (post sales agent), who provides support after you buy your home.</p>
+   <p>The equity loan must be repaid, even if you experience a loss of income. It is recommended you seek independent financial advice about such possible situations, before buying your home with an equity loan.</p>        
+            -->
+           
+   <!-- <p>You must get your home independently valued before you repay so the correct amount to pay back can be calculated. </p>  -->
+           
+   
+   
+    
+   
+           
+   <!-- tabs -->
+   
+   
+   
+   
+   
+   
+   
+   
+       
+       <h3 class="govuk-heading-m">Example of repayment</h3>
+       <p class="govuk-!-margin-bottom-3">This example shows how much you would repay if the property's market value changes.</p>
+   
+       <p class="govuk-!-margin-bottom-0">It is based on: </p>
+       <ul class="govuk-list govuk-list--bullet">
+         <li>a property bought for £200,000</li>
+         <li>an original equity loan value of £40,000</li>
+         <li>an equity loan of 20%</li>
+       </ul>
+   
+       <p class="govuk-!-margin-bottom-4">A 20% equity loan can be repaid in up to 2 repayments. The first repayment must be at least 10%.</p>
+   
+   
+   <div class="govuk-tabs govuk-!-margin-bottom-9" data-module="govuk-tabs">
+     <h2 class="govuk-tabs__title">
+       Example
+     </h2>
+     <ul class="govuk-tabs__list">
+       <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+         <a class="govuk-tabs__tab" href="#past-day">
+           First repayment
+         </a>
+       </li>
+       <li class="govuk-tabs__list-item">
+         <a class="govuk-tabs__tab" href="#past-week">
+           Second and final repayment
+         </a>
+       </li>
+       
+     </ul>
+     
+     <div class="govuk-tabs__panel" id="past-day">
+   
+       <p>You must get your home valued to know what your repayment amount will be.</p>
+      
+       <table class="govuk-table">
+     
+         <thead class="govuk-table__head">
+           <tr class="govuk-table__row">
+             <th scope="col" class="govuk-table__header" colspan="3">First repayment</th>
+           </tr>
+           <tr class="govuk-table__row">
+             <th class="govuk-table__header govuk-!-width-one-third"></th>
+             <th scope="row" class="govuk-table__header govuk-table__cell--numeric" ><strong>Market value <br>rises by 5%</strong></th>
+             <th scope="row" class="govuk-table__header govuk-table__cell--numeric" ><strong>Market value <br>falls by 5%</strong></th>
+           </tr>
+          
+         </thead>
+         <tbody class="govuk-table__body">
+           <tr class="govuk-table__row">
+             <td scope="row" class="govuk-table__cell" >Property value </td>
+             <td class="govuk-table__cell govuk-table__cell--numeric" >£210,000</td>
+             <td class="govuk-table__cell govuk-table__cell--numeric" >£190,000</td>
+           </tr>
+           <tr class="govuk-table__row">
+             <td scope="row" class="govuk-table__cell" >Equity loan value (20%) </td>
+             <td class="govuk-table__cell govuk-table__cell--numeric" >£42,000</td>
+             <td class="govuk-table__cell govuk-table__cell--numeric" >£38,000</td>
+           </tr>
+           <tr class="govuk-table__row">
+             <td scope="row" class="govuk-table__cell">First repayment of 10%
+               <br> <span class="govuk-hint govuk-!-font-size-16 govuk-!-margin-0">(must be at least 10%)</span></td>
+               <td scope="row" class="govuk-table__cell govuk-table__cell--numeric">£21,000</td>
+               <td scope="row" class="govuk-table__cell govuk-table__cell--numeric">£19,000</td>
+           </tr>
+          
+           </tbody>
+       </table>
+   
+     </div>
+     <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
+       <table class="govuk-table govuk-!-margin-bottom-2">
+         <p>This example shows how much you would repay if the property value changes further from the original price.</p>
+         <table class="govuk-table">
+     
+          
+           <tbody class="govuk-table__body">
+             <tr class="govuk-table__row">
+               <td class="govuk-table__cell govuk-!-width-one-third"></td>
+               <th scope="row" class="govuk-table__header govuk-table__cell--numeric" ><strong>Market value rises by further 5%</strong></th>
+               <th scope="row" class="govuk-table__header govuk-table__cell--numeric" ><strong>Market value falls by further 5%</strong></th>
+             </tr>
+             <tr class="govuk-table__row">
+               <td scope="row" class="govuk-table__cell" >Property value </td>
+               <td class="govuk-table__cell govuk-table__cell--numeric" >£220,500</td>
+               <td class="govuk-table__cell govuk-table__cell--numeric" >£180,500</td>
+             </tr>
+             <tr class="govuk-table__row">
+               <td scope="row" class="govuk-table__cell" >Remaining   and final repayment amount
+                 <br> <span class="govuk-hint govuk-!-font-size-16 govuk-!-margin-0">(10% of property value)</span></td>
+               <td class="govuk-table__cell govuk-table__cell--numeric" >£22,050</td>
+               <td class="govuk-table__cell govuk-table__cell--numeric" >£18,050</td>
+             </tr>
+             <!-- <tr class="govuk-table__row">
+               <td scope="row" class="govuk-table__cell">Final repayment 
+                </td>
+                 <td scope="row" class="govuk-table__cell govuk-table__cell--numeric">£22,050</td>
+                 <td scope="row" class="govuk-table__cell govuk-table__cell--numeric">£18,050</td>
+             </tr> -->
+           
+          
+           </tbody>
+         </table>
+   
+     </div>
+    
+    
+   </div>  
+
+<!-- START: How to apply -->
+<h2 class="govuk-heading-l" id="how-to-apply">How to apply</h2>
+
+<p>Follow these steps to buy a home with  an equity loan.</p> 
+            
+<!-- <p>1. To apply you must <a href="who-can-apply">check you meet the conditions on the who can apply</a> page on the GOV.UK website.</p> -->
+
+ <!-- <p>1. To apply you must <a href="who-can-apply">check you meet the conditions</a> on the GOV.UK website.</p> -->
+ <!-- <ol class="govuk-list govuk-list--number">
+  
+
+<li style="margin-bottom:15px;">To apply you must check you meet the conditions</a> on the <a href="who-can-apply">who can apply</a> page.</li>
+   <li style="margin-bottom:15px;">If you meet the conditions, you then need to find a home with a registered <a href="https://www.helptobuy.gov.uk/equity-loan/find-helptobuy-agent/">Help to Buy housebuilder</a>. </li>        
+     <li style="margin-bottom:15px;">After this, you must reserve a home with a house builder or an estate agent first, before you can apply for an equity loan. This usually involves paying a reservation fee of up £500.</li>   
+           
+     <li style="margin-bottom:15px;">Once you have reserved a home, you can apply on the <a href="https://htb-alpha-uj3.herokuapp.com/apply/uj3/iteration-5/apply-00-service-start">Apply for a Help to Buy: Equity Loan</a> page on the GOV.UK website.</li>
+           
+     <li style="margin-bottom:15px;">After you’ve applied, you must wait for the decision. If you’re making a joint application, the 2nd applicant must review the application before it is submitted.</li>         
+   </ol>           -->
+
+   <ul class="govuk-list">
+     <li class="gov-margin-bottom-xl">
+       <h3 class="govuk-heading-m">Find out:</h3>
+       <ol class="steps" style="max-width: none; padding-right:40px;">
+         <li style="margin-bottom:15px;"><strong>Read the guidance</strong> <br><a href="who-can-apply">Check you meet the conditions</a> and that you <a href="paying-back-the-loan">understand how it works</a>.</li>
+         <!-- <li style="margin-bottom:15px;"><strong>Plan your money</strong><br>Save for a deposit and other costs such as solicitors fees. Make sure you have a plan of how you can repay the loan.</li> -->
+         <li style="margin-bottom:15px;"><strong>Find out what  mortgage amount you can get</strong> <br>You'll need need to know the amount for the equity loan application, though you don't apply for a mortgage at this stage. It’s recommended to see an <a href="#">independent financial adviser (IFA)</a>. </li>
+         <li style="margin-bottom:15px;"><strong>Work out your property price</strong> <br>
+            Work out the <a href="how-it-works">amount of equity loan you might get</a>, if approved.
+         </li>
+         <!-- <li style="margin-bottom:15px;"><strong>Work out how much you can spend</strong> <br>Add  your deposit and the amount of mortgage together. Then you can <a href="how-it-works">Work out the amount of equity loan you can get</a>.</li> -->
+         <li style="margin-bottom:15px;"><strong>Find a home</strong> <br>Find a new build home with a registered <a href="https://www.helptobuy.gov.uk/equity-loan/find-helptobuy-agent/">Help to Buy house builder</a>. </li>        
+           </ol>
+     
+     </li>
+     <li class="gov-margin-bottom-xl">
+       <h3 class="govuk-heading-m">Reserve and apply:</h3>
+       <ol start="5" class="steps" style="max-width: none; padding-right:40px;">
+         
+         <li style="margin-bottom:15px;"><strong>Reserve the property</strong><br>You'll need the property details for the application form. Some house builders ask for a reservation fee of up to £500, which is refundable.</li>
+         <li style="margin-bottom:15px;"><strong>Find a conveyancing solicitor</strong> <br>Your solicitor details are needed for the  application form.</li>
+         <li style="margin-bottom:15px;"><strong>Apply</strong> <br><a href="../apply-00-service-start">Apply online for a Help to Buy: Equity Loan</a>. A decision  will usually take around a week. A Help to Buy agent will get in touch with you to let you know if your application has been approved.</li>
+         </ol>
+     </li>
+     <li class="gov-margin-bottom-xl">
+       <h3 class="govuk-heading-m">After you have been approved:</h3> 
+       <ol  class="steps" start="8" style="max-width: none; padding-right:40px;">
+       <li style="margin-bottom:15px;"><strong>Apply for a mortgage </strong> <br>Your mortgage, deposit and the equity loan must add up to the exact property price.</li>
+       <li style="margin-bottom:15px;"><strong>Exchange and completion</strong> <br>Your solicitor will advise you, check the details and organise the money to be paid to the house builder and for the details to be registered with the Land Registry. Your name will be on the property deeds.</li>
+     </li>
+     </ul>
+
+
+
+
+<hr class="govuk-section-break govuk-section-break--visible" style="margin-bottom: 15px;">
+
+ <ul class="govuk-list" style="font-size: 15px;">
+        <li>Published: 21 May 2020</li>
+        <li>Last updated: 20 May 2020</li>
+        <li>From: <a class="govuk-link" href="#">Home England</a></li>
+      </ul>
+
+      <a id="app-c-back-to-top" class="govuk-link app-c-back-to-top dont-print" style="margin-top: 55px; display: block;" href="#contents">
+        <svg class="app-c-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17">
+          <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
+        </svg>
+        Contents
+      </a>
+  
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+      <aside class="app-related-items" role="complementary">
+
+        <h2 class="govuk-heading-m">Related content</h2>
+        <ul class="govuk-list">
+          <li><a href="#" class="govuk-link">Return to an equity loan application </a></li>
+          <li><a href="https://htb-alpha-uj3.herokuapp.com/redemption/uj4/iteration-2/application/application-overview" class="govuk-link">How to pay back your  loan</a></li>
+      <li><a href="https://www.helptobuy.gov.uk/equity-loan/find-helptobuy-agent/">Find a home you can buy with an equity loan</a></li>
+       
+       
+      <!-- <li><a href="#" class="govuk-link">Council housing</a></li>
+
+          <li><a href="#" class="govuk-link">Housing association homes</a></li>
+          
+          <li><a href="#" class="govuk-link">Right to Acquire: buying your housing association home</a></li>
+          
+          <li><a href="#" class="govuk-link">Right to Buy: buying your council home</a></li> -->
+        </ul>
+
+      </aside>
+
+    </div>
+  
+  </div>
+
+  <div id="fixed-footer" style="background-color: #f3f2f1; width: 100%; display: none; position: fixed; bottom: 0; height: 64px; left: 0;">
+  <div style="max-width: 960px; margin: 20px auto;">
+    <div class="app-c-contents-list-with-body__link-wrapper govuk-sticky-element--enabled govuk-sticky-element--stuck-to-window">
+      <div class="app-c-contents-list-with-body__link-container">
+        <a class="govuk-link app-c-back-to-top dont-print" href="#contents">
+          <svg class="app-c-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17">
+            <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
+          </svg>
+          Contents
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  <!-- <div class="govuk-grid-column-full"> 
+      <a class="govuk-link app-c-back-to-top dont-print" href="#contents">
+        <svg class="app-c-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17">
+          <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
+        </svg>
+        Contents
+      </a>
+    </div> -->
+
+{% endblock %}

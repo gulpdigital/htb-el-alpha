@@ -1,0 +1,142 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+  {{ super() }}
+  <!-- <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">parent page</a>
+      </li>
+
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">surrent page</li>
+ 
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <a href="#" class="govuk-back-link govuk-body govuk-!-margin-bottom-9">Back</a>
+      <!-- <h1 class="govuk-heading-xl">Have you reserved a new build home with a property agent?
+      </h1> -->
+      <form method="post" novalidate="" autocomplete="off" action="apply-04-form06">
+      <div class="govuk-form-group">
+        
+        <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+            <h1 class="govuk-fieldset__heading">
+              About your new build home
+            </h1>
+          </legend>
+          <p class="govuk-body">We’ll use these to check if your application can be approved.</p>
+          <p class="govuk-hint">
+            Enter the new build details. Fill in those that apply to you.
+          </p>
+          
+          
+          
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="address-county">
+                Plot number or name
+              </label>
+              <span id="changed-name-hint" class="govuk-hint">
+                For example, Plot 1 or Huxley Grove
+              </span>
+              <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text">
+            </div>
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="address-county">
+                Site name
+              </label>
+              <span id="changed-name-hint" class="govuk-hint">
+                For example, Maiden Court Place
+              </span>
+              <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text">
+            </div>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="address-town">
+                Developer name
+              </label>
+              <span id="changed-name-hint" class="govuk-hint">
+                For example, Smart Homes Builders
+              </span>
+              <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2">
+            </div>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="address-town">
+                Name of local authority
+              </label>
+              <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2" value="">
+            </div>
+
+            <h3 class="govuk-heading-s">Address</h3>
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="address-line-1">
+                Building and street <span class="govuk-visually-hidden">line 1 of 2</span>
+              </label>
+              <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1">
+            </div>
+          
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="address-line-2">
+                <span class="govuk-visually-hidden">Building and street line 2 of 2</span>
+              </label>
+              <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2">
+            </div>
+          
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="address-town">
+                Town or city
+              </label>
+              <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2">
+            </div>
+          
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="address-county">
+                County
+              </label>
+              <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text">
+            </div>
+          
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="address-postcode">
+                Postcode
+              </label>
+              <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text" autocomplete="postal-code">
+            </div>
+          
+           
+
+            
+          </fieldset>
+
+      </div>
+
+
+      <button class="govuk-button" data-module="govuk-button">
+        Save and continue
+      </button>
+    </form>
+     
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+      <p>&nbsp;</p>
+
+    </div>
+  </div>
+{% endblock %}

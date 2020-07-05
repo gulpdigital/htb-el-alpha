@@ -1,0 +1,331 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+  {{ super() }}
+  <!-- <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">parent page</a>
+      </li>
+
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">surrent page</li>
+ 
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <a href="#" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-three-quarters">
+
+        <!-- <h1 class="govuk-heading-xl">Check  answers</h1> -->
+
+        <h2 class="govuk-heading-l">Check the information the first applicant entered about you</h2>
+        <h3 class="govuk-heading-m">Your details</h3>
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key govuk-!-width-one-half">
+              Your email
+            </dt>
+            <dd class="govuk-summary-list__value">
+              
+              <p class="govuk-body">frankie.shaw@example.com</p>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="apply-04-03-form-change">
+               Change <span class="govuk-visually-hidden"> contact details</span>
+              </a>
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key ">
+              Your phone number
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">07509 282349</p>
+              
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="apply-04-03-form-change">
+                Change <span class="govuk-visually-hidden"> contact details</span>
+              </a>
+            </dd>
+          </div>
+
+         
+        </dl>
+
+        <h2 class="govuk-heading-m">Your income</h2>
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+          <div class="govuk-summary-list__row ">
+            <dt class="govuk-summary-list__key govuk-!-width-one-half">
+              Annual salary (before tax)<br>
+              <span class="govuk-hint govuk-!-font-size-16">This cannot include child tax credits or child benefit amounts</span>
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">£27,000 per year</p>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">annual salary</span>
+              </a>
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row ">
+            <dt class="govuk-summary-list__key govuk-!-width-one-half">
+              Annual overtime, bonuses and commissions
+              
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">£0 per year</p>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">annual salary</span>
+              </a>
+            </dd>
+          </div>
+
+          
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Disability allowance
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">£0 per month</p> 
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">income</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Guaranteed maintenance income
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">£0 per month</p> 
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">income</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Any other monthly income 
+              <span class="govuk-hint govuk-!-font-size-16">This cannot include any child tax credits or child benefit amounts</span>
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">£0 per month</p> 
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">income</span>
+              </a>
+            </dd>
+          </div>
+
+
+
+
+          </dl>
+
+          <h2 class="govuk-heading-m">Your outgoings</h2>
+          <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+  
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key govuk-!-width-one-half">
+                Total outstanding<br>credit card balances 
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">£2,040 total</p>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change <span class="govuk-visually-hidden">monthly outgoings</span>
+                </a>
+              </dd>
+            </div>
+  
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key govuk-!-width-one-half">
+                Total salary deductions <br>
+                <span class="govuk-body govuk-!-font-size-16">For example, childcare vouchers, pension</span>
+
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">£240 per month</p>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change <span class="govuk-visually-hidden">monthly outgoings</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Student loan <br>repayments
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">£550 per month</p>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change <span class="govuk-visually-hidden">monthly outgoings</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Loan/hire purchase <br>payments 
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">£0 per month</p> 
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change <span class="govuk-visually-hidden">outgoings</span>
+                </a>
+              </dd>
+            </div>
+        </dl>
+        <h2 class="govuk-heading-m">Your home ownership information</h2>
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Home ownership 
+            </dt>
+            <dd class="govuk-summary-list__value">
+              
+              <p class="govuk-body govuk-!-font-size-16">You have never owned a residential property or land anywhere in the world</p>
+                <p class="govuk-body govuk-!-font-size-16">Your are not married to someone who has owned  a residential property or land anywhere in the world</p>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> contact details</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+
+        <form method="post" novalidate="" autocomplete="off" action="#">
+          <div class="govuk-form-group">
+            
+            <fieldset class="govuk-fieldset radio-routes-toggle" aria-describedby="changed-name-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                <h1 class="govuk-fieldset__heading">
+                  Are these details correct?
+                </h1>
+              </legend>
+              <!-- <p class="govuk-body govuk-!-margin-bottom-5">If you make any changes, the first applicant will be asked to verify them.</p> -->
+              <div class="govuk-radios govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="changed-name" name="reservation" type="radio" value="yes" data-path="apply-05-01-check-buyer1">
+                  <label class="govuk-label govuk-radios__label" for="changed-name">
+                    Yes, they're correct
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="changed-name-2" name="reservation" type="radio" value="no" data-path="apply-05-01-check-change">
+                  <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                    No, they're not correct
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+      
+    
+           
+          </div>
+    
+    
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+       
+        <!-- <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h1 class="govuk-fieldset__heading">
+                Are these details correct?
+              </h1>
+            </legend>
+            <div class="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                  Yes, they're correct
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                  No, they're not correct
+                </label>
+              </div>
+             
+            </div>
+          </fieldset>
+        </div> -->
+      
+          <!-- <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset radio-routes-toggle"  aria-describedby="waste-hint2">
+     
+                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                    <h2 class="govuk-heading-s">
+                      Are these details correct?
+                    </h2>
+                  </legend>
+                 
+                  <div class="govuk-radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="changed-name" name="changed-name1" type="radio" value="yes" >
+                      <label class="govuk-label govuk-radios__label" for="changed-name">
+                        Yes, they're correct
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no" >
+                      <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                       No, they're not correct
+                      </label>
+                    </div>
+                  </div>
+                  </fieldset></div> -->
+
+        <!-- <form method="post" novalidate="" autocomplete="off" action="apply-05-01-check-buyer1">
+       <input type="hidden" name="answers-checked" value="true">
+          <button class="govuk-button" data-module="govuk-button">
+            Save and continue
+          </button>
+        </form> -->
+        <div><p>&nbsp;</p></div> 
+  
+  
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}

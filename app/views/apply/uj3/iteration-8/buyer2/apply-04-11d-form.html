@@ -1,0 +1,392 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+  {{ super() }}
+  <!-- <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">parent page</a>
+      </li>
+
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">surrent page</li>
+ 
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters">
+      <a href="#" class="govuk-back-link govuk-body govuk-!-margin-bottom-9">Back</a>
+      <span class="govuk-caption-l">  </span>
+      
+      <form method="post" novalidate="" autocomplete="off" action="apply-05-02a-buyer1-message">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              Do you understand the monthly interest and management fee?
+            </h1>
+          </legend>
+          <p class="govuk-body govuk-!-margin-bottom-5 govuk-!-margin-top-4" ><a href="#">Printable version</a></p>
+
+<div class="govuk-inset-text">Your equity loan monthly payments do not go towards repaying the equity loan, only the interest and management fee.</div>
+          <p class="govuk-body govuk-!-margin-bottom-5 govuk-!-margin-top-4" >
+            
+            </p>
+            <p>There is a monthly £1 management fee until the end of the loan. </p>
+
+            <p>Interest starts after 5 years at 1.75%. It then increases incrementally by a fixed formula which uses a measure of inflation called the  Consumer Price Index plus Housing (CPIH). </p>
+
+            <!-- <p>You also pay interest at a rate that starts at 1.75% after 5 years and then increases incrementally with a fixed formula which includes inflation (measured by the Consumer Price Index plus Housing, or CPIH). </p> -->
+            <details class="govuk-details" data-module="govuk-details">
+              <summary class="govuk-details__summary">
+                <span class="govuk-details__summary-text">
+                  Show me the interest increase details
+                </span>
+              </summary>
+              <div class="govuk-details__text">
+                <!-- <p>The interest formula includes a measure of inflation called the Consumer Price Index plus Housing (CPIH).</p> -->
+                <p>If the date you complete buying your property is during 2021:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+     <li>interest will start at 1.75% on the 5th anniversary of owning your home (i.e. sometime in 2026)</li>
+     <!-- <li>interest will increase by inflation (measured as CPIH)  + 2%, from 1st April 2027</li> -->
+     <li>from 1 April 2027 onwards, each year the interest rate from the previous year is multiplied by (CPIH + 2)% and added to itself</li>
+     <li>this formula is repeated until you repay the loan</li>
+     </ul>
+      <!-- <p>F</p> -->
+     
+              </div>
+            </details>
+          
+            <!-- <details class="govuk-details" data-module="govuk-details">
+              <summary class="govuk-details__summary">
+                <span class="govuk-details__summary-text">
+                  What is the CPIH inflation measure?
+                </span>
+              </summary>
+              <div class="govuk-details__text">
+               This is a rate that measures price changes (inflation) to work out the average cost of the things we buy and use. It takes the price changes of an item in a basket of goods (that is decided in advance) and housing  and then measures the average cost of these items.
+              </div>
+            </details> -->
+        
+
+
+            <!-- <p>Your interest payments payments start in year 6. They are calculated on the orginal equity loan amount.</p> -->
+            
+         
+
+          <div >
+            <h2 class="govuk-heading-m govuk-!-margin-top-7">Examples of interest payments if inflation (CPIH) is 3%</h2>
+            <!-- <p class="govuk-body ">This example shows you what you'd pay in interest if the inflation measure (CPIH) is 3%. However the inflation measure is variable from year to year, so these figures are examples only.</p> -->
+            <div class="govuk-inset-text">Inflation  is variable from year to year, so these figures are examples only.</div>
+            
+            <p class="govuk-body govuk-!-margin-bottom-5">It assumes you have not repaid any of your equity loan by the time you start paying interest. Your interest will be reduced in line with the percentage of the equity loan that you have repaid.</p>
+            <!-- <p class="govuk-body"> If your property value goes down by 5%, the amount you owe will go down by 5%.</p> -->
+              
+            <!-- <h2 class="govuk-heading-s govuk-!-margin-top-7" >Example if your property price changes</h2> -->
+          
+          
+             <!-- <p class="govuk-body">Your current equity loan value is <strong>£39,600</strong> </p> -->
+
+             <!-- <h4 class="govuk-heading-m">Examples</h4>  -->
+            
+
+             <div class="govuk-tabs govuk-!-margin-bottom-0" data-module="govuk-tabs">
+              <h2 class="govuk-tabs__title">
+                Contents
+              </h2>
+              <ul class="govuk-tabs__list">
+                <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                  <a class="govuk-tabs__tab" href="#past-day">
+                    After 5 years
+                  </a>
+                </li>
+                <li class="govuk-tabs__list-item">
+                  <a class="govuk-tabs__tab" href="#past-week">
+                    April 2027 
+                  </a>
+                </li>
+                <li class="govuk-tabs__list-item">
+                  <a class="govuk-tabs__tab" href="#past-month">
+                    April 2028 
+                  </a>
+                </li>
+                <li class="govuk-tabs__list-item">
+                  <a class="govuk-tabs__tab" href="#past-year">
+                    April 2029
+                  </a>
+                </li>
+              </ul>
+              <div class="govuk-tabs__panel" id="past-day">
+                <h2 class="govuk-heading-m">5 years after you buy</h2>
+               
+               <!-- <p>The interest starts on the fifth anniversary of the date you bought your home at 1.75% of £39,600.</p>
+               <p>If your purchase date (20 March 2021) remains the same, your interest will start on 20 March 2026.  </p> -->
+              
+               <table class="govuk-table">
+                <!-- <caption class="govuk-table__caption">Months and rates</caption> -->
+                <thead class="govuk-table__head">
+                  <tr class="govuk-table__row">
+                    <th scope="col" class="govuk-table__header">Period</th>
+                    <th scope="col" class="govuk-table__header govuk-table__header--numeric">Rate</th>
+                    <th scope="col" class="govuk-table__header govuk-table__header--numeric">Annual</th>
+                    <th scope="col" class="govuk-table__header govuk-table__header--numeric">Monthly</th>
+                  </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">20 March 2026 to<br> 31 March 2027</th>
+                    <td class="govuk-table__cell govuk-table__cell--numeric"><strong>1.75%</strong></td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric">£693.00</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric">£57.75</td>
+                  </tr>
+                 
+                </tbody>
+              </table>
+             
+                
+              <!-- <details class="govuk-details" data-module="govuk-details">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    What happens if I buy outside of these dates?
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+                 <p>If you buy the property before 1 January 2021, your interest will increase on 1 April 2026, and all the subsequent years, interest will start 1 year earlier than shown in this example. </p>
+
+                <p>If you buy the property after 31 December 2021, your interest will  increase at a  later date,  in line with the Help to Buy scheme rules.</p> 
+                </div>
+              </details> -->
+           
+              <!-- <details class="govuk-details" data-module="govuk-details">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    What happens if I complete later?
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+                 If you buy the property after 31 March 2021, your interest will still increase on 1 April 2027.
+                </div>
+              </details> -->
+         
+                
+              </p>
+              </div>
+              <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
+                <h2 class="govuk-heading-m">From 1 April 2027 to 31 March 2028</h2>
+
+                <p>The formula for the interest from 1 April 2027 onwards is the interest from the previous year  multiplied by inflation (CPIH) plus 2%  and added to itself. </p>
+                <!-- <p>The amount of interest is your previous year's interest rate multiplied by CPIH+ 2 %.</p>
+                  
+
+                  
+                 <p>The interest from the previous year (1.75%) is multiplied by (CPIH+2)% and added to itself to reach the new figure.</p>
+
+                 <p>If CPIH were 3%, this is the interest you would pay:</p> -->
+                 
+              
+               <table class="govuk-table">
+                <!-- <caption class="govuk-table__caption">Months and rates</caption> -->
+                <thead class="govuk-table__head">
+                  <tr class="govuk-table__row">
+                    <th scope="col" class="govuk-table__header govuk-!-width-one-third">Period</th>
+                    <th scope="col" class="govuk-table__header govuk-table__header--numeric ">Rate</th>
+                    <th scope="col" class="govuk-table__header govuk-table__header--numeric">Annual</th>
+                    <th scope="col" class="govuk-table__header govuk-table__header--numeric">Monthly</th>
+                  </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">1 April 2027 to<br> 31 March 2028</th>
+                    <td class="govuk-table__cell govuk-table__cell--numeric"><strong>1.838%</strong>
+                      <!-- <p class="govuk-!-margin-0">1.75</p>
+                      <p class="govuk-!-margin-0">(1.75 x 2+3%) = 0.843</p>
+                      <p class="govuk-!-margin-0">1.838</p> -->
+                    
+                    
+                    </td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric">£727.65</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric">£60.64</td>
+                  </tr>
+
+                  <tr class="govuk-table__row">
+                    <!-- <th scope="row" class="govuk-table__header"></th> -->
+                    <td class="govuk-table__cell govuk-table__cell--numeric" colspan="2">
+                      <p class="govuk-!-margin-0">previous year's rate: &nbsp;  &nbsp; 1.750%</p>
+                      <p class="govuk-!-margin-0" > <span class="govuk-!-margin-0" style="border-bottom: solid 1px grey;">+ &nbsp;(1.750 x 3+2%)  &nbsp; = &nbsp; 0.088% </span></p>
+                      <p class="govuk-!-margin-0">1.838%</p>
+                    
+                    
+                    </td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric"></td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric"></td>
+                  </tr>
+                </tbody>
+              </table>
+            
+              </div>
+              <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-month">
+                <h2 class="govuk-heading-m">From 1 April 2028 to 31 March 2029</h2>
+                 
+               
+
+                 <!-- <p>The interest from the previous year (1.84%) is multiplied by (CPIH+2)% and added to itself to reach the new figure.</p>-->
+
+                
+              
+               <table class="govuk-table">
+                <!-- <caption class="govuk-table__caption">Months and rates</caption> -->
+                <thead class="govuk-table__head">
+                  <tr class="govuk-table__row">
+                    <th scope="col" class="govuk-table__header govuk-!-width-one-third">Period</th>
+                    <th scope="col" class="govuk-table__header govuk-table__header--numeric">Rate</th>
+                    <th scope="col" class="govuk-table__header govuk-table__header--numeric">Annual</th>
+                    <th scope="col" class="govuk-table__header govuk-table__header--numeric">Monthly</th>
+                  </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">1 April 2028 to <br> 31 March 2029</th>
+                    <td class="govuk-table__cell govuk-table__cell--numeric"><strong>1.929%</strong>  </td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric">£764.03</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric">£63.67</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <!-- <th scope="row" class="govuk-table__header"></th> -->
+                    <td class="govuk-table__cell govuk-table__cell--numeric" colspan="2">
+                      <p class="govuk-!-margin-0">previous year's rate: &nbsp;  &nbsp; 1.843%</p>
+                      <p class="govuk-!-margin-0" > <span class="govuk-!-margin-0" style="border-bottom: solid 1px grey;">+ &nbsp; (1.843 x 3+2%)  &nbsp; = &nbsp; 0.086%</span></p>
+                      <p class="govuk-!-margin-0">1.929%</p>
+                    </td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric"></td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric"></td>
+                  </tr>
+                </tbody>
+              </table>
+            
+              </div>
+              <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-year">
+                <h2 class="govuk-heading-m">From 1 April 2029 to 31 March 2030</h2>
+                <!-- <p>Each 1 April the interest rate from the previous year is multiplied by (CPIH + 2)% and added to itself.</p> -->
+                  <p>This formula is repeated until you repay the loan.</p> 
+                <!-- <p>This rate increase formula continues until you have repaid your equity loan amount in full.</p>
+                 
+                 <p>The interest from the previous year (1.93%) is multiplied by (CPIH+2)% and added to itself to reach the new figure.</p>
+
+                 <p>If CPIH were 3%, this is the interest you would pay:</p> -->
+              
+               <table class="govuk-table">
+                <!-- <caption class="govuk-table__caption">Months and rates</caption> -->
+                <thead class="govuk-table__head">
+                  <tr class="govuk-table__row">
+                    <th scope="col" class="govuk-table__header govuk-!-width-one-third">Period</th>
+                    <th scope="col" class="govuk-table__header govuk-table__header--numeric">Rate</th>
+                    <th scope="col" class="govuk-table__header govuk-table__header--numeric">Annual</th>
+                    <th scope="col" class="govuk-table__header govuk-table__header--numeric">Monthly</th>
+                  </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">1 April 2029 to <br>31 March 2030</th>
+                    <td class="govuk-table__cell govuk-table__cell--numeric"><strong>2.029%</strong> </td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric">£802.67</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric">£66.89</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <!-- <th scope="row" class="govuk-table__header"></th> -->
+                    <td class="govuk-table__cell govuk-table__cell--numeric" colspan="2">
+                      <p class="govuk-!-margin-0">previous year's rate: &nbsp;  &nbsp; 1.929%</p>
+                      <p class="govuk-!-margin-0" > <span class="govuk-!-margin-0" style="border-bottom: solid 1px grey;">+  &nbsp; (1.929 x 3+2%)  &nbsp; = &nbsp; 0.100%</span></p>
+                      <p class="govuk-!-margin-0">2.029%</p>
+                    </td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric"></td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric"></td>
+                  </tr>
+                </tbody>
+              </table>
+           
+           
+              </div>
+            </div>
+       
+       
+       
+       
+             <!-- end tabs -->
+            
+             
+           
+          </div>
+ 
+        </fieldset>
+      </div>
+
+     
+      <div class="govuk-inset-text govuk-!-margin-bottom-7 govuk-!-margin-top-4">
+        <p>These figures are based on you completing buying your property during 2021. If the date you buy your property is outside this time,  the date your interest will start to increase will change.</p>
+      
+         </div>
+
+ 
+      
+     
+                 
+                 
+                <!-- <p>You start paying interest on the fifth anniversary of the date you buy your property. The rate starts at 1.75% and is always based on the original property valuation. </p>
+                  
+                <p>For your estimated buying date of 20 March 2021, your interest rate will increase on  1 April 2027. </p> 
+                  
+                 <p>Afterwards, the interest will increase every 1st April, by the previous year's rate multiplied by inflation plus 2%. Help to Buy uses the Consumer Price Index plus Housing (CPIH) as a measure of inflation.</p> -->
+     
+               
+
+      <div class="govuk-form-group govuk-!-margin-bottom-9">
+        <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+          
+          <div class="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+              <label class="govuk-label govuk-checkboxes__label" for="waste">
+                I understand that my monthly payments only pay the interest and fees, not the  equity loan 
+              </label>
+            </div>
+           
+          </div>
+        </fieldset>
+      </div>
+       
+
+       
+      <button class="govuk-button govuk-!-margin-right-1 " data-module="govuk-button">
+        Save and continue
+      </button>
+ 
+      <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+        Save and come back later
+      </button>
+
+    </form>
+
+    </div>
+
+    <div class="govuk-grid-column-one-quarter">
+
+      
+
+       
+      </div>
+
+      <div></div>
+
+    </div>
+  </div>
+{% endblock %}

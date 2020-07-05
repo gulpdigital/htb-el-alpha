@@ -1,0 +1,40 @@
+# ignore tracking usage data config - we want a different one for each user
+usage-data-config.json
+# ignore extension SCSS because it's dynamically generated
+lib/extensions/_extensions.scss
+.env
+.sass-cache
+.DS_Store
+.start.pid
+.port.tmp
+public/*
+public/javascripts
+public/sass
+public/stylesheets
+node_modules/*
+.tmuxp.*
+package-lock.json
+# public/stylesheets/application-ie8.css
+# public/stylesheets/application.css
+# public/stylesheets/unbranded-ie8.css
+# public/stylesheets/unbranded.css
+public/sass/patterns/_custom-layout.scss
+public/stylesheets/application-ie8.css
+public/stylesheets/application.css
+public/stylesheets/unbranded-ie8.css
+public/stylesheets/unbranded.css
+public/sass/patterns/_custom-layout.scss
+public/stylesheets/application-ie8.css
+public/stylesheets/application.css
+public/stylesheets/docs-ie8.css
+public/stylesheets/docs.css
+public/stylesheets/unbranded-ie8.css
+public/stylesheets/unbranded.css
+public/stylesheets/application-ie8.css
+public/stylesheets/application.css
+public/stylesheets/unbranded-ie8.css
+public/stylesheets/unbranded.css
+public/stylesheets/application-ie8.css
+public/stylesheets/application.css
+public/stylesheets/unbranded-ie8.css
+public/stylesheets/unbranded.css

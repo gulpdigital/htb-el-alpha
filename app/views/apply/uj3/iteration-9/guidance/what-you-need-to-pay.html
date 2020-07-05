@@ -1,0 +1,394 @@
+
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block content %}
+<div class="govuk-breadcrumbs govuk-!-margin-top-0 govuk-!-margin-bottom-9">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Housing and local services</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Affordable home ownership schemes</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Help to Buy: Equity Loan</li>
+  </ol>
+</div>
+<div class="govuk-grid-row">
+  <div class=" govuk-grid-column-full">
+
+      <h1 class="govuk-heading-xl">Find out about a Help to Buy: Equity Loan</h1>
+
+      <ul class="govuk-list dash-list">
+        <li><a class="govuk-link" href="index">Overview</a></li>
+        <li><a class="govuk-link" href="who-can-apply">Who can apply</a></li>
+        <li><a class="govuk-link" href="how-it-works">How it works</a></li>
+        <li>What you need to pay</li>
+        <li><a class="govuk-link" href="what-you-cannot-do">What you cannot do</a></li>
+        <li><a class="govuk-link" href="how-to-apply">How to apply</a></li>
+      </ul>
+      </div>
+      
+
+      <div class="govuk-grid-column-two-thirds">
+        <hr class="govuk-section-break govuk-section-break--visible" style="margin-bottom: 15px;">
+ 
+        <h1  class="govuk-heading-l">What you need to pay</h1>
+
+        <p>
+          There are 3 things you need to pay with an equity loan:
+        </p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>a monthly £1 management fee</li>
+          <li>a monthly interest fee (this starts after 5 years)</li>
+          <li>the equity loan in full or in part repayments</li>
+        </ul>
+ 
+     <h3 class="govuk-heading-m">Monthly management fee</h3>
+<p>You'll be charged a monthly £1 management fee, which is paid by direct debit from the start of owning your home until the loan is repaid.</p> 
+
+<h3 class="govuk-heading-m">Interest</h3>
+
+<p>Interest starts after 5 years at 1.75%. It then increases incrementally each year by a fixed formula which uses a measure of inflation called the Consumer Price Index plus Housing (CPIH).</p>
+ 
+<p>The formula is the previous year's interest multiplied by (CPIH+2)%.</p>
+       
+ <details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      What could the monthly interest charges look like?
+    </span>
+  </summary>
+  <div class="govuk-details__text" >
+    <h3 class="govuk-heading-m">Example:</h3>
+<h4 class="govuk-heading-s">Based on an Equity Loan of £30,000 and inflation (CPIH) of 2.5%.</h4>
+<p>Inflation varies from year to year, so this example is for illustration only.</p>
+
+<p>Each 1 April the interest rate from the previous year is multiplied by (CPIH + 2)% and added to itself.</p>
+<table class="govuk-table">
+
+<thead class="govuk-table__head">
+<tr class="govuk-table__row">
+  <th scope="col" class="govuk-table__header govuk-!-width-one-half">Fees and interest</th>
+  <th scope="col" class="govuk-table__header govuk-!-width-one-quarter govuk-table__header--numeric">Annual payments</th>
+
+  <th scope="col" class="govuk-table__header govuk-!-width-one-quarter govuk-table__header--numeric">Monthly payments</th>
+</tr>
+</thead>
+
+<tbody class="govuk-table__body">
+
+<tr class="govuk-table__row">
+  <th scope="row" class="govuk-table__header" style="border-bottom: 0;">Year 1 to 5</th>
+  <th></th>
+  <th class="govuk-table__header govuk-table__header--numeric" style="border-bottom: 0;"></th>
+</tr>
+<tr class="govuk-table__row">
+  <td scope="row" class="govuk-table__cell">No interest payments</td>
+  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+</tr>
+<tr class="govuk-table__row">
+  <td scope="row" class="govuk-table__cell" style="border-bottom: solid 	#626a6e 3px; ">Management fee</td>
+  <td class="govuk-table__cell  govuk-table__cell--numeric" style="border-bottom: solid 	#626a6e 3px;">£12.00</td>
+  <td class="govuk-table__cell  govuk-table__cell--numeric" style="border-bottom: solid 	#626a6e 3px;">£1.00</td>
+</tr>
+<!-- <tr class="govuk-table__row">
+  <td scope="row" class="govuk-table__cell" style="border-bottom: solid #b1b4b6 3px;"></td>
+  <th class="govuk-table__header govuk-table__header--numeric"  style="border-bottom: solid #b1b4b6 3px;">Total: £1.00</th>
+</tr> -->
+<!-- row -->
+<tr class="govuk-table__row">
+  <th scope="row" class="govuk-table__header" style="border-bottom: 0; padding-top: 30px;">Year 6</th>
+  <th></th>
+  <th class="govuk-table__header govuk-table__header--numeric" style="border-bottom: 0; padding-top: 30px;"></th>
+  
+</tr>
+<tr class="govuk-table__row">
+  <td scope="row" class="govuk-table__cell">1.75%</td>
+  <td class="govuk-table__cell govuk-table__cell--numeric">£525.00</td>
+  <td class="govuk-table__cell govuk-table__cell--numeric">£43.83</td>
+</tr>
+<tr class="govuk-table__row">
+  <td scope="row" class="govuk-table__cell" style="border-bottom: solid 	#626a6e 3px; ">Management fee</td>
+  <td class="govuk-table__cell govuk-table__cell--numeric" style="border-bottom: solid 	#626a6e 3px;">£12.00</td>
+  <td class="govuk-table__cell govuk-table__cell--numeric" style="border-bottom: solid 	#626a6e 3px;">£1.00</td>
+</tr>
+<!-- <tr class="govuk-table__row">
+  <td scope="row" class="govuk-table__cell" style="border-bottom: solid #b1b4b6 3px;"></td>
+  <td class="govuk-table__header govuk-table__header--numeric" style="border-bottom: solid #b1b4b6 3px;">Total: £44.83</td>
+</tr> -->
+ <!-- row -->
+ <tr class="govuk-table__row">
+  <th scope="row" class="govuk-table__header" style="border-bottom: 0; padding-top: 30px;">Year 7</th>
+  <th></th>
+  <th class="govuk-table__header govuk-table__header--numeric" style="border-bottom: 0; padding-top: 30px;"></th>
+</tr>
+<tr class="govuk-table__row">
+  <td scope="row" class="govuk-table__cell ">1.83%<br><span class="govuk-hint">1.75%  (previous year's rate) + <br>1.75% x (CPIH of 3% + 2)%</span>
+</td>
+  <td class="govuk-table__cell govuk-table__cell--numeric">£549.00</td>
+  <td class="govuk-table__cell govuk-table__cell--numeric">£45.75</td>
+</tr>
+<tr class="govuk-table__row">
+  <td scope="row" class="govuk-table__cell" style="border-bottom: solid 	#626a6e 3px;">Management fee</td>
+  <td class="govuk-table__cell govuk-table__cell--numeric" style="border-bottom: solid 	#626a6e 3px;">£12.00</td>
+  <td class="govuk-table__cell govuk-table__cell--numeric" style="border-bottom: solid 	#626a6e 3px;">£1.00</td>
+</tr>
+
+ <!-- row -->
+ <tr class="govuk-table__row">
+  <th scope="row" class="govuk-table__header" style="border-bottom: 0; padding-top: 30px;">Year 8</th>
+  <th></th>
+  <th class="govuk-table__header govuk-table__header--numeric" style="border-bottom: 0; padding-top: 30px;"></th>
+</tr>
+<tr class="govuk-table__row">
+  <td scope="row" class="govuk-table__cell">1.91%<br><span class="govuk-hint">1.83% (previous year's rate) + <br>1.83% x (CPIH of 3% + 2)%</span>
+    
+    
+    </td>
+  <td class="govuk-table__cell govuk-table__cell--numeric">£573.00</td>
+  <td class="govuk-table__cell govuk-table__cell--numeric">£47.75</td>
+</tr>
+<tr class="govuk-table__row">
+  <td scope="row" class="govuk-table__cell" style="border-bottom: solid 	#626a6e 3px;">Management fee</td>
+  <td class="govuk-table__cell govuk-table__cell--numeric" style="border-bottom: solid 	#626a6e 3px;">£12.00</td>
+  <td class="govuk-table__cell govuk-table__cell--numeric" style="border-bottom: solid 	#626a6e 3px;">£1.00</td>
+</tr>
+
+</tbody>
+</table>
+<p class="govuk-body">The interest will keep increasing using this formula until you have repaid your equity loan. 
+</p>
+
+<p class="govuk-body">
+ Year 6 starts on the next 1 April, 5 years after you buy your home. If you buy between January to March, then it starts in April from the following year.</p>
+</details>
+         
+<h2 class="govuk-heading-m">Repaying  the equity loan</h2>
+
+<div class="govuk-inset-text">The monthly payments do not go towards repaying the equity loan.</div>
+
+<p >You must repay the equity loan in full or in part repayments. When paying in part, the minimum you can repay is 10% of the property's value. This is made in a lump sum payment. 
+  
+  <p>The repayment amount you make depends on the Royal Institution of Chartered Surveyors (RICS) property valuation of your home, which is needed each time you repay. There are also: </p>
+
+  <!-- <p>There are fees associated with repaying, such as getting the valuation. To keep these fees to a minimum, equity loan repayments can be made a maximum of 2 times for a 20% equity loan, and 4 times for a 40% equity loan. </p> -->
+
+<ul class="govuk-list govuk-list--bullet">
+<li>solicitors costs</li>
+<li>surveyor</li>
+<li>Help to Buy administration fee</li>
+ </ul> 
+<p >You can repay at any time, but you must pay by the time you either sell your home, repay your mortgage, or by the end of your mortgage term. </p>
+<!-- <ul class="govuk-list govuk-list--bullet">
+    <li>sell your home</li>
+    <li>repay your mortgage in full</li>
+    <li>or within 25 years</li>
+</ul> -->
+<p >To repay you could raise funds by re-mortgaging, use savings, or by selling the property.</p>
+  <h3 class="govuk-heading-s">Repayment  fees</h3> 
+  
+  <p>You will need to apply for a repayment quote to make a repayment. This includes a £200 Help to Buy administration fee each time you apply. There will also be other fees such as getting a valuation done.
+    <p><a href="https://htb-alpha-uj3.herokuapp.com/redemption/uj4/iteration-2/application/application-overview">Find out how to manage and pay your loan</a> once you own a home with an equity loan.</p> 
+<!-- <p>Repayment arrangements can be discussed with your Help to Buy mortgage administrator (post sales agent), who provides support after you buy your home.</p>
+<p>The equity loan must be repaid, even if you experience a loss of income. It is recommended you seek independent financial advice about such possible situations, before buying your home with an equity loan.</p>        
+         -->
+        
+<!-- <p>You must get your home independently valued before you repay so the correct amount to pay back can be calculated. </p>  -->
+        
+
+
+ 
+
+        
+<!-- tabs -->
+
+
+
+
+
+
+
+
+    
+    <h3 class="govuk-heading-s">Example of repayment</h3>
+    <p class="govuk-!-margin-bottom-3">This example shows how much you would repay if the property's market value changes.</p>
+
+    <p class="govuk-!-margin-bottom-0">It is based on: </p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>a property bought for £200,000</li>
+      <li>an original equity loan value of £40,000</li>
+      <li>an equity loan of 20%</li>
+    </ul>
+
+    <p class="govuk-!-margin-bottom-4">A 20% equity loan can be repaid in up to 2 repayments. The first repayment must be at least 10%.</p>
+
+
+<div class="govuk-tabs govuk-!-margin-bottom-9" data-module="govuk-tabs">
+  <h2 class="govuk-tabs__title">
+    Example
+  </h2>
+  <ul class="govuk-tabs__list">
+    <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+      <a class="govuk-tabs__tab" href="#past-day">
+        First repayment
+      </a>
+    </li>
+    <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab" href="#past-week">
+        Second and final repayment
+      </a>
+    </li>
+    
+  </ul>
+  
+  <div class="govuk-tabs__panel" id="past-day">
+
+    <p>You must get your home valued to know what your repayment amount will be.</p>
+   
+    <table class="govuk-table">
+
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header govuk-!-width-one-third"></th>
+          <th scope="row" class="govuk-table__header govuk-table__cell--numeric" ><strong>Market value <br>rises by 5%</strong></th>
+          <th scope="row" class="govuk-table__header govuk-table__cell--numeric" ><strong>Market value <br>falls by 5%</strong></th>
+        </tr>
+       
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td scope="row" class="govuk-table__cell" >Property value </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric" >£210,000</td>
+          <td class="govuk-table__cell govuk-table__cell--numeric" >£190,000</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td scope="row" class="govuk-table__cell" >Equity loan value (20%) </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric" >£42,000</td>
+          <td class="govuk-table__cell govuk-table__cell--numeric" >£38,000</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td scope="row" class="govuk-table__cell">First repayment of 10%
+            <br> <span class="govuk-hint govuk-!-font-size-16 govuk-!-margin-0">(must be at least 10%)</span></td>
+            <td scope="row" class="govuk-table__cell govuk-table__cell--numeric">£21,000</td>
+            <td scope="row" class="govuk-table__cell govuk-table__cell--numeric">£19,000</td>
+        </tr>
+       
+        </tbody>
+    </table>
+
+  </div>
+  <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
+    <table class="govuk-table govuk-!-margin-bottom-2">
+      <p>This example shows how much you would repay if the property value changes further from the original price.</p>
+      <table class="govuk-table">
+  
+       
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell govuk-!-width-one-third"></td>
+            <th scope="row" class="govuk-table__header govuk-table__cell--numeric" ><strong>Market value rises by further 5%</strong></th>
+            <th scope="row" class="govuk-table__header govuk-table__cell--numeric" ><strong>Market value falls by further 5%</strong></th>
+          </tr>
+          <tr class="govuk-table__row">
+            <td scope="row" class="govuk-table__cell" >Property value </td>
+            <td class="govuk-table__cell govuk-table__cell--numeric" >£220,500</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric" >£180,500</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td scope="row" class="govuk-table__cell" >Remaining   and final repayment amount
+              <br> <span class="govuk-hint govuk-!-font-size-16 govuk-!-margin-0">(10% of property value)</span></td>
+            <td class="govuk-table__cell govuk-table__cell--numeric" >£22,050</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric" >£18,050</td>
+          </tr>
+          <!-- <tr class="govuk-table__row">
+            <td scope="row" class="govuk-table__cell">Final repayment 
+             </td>
+              <td scope="row" class="govuk-table__cell govuk-table__cell--numeric">£22,050</td>
+              <td scope="row" class="govuk-table__cell govuk-table__cell--numeric">£18,050</td>
+          </tr> -->
+        
+       
+        </tbody>
+      </table>
+
+  </div>
+ 
+ 
+</div>
+
+
+
+
+
+        
+<nav class="gem-c-pagination" role="navigation" aria-label="Pagination">
+  <ul class="gem-c-pagination__list" data-module="track-click">
+      <li class="gem-c-pagination__item gem-c-pagination__item--previous">
+        <a href="how-it-works" class="gem-c-pagination__link" rel="prev" data-track-category="contentsClicked" data-track-action="previous" data-track-label="/get-a-child-passport" data-track-dimension="previous" data-track-dimension-index="29">
+          <span class="gem-c-pagination__link-title">
+            <svg class="gem-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
+              <path d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z"></path>
+            </svg>
+            <span class="gem-c-pagination__link-text">
+              Previous
+            </span>
+          </span>
+            <span class="gem-c-pagination__link-divider visually-hidden">:</span>
+            <span class="gem-c-pagination__link-label">How it works</span>
+        </a>
+      </li>
+      <li class="gem-c-pagination__item gem-c-pagination__item--next">
+        <a href="what-you-cannot-do" class="gem-c-pagination__link" rel="next" data-track-category="contentsClicked" data-track-action="next" data-track-label="/get-a-child-passport/renew-a-child-passport" data-track-dimension="next" data-track-dimension-index="29">
+          <span class="gem-c-pagination__link-title">
+            <svg class="gem-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
+              <path d="m10.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+            </svg>
+            <span class="gem-c-pagination__link-text">
+              Next
+            </span>
+          </span>
+            <span class="gem-c-pagination__link-divider visually-hidden">:</span>
+            <span class="gem-c-pagination__link-label">What you cannot do</span>
+        </a>
+      </li>
+  </ul>
+</nav>
+
+</div>
+
+<div class="govuk-grid-column-one-third">
+
+  <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+  <aside class="app-related-items" role="complementary">
+
+    <h2 class="govuk-heading-m">Related content</h2>
+    <ul class="govuk-list">
+      <li><a href="#" class="govuk-link">Return to an equity loan application </a></li>
+      <!-- <li><a href="../../../../redemption/uj4/iteration-2/application/application-overview">How to repay an equity loan</a></li> -->
+      <li><a href="https://htb-alpha.herokuapp.com/redemption/uj4/iteration-6/application/application-overview">How to repay an equity loan</a></li>
+  <li><a href="https://www.helptobuy.gov.uk/equity-loan/find-helptobuy-agent/">Find a home you can buy with an equity loan</a></li>
+    <!-- <li><a href="#" class="govuk-link">Council housing</a></li>
+
+      <li><a href="#" class="govuk-link">Housing association homes</a></li>
+      
+      <li><a href="#" class="govuk-link">Right to Acquire: buying your housing association home</a></li>
+      
+      <li><a href="#" class="govuk-link">Right to Buy: buying your council home</a></li> -->
+    </ul>
+
+  </aside>
+
+</div>
+
+</div>
+{% endblock %}

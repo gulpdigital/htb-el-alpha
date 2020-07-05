@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Home",
+      href: "#"
+    },
+    {
+      text: "Housing and local services",
+      href: "#"
+    },
+    {
+      text: "Apply for a quote to repay your equity loan"
+    }
+  ]
+}) }}
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Pay back the equity loan
+      </h1>
+
+      <p class="govuk-body">Contents</p>
+
+      <ul class="govuk-list govuk-list--dash">
+          <li>– Overview</li>
+          <li>– <a href="application-selling">Paying back the loan in full when selling your home</a></li>
+          <li>– <a href="application-without-selling">Paying back the loan in part or in full without selling your home</a></li>
+      </ul>
+
+      <h2 class="govuk-heading-l">Overview</h2>
+      
+      <p>You can repay the Help to Buy equity loan at any time. The loan is interest free for 5 years. Interest is then charged at:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>1.75% in year 6 and increasing each year by RPI plus 1% for properties bought before April 2021</li>
+        <li>1.75% in year 6 and increasing each year by CPI plus 2% for properties bought after April 2021</li>
+      </ul>
+
+      <p>You can repay your loan in full or in part.  Before you repay you must get your home independently valued so that the amount you need to pay back can be calculated. The minimum repayment is equivalent to 10% of the value of the property.</p>
+      <p>You must repay the loan in full when you sell your home. If you do not sell your home, you can repay some or all of the loan by using your own funds, borrowing more from your first charge lender or remortgaging with another lender.</p>
+
+      <h3 class="govuk-heading-m">Repayment calculator</h3>
+      <p>You can estimate the amount you will need to repay by using a <a href="#">repayment calculator</a>.</p>
+
+      <h3 class="govuk-heading-m">Fees</h3>
+
+      <p>There is an administration fee of £200 each time you apply to repay the equity loan. Administration fees are valid for 8 months.</p>
+      <p>A monthly service fee of £1 also applies throughout the lifetime of the loan.</p>
+
+      <p>Next<br />
+        <a href="application-selling">Paying back the loan in full when selling your home</a></p>
+      
+    </div>
+  </div>
+{% endblock %}

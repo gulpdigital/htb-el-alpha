@@ -1,0 +1,124 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+{{ govukBackLink({
+  href: "#",
+  text: "Back"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Your account overview</h1>
+
+      <p>View a summary of your Help to Buy scheme and documents. You can also edit your personal details, check your balance and make payments toward your loan including interest and charges.</p>
+
+      <h2 class="govuk-heading-l">Help to Buy: Equity loan <span class="govuk-caption-xl">Scheme ID: 234560</span></h2>
+
+      <table class="govuk-table gov-margin-bottom-xxl">
+        <caption class="govuk-table__caption">17 Chapman Square, London SW19 5QR</caption>
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Date</th>
+            <th scope="col" class="govuk-table__header">Amount</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Equity loan amount </th>
+            <td class="govuk-table__cell">£68.500 (20%)</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Completion date</th>
+            <td class="govuk-table__cell">31 Jul 2016</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Interest start date</th>
+            <td class="govuk-table__cell">1 Aug 2022</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 class="govuk-heading-l">Manage your loan</h2>
+
+      <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                Check your documents
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+            <p class='govuk-body'><a href="#">View your legal documents</a> such as the contract and annual statements. </p>
+          </div>
+        </div>
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+                Make changes on your account
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+            <p class='govuk-body'>This is the content for Writing well for specialists.</p>
+          </div>
+        </div>
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+                Get redemption quote
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+            <p class='govuk-body'>The UK House Price Index (UK HPI) captures changes in the value of residential properties. Homes England uses HPI to estimate current value of your home. This valuation can be used only for partial redemption.</p>
+            <p class='govuk-body'>Estemated value for your home is £210,000.</p>
+          </div>
+        </div>
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-4">
+                Redeem your loan
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
+            <p class='govuk-body'><a href="#">Apply to pay back either in multiples of 10% or in full.</a></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+      <div class="govuk-header__container gov-margin-bottom-m"></div>
+      <h3 class="govuk-heading-m">Contact us</h3>
+      <p class="govuk-body">This is a paragraph inside a one-third wide column</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Call us on 0800 123456</li>
+        <li>email to <a href="#">emailaddress@gov.uk</a></li>
+        <li>anything else?</li>
+      </ul>
+    </div>
+  </div>
+  </div>
+{% endblock %}

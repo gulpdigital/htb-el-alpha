@@ -1,0 +1,181 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+  {{ super() }}
+  <!-- <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">parent page</a>
+      </li>
+
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">surrent page</li>
+ 
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">Apply for a Help to Buy: Equity Loan</h1>
+
+      <p>Apply for a low-interest loan towards a deposit for a home.</p>
+      <p>You can get help from the government by applying for a Help To Buy: Equity Loan.</p>
+
+      <h2 class="govuk-heading-l">Who can apply</h2>
+      <p>Homebuyers based in England can apply for this scheme. There are different schemes for homebuyers in <a href="https://www.mygov.scot/help-to-buy/overview/">Scotland</a> and <a href="https://gov.wales/buying-selling-property
+        ">Wales</a>.</p>
+        <p><a href="#" class="govuk-link">Check you meet the conditions to apply for an equity loan.</a></p>
+        <h2 class="govuk-heading-l">Eligibility</h2>
+        <p>You must be:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>18 or over</li>
+        <li>able to prove you can afford the mortgage repayments</li>
+        
+        <!-- <li>be one that you can show you cannot afford (if you’re applying in Wales)</li>  -->
+        
+        
+                </ul>
+
+        <p>The home you buy must:</p>
+        <ul class="govuk-list govuk-list--bullet">
+<li>be a new build</li>
+
+<li>be the first property you own (if you’re applying in England)</li>
+<li>not be sublet or rented out after you buy it</li>
+        </ul>
+
+
+        <h2 class="govuk-heading-m">Purchase price limits</h2>
+        <p>There is a property purchase price limit on the home that you buy. The limit is different for each region. These limits are shown below:
+        </p>
+        <table class="govuk-table">
+          
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Region</th>
+              <th scope="col" class="govuk-table__header">Full purchase price cap</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">England</th>
+              <td class="govuk-table__cell"></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__cell" style="padding-left: 20px;">East</td>
+              <td class="govuk-table__cell">£407,400</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__cell" style="padding-left: 20px;">East Midlands</td>
+              <td class="govuk-table__cell">£261,900</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__cell" style="padding-left: 20px;">London</td>
+              <td class="govuk-table__cell">£600,000</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__cell" style="padding-left: 20px;">North East</td>
+              <td class="govuk-table__cell">£186,100</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__cell" style="padding-left: 20px;">North West</td>
+              <td class="govuk-table__cell">£224,400</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__cell" style="padding-left: 20px;">South East</td>
+              <td class="govuk-table__cell">£437,600</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__cell" style="padding-left: 20px;">South West</td>
+              <td class="govuk-table__cell">£349,000</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__cell" style="padding-left: 20px;">West Midlands</td>
+              <td class="govuk-table__cell">£255,600</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__cell" style="padding-left: 20px;">Yorkshire and The Humber</td>
+              <td class="govuk-table__cell">£228,100</td>
+            </tr>
+
+
+
+            <!-- <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Scotland</th>
+              <td class="govuk-table__cell">£200,000</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Wales</th>
+              <td class="govuk-table__cell">£300,000</td>
+            </tr> -->
+          </tbody>
+        </table>
+      
+
+      <h2 class="govuk-heading-l">How it works</h2>
+      <p>With an equity loan:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>you need at least a 5% deposit</li>
+      <li>the government will lend you up to 20% (up to 40% in London)</li>
+      <li>need a mortgage of up to 75% for the rest (up to 55% in London)</li> 
+      </ul>
+      <p>You must buy your home from a registered Help to Buy homebuilder - <a href="#">your agent</a> should have a list.</p>
+      <p>There are <a href="https://www.gov.wales/housing/">different rules for equity loans in Wales</a>. There are also <a href="https://www.mygov.scot/help-to-buy/overview/">different rules for equity loans in Scotland</a>.</p>
+   
+
+      <h2 class="govuk-heading-l">What you need</h2>
+      <p>For joint applications, proof of identification will be required for each applicant.</p>
+        <ul class="govuk-list govuk-list--bullet">
+         
+        <li>Proof of ID (passport, driving license)</li>
+        <li>New build property details</li>
+        <li>Monthly income and outgoings</li>
+        <li>Solicitor details</li>
+
+
+        </ul>
+      
+      <h2 class="govuk-heading-l">How to apply</h2>
+      <p>Complete the online form to apply for an equity loan.</p>
+      
+
+      <a href="apply-01-eligibility01" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">
+        Start now
+        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
+          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
+        </svg>
+      </a>
+
+
+      
+
+     
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+      <aside class="app-related-items" role="complementary">
+
+        
+        <h2 class="govuk-heading-m">Related content</h2>
+        <ul class="govuk-list">
+        <li><a href="https://www.gov.uk/buy-sell-your-home" class="govuk-link">Check your equity loan application </a></li>
+        <li><a href="https://www.gov.uk/energy-performance-certificate-commercial-property" class="govuk-link">Pay your equity loan</a></li>
+        </ul>
+
+      </aside>
+
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,238 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+  {{ super() }}
+  <!-- <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">parent page</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">surrent page</li>
+ 
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters">
+      <a href="#" class="govuk-back-link govuk-body govuk-!-margin-bottom-9">Back</a>
+      
+      <form method="post" novalidate="" autocomplete="off" action="form-04">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading govuk-!-margin-bottom-7">
+              Check how much equity loan you need
+            </h1>
+          </legend>
+          <h2 class="govuk-heading-m govuk-!-margin-bottom-1">Your entries:</h2>
+          <div style="padding: 0 20px;">
+          <!-- <h3 class="govuk-!-margin-bottom-1 govuk-heading-s">Your entries:</h3> -->
+
+          <dl class="govuk-summary-list govuk-!-margin-bottom-1" style="max-width: 400px;">
+            <div class="govuk-summary-list__row">
+              <dd class="govuk-summary-list__value" style="border-bottom-width:0px;">
+                Property price
+              </dd>
+              <dt class="govuk-summary-list__key" style="text-align:right; border-bottom-width:0px;">
+                £198,000
+              </dt>
+              <dd class="govuk-summary-list__actions" style="border-bottom-width:0px;">
+              </dd>
+            </div>
+          </dl>
+
+          <dl class="govuk-summary-list govuk-!-margin-bottom-6" style="max-width: 400px;">
+            <div class="govuk-summary-list__row">
+              <dd class="govuk-summary-list__value" style="border-bottom-width:0px;">
+                Mortgage amount
+              </dd>
+              <dt class="govuk-summary-list__key" style="text-align:right; border-bottom-width:0px;">
+                £140,000
+              </dt>
+              <dd class="govuk-summary-list__actions" style="text-align:left; border-bottom-width:0px;">
+                <a class="govuk-link" href="#">
+                  Change<span class="govuk-visually-hidden"> </span>
+                </a>
+              </dd>
+            </div>
+          </dl>
+        </div>
+          <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="govuk-error-summary" style="margin-bottom: 30px;">
+            <!-- <h2 class="govuk-error-summary__title" id="error-summary-title">
+              There is a problem
+            </h2> -->
+            <dl class="govuk-summary-list govuk-!-margin-bottom-1" style="max-width: 400px;">
+              <div class="govuk-summary-list__row">
+                <dd class="govuk-summary-list__value" style="border-bottom-width:0px; padding-top:0;">
+                  Deposit
+                </dd>
+                <dt class="govuk-summary-list__key" style="text-decoration: none; color:#d4351c; border-bottom-width:0px; padding-top:0;">
+                  £22,000
+                </dt>
+                <dd class="govuk-summary-list__actions" style="text-align:left; border-bottom-width:0px; padding-top:0;">
+                  <a class="govuk-link" href="#">
+                    <span class="govuk-visually-hidden"> </span>
+                  </a>
+                </dd>
+              </div>
+            </dl>
+            <div class="govuk-error-summary__body">
+              <ul class="govuk-list govuk-error-summary__list">
+                <li>
+                  <!-- <p class="govuk-!-font-weight-bold" style="color:#d4351c;">You must <a href="#deposit-amounts">select an option below</a> to match percentage of Equity Loan you wish to borrow.
+                  </p> -->
+
+                  <p class="govuk-!-font-weight-bold" style="color:#d4351c;">We couldn’t meet this amount exactly. You need to select an <a href="#deposit-amounts">option</a>.</p>
+                </li>
+                <li>
+                  <details class="govuk-details" data-module="govuk-details" style="margin-bottom:0;">
+                    <summary class="govuk-details__summary">
+                      <span class="govuk-details__summary-text">
+                        <!-- Why won't it accept the deposit amount I've given? -->
+                        Why can I not enter my deposit amount? 
+                      </span>
+                    </summary>
+                    <div class="govuk-details__text" style="border-left: 0; padding-left: 0;">
+                      The amount has been changed because we only lend in whole pounds and not in fractions of percentages, for example £22,000 or £44,000. 
+                    </div>
+                  </details>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+ 
+        </fieldset>
+      </div>
+
+
+      <p class="govuk-body">The amount you’ve entered has been changed to meet the nearest amount in whole pounds.</p>
+
+      <h2 class="govuk-heading-m">Select an equity loan amount</h2>
+
+      <h3 class="govuk-heading-s">Your options</h3>
+
+      <p class="govuk-body govuk-!-margin-bottom-7">Choose an equity loan amount based on how much deposit you have available. An equity loan can be between 10% to 20% of the property price.</p>
+    </div>
+  </div>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-three-quarters">
+
+      <table class="govuk-table" id="deposit-amounts">
+        <!-- <caption class="govuk-table__caption">Your totals</caption> -->
+         <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header" style="border-bottom: 0;">%</th>
+            <th scope="col" class="govuk-table__header" style="border-bottom: 0;">Deposit amount</th>
+            <th scope="col" class="govuk-table__header" colspan="1" style="border-bottom: 0;">Equity loan amount</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <!-- <tr class="govuk-table__row">
+            <td class="govuk-table__cell" style="padding: 0; border-bottom: 0;"></td>
+            <td scope="row" class="govuk-table__cell" colspan="2" style="border-bottom: 0; padding: 0;"><p>The amount required to complete the property price</p></td>
+          </tr> -->
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell" style="padding: 0;" ><span class="govuk-hint govuk-!-font-size-16">Percentage of</br>property value</span></td>
+            <td class="govuk-table__cell" style="padding: 0;"><span class="govuk-hint govuk-!-font-size-16">Select the  amount</br>you can afford</span></td>
+            <td class="govuk-table__cell" style="padding: 0;"><span class="govuk-hint govuk-!-font-size-16">Current value of<br>equity loan</span></td>
+          
+          </tr>
+          <!-- row -->
+          <tr class="govuk-table__row"> 
+            <th class="govuk-table__header" rowspan="2">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="changed-name" name="changed-name1" type="radio" value="yes" >
+                <label class="govuk-label govuk-radios__label govuk-!-font-size-24" for="changed-name">
+                 20%
+                </label>
+              </div>
+            </th>
+            <td style="vertical-align: middle;"><p class="govuk-!-font-weight-bold govuk-!-margin-bottom-2 govuk-!-margin-top-3 govuk-!-font-size-24">£18,400</p></td>
+            <td scope="row"  style="vertical-align: middle;"> <p class="govuk-body govuk-!-margin-bottom-0 govuk-!-margin-top-2 govuk-!-font-size-24">£39,600</p></td>
+          </tr>
+          <tr  class="govuk-table__row">
+            <td colspan="2" scope="row" class="govuk-table__cell"><p class="govuk-body govuk-!-font-size-19 govuk-!-margin-bottom-3 govuk-!-margin-top-0" >Maximum amount you can borrow in Equity Loan. <span class="govuk-!-font-weight-bold" style="color: #d4351c;">You would be borrowing more</span></p></td>
+          </tr>
+         <!-- row -->
+         <tr class="govuk-table__row"> 
+          <th class="govuk-table__header" rowspan="2">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="changed-name" name="changed-name1" type="radio" value="yes" >
+              <label class="govuk-label govuk-radios__label govuk-!-font-size-24" for="changed-name">
+                19%
+              </label>
+            </div>
+          </th>
+          <td scope="row"  style="vertical-align: middle;"><p class="govuk-!-font-weight-bold govuk-!-margin-bottom-2 govuk-!-margin-top-3 govuk-!-font-size-24">£20,380</p></td>
+          <td scope="row" style="vertical-align: middle;"> <p class="govuk-body govuk-!-margin-bottom-0 govuk-!-margin-top-2 govuk-!-font-size-24">£37,620</p></td>
+        </tr>
+        <tr  class="govuk-table__row">
+          <td colspan="2" scope="row" class="govuk-table__cell"><p class="govuk-body govuk-!-font-size-19 govuk-!-margin-bottom-3 govuk-!-margin-top-0 " >Closest lower amount to your estimated deposit. <span class="govuk-!-font-weight-bold" style="color: #d4351c;">You would be borrowing more</span></p></td>
+        </tr>
+        <!-- row -->
+        <tr class="govuk-table__row"> 
+          <th class="govuk-table__header" rowspan="2">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="changed-name" name="changed-name1" type="radio" value="yes" >
+              <label class="govuk-label govuk-radios__label govuk-!-font-size-24" for="changed-name">
+                18%
+              </label>
+            </div>
+          </th>
+          <td scope="row" style="vertical-align: middle;"><p class="govuk-!-font-weight-bold govuk-!-margin-bottom-2 govuk-!-margin-top-3 govuk-!-font-size-24">£22,360</p></td>
+          <td scope="row"  style="vertical-align: middle;"> <p class="govuk-body govuk-!-margin-bottom-0 govuk-!-margin-top-2 govuk-!-font-size-24">£35,640</p></td>
+        </tr>
+        <tr  class="govuk-table__row">
+          <td colspan="2" scope="row" class="govuk-table__cell"><p class="govuk-body govuk-!-font-size-19 govuk-!-margin-bottom-3 govuk-!-margin-top-0" > <span class="govuk-!-font-weight-bold" style="color: #d4351c;">This is higher than your deposit.</span> You would be borrowing less</p></td>
+        </tr>
+        </tbody>
+      </table>
+
+      <button class="govuk-button govuk-button--secondary govuk-!-margin-right-1" data-module="govuk-button" >
+        View lower Equity Loan amounts
+      </button>
+
+      <!-- <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            <a href="apply-04-11aa-form#deposit-amounts">How can I check more amounts to suit my budget?</a>
+
+          </span>
+        </summary>
+        <div class="govuk-details__text" style="border-left: 0; padding-left: 0;">
+          
+        </div>
+      </details> -->
+
+       <div><p>&nbsp;</p></div> 
+      <button class="govuk-button govuk-!-margin-right-1" data-module="govuk-button">
+        Continue
+      </button>
+ 
+  
+
+    </form>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+      <p>&nbsp;</p>
+
+    </div>
+  </div>
+{% endblock %}

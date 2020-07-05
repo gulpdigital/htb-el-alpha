@@ -1,0 +1,165 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Home",
+      href: "#"
+    },
+    {
+      text: "Housing and local services",
+      href: "#"
+    },
+    {
+      text: "Apply for a quote to repay your equity loan"
+    }
+  ]
+}) }}
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Pay back the equity loan
+      </h1>
+ 
+        <p class="govuk-body">Contents</p>
+        <ul class="govuk-list govuk-list--dash">
+          <li>– <a href="application-overview">Overview</a></li>
+          <li>– <a href="application-selling">Paying back the loan in full when selling your home</a></li>
+          <li>– Paying back the loan in part or in full without selling your home</li>
+        </ul>
+
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h2 class="govuk-heading-l">Paying back the loan in part or in full without selling your home</h2>
+
+      <p>You can pay back some or all of the loan at any time by raising finance such as:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>borrowing more from your mortgage lender</li>
+        <li>borrowing more while remortgaging with a different mortgage lender</li>
+      </ul>
+
+      <p>You can also use your own funds or savings to pay some or all of the loan.</p>
+
+      <p>The minimum percentage of the equity loan you can repay is 10% of the market value of the property.</p>
+
+      <p>You must also:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>clear any outstanding arrears before you can repay the loan</li>
+        <li>repay the loan in full before the 25 year mortgage term ends</li>
+      </ul>
+
+      <p>You will also need to factor in additional costs such as solicitor and mortgage lender fees.</p>
+
+      <h3 class="govuk-heading-m">Raising finance to repay your loan</h3>
+
+      <p>If you want to borrow more money from your current or a different mortgage provider, you will need to obtain a <a href="#">consent to borrow</a> from Help to Buy.</p>
+
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            What is a consent to borrow?
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          A consent to borrow is a permission from Help to Buy that allows you to seek further borrowing from a mortgage lender. Permission is usually granted within X days.
+        </div>
+      </details>
+
+      <h3 class="govuk-heading-m">Apply to borrow more money from your mortgage lender</h3>
+
+      <p>If you have a good credit record and the value of your property has risen by more than the amount you originally borrowed you may be able to borrow more money. This is called a further advance.</p>
+      <p>You may pay a higher rate of interest.</p>
+      <p>You will need to work out if you can afford to make the increase in payments.</p>
+
+      <h3 class="govuk-heading-m">Borrowing more while remortgaging with another lender</h3>
+
+      <p>If you have a good credit record and the value of your property has risen, you may be able to get a better deal by remortgaging and borrowing more money from a different mortgage lender.</p>
+      <p>Not every lender offers Help to Buy remortgages.</p>
+      <p>You will need to work out if you can afford to make the increase in payments.</p>
+      
+      <h3 class="govuk-heading-m">Use your savings</h3>
+
+      <p>If you have savings or another source of funds you can repay some or all of your loan at any time.</p>
+      <p>You will need to estimate the current market value of your property so you can work out how much to repay.</p>
+      
+      <h2 class="govuk-heading-l">How to pay back part of the loan</h2>
+
+      <ul class="govuk-list">
+        <li class="gov-margin-bottom-xl">
+          <h3 class="govuk-heading-m">1. Carry out an affordability check</h3>
+          <p>Use the <a href="#">repayment calculator</a> to work out the amount you would like to borrow. You can also use your workings out to get a Mortgage in Principle.</p>
+        </li>
+        <li class="gov-margin-bottom-xl">
+          <h3 class="govuk-heading-m">2. Contact Help to Buy</h3>
+          <p>Get in touch with Help to Buy and explain you would like to repay on your loan. Help to Buy will prepare the documents to send to your solicitor.</p>
+        </li>
+        <li class="gov-margin-bottom-xl">
+          <h3 class="govuk-heading-m">3. Appoint a solicitor</h3>
+          <p>Whichever method you choose to repay the loan you must instruct a solicitor to carry out the legal undertaking. If you are looking to borrow more money from a mortgage lender and this has been approved by Help to Buy, your solicitor will be sent the consent to borrow.</p>
+        </li>
+        <li class="gov-margin-bottom-xl">
+          <h3 class="govuk-heading-m">4. Apply for a repayment quote</h3>
+          <p>You can <a class="govuk-link govuk-link--no-visited-state" href="application-intro.html">apply online</a> to start your application or download a form to print or save to your desktop. There is an administration fee of £200 whenever you apply for a repayment quote.</p>
+        </li>
+        <li class="gov-margin-bottom-xl">
+          <h3 class="govuk-heading-m">5. Receive a repayment quote</h3>
+          <p>Your solicitor sends you a repayment quote which shows how much you need to repay including daily interest. You instruct your solicitor to proceed.</p>
+        </li>
+        <li class="gov-margin-bottom-xl">
+          <h3 class="govuk-heading-m">6. Contact lender</h3>
+          <p>Get in touch with your current mortgage provider or a different lender and make an application. You can use the Mortgage in Principle to show how much you would like to borrow and that you can afford to pay it back.</p>
+        </li>
+        <li class="gov-margin-bottom-xl">
+          <h3 class="govuk-heading-m">7. Receive mortgage approval</h3>
+          <p>You sign the deeds for the new mortgage amount and submit to your solicitor.</p>
+        </li>
+        <li class="gov-margin-bottom-xl">
+          <h3 class="govuk-heading-m">8. Solicitor undertaking</h3>
+          <p>Your solicitor ensures the repayment quote and new mortgage amount are aligned and notifies Help to Buy.</p>
+        </li>
+        <li class="gov-margin-bottom-xl">
+          <h3 class="govuk-heading-m">9. Receive Authority to Complete</h3>
+          <p>Within 5 days from receiving the legal undertaking, Help to Buy issue an Authority to Complete (ATC) to your solicitor.</p>
+        </li>
+        <li class="gov-margin-bottom-xl">
+          <h3 class="govuk-heading-m">10. Transfer funds</h3>
+          <p>Your mortgage lender releases the funds to your solicitor. If you are using your savings you send the amount stated on the ATC to your solicitor. Your solicitor transfers the funds to Help to Buy and your equity loan amount is recalculated.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+        <p>Previous<br />
+          <a href="application-selling">Paying back the loan in full when selling your home</a></p>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full gov-margin-bottom-xxl "></div>
+  </div>  
+      
+  
+{% endblock %}

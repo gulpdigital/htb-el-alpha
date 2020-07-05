@@ -1,0 +1,163 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+  {{ super() }}
+  <!-- <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">parent page</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">surrent page</li>
+ 
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters">
+      <a href="#" class="govuk-back-link govuk-body govuk-!-margin-bottom-9">Back</a>
+      <span class="govuk-caption-l">Section 5 of 7  </span>
+     
+      
+      <form method="post" novalidate="" autocomplete="off" action="apply-04-11b-form">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              The amounts entered are over the property price
+            </h1>
+          </legend>
+          <!-- <p class="govuk-body govuk-!-margin-bottom-5">We’ll use details to understand if the equity loan is affordable.</p> -->
+
+        
+
+        
+         
+        </fieldset>
+      </div>
+
+      <p class="govuk-body">You must enter the right amounts that add up to the exact property price.</p> <p class="govuk-body"></p>You need to change the one of the amounts entered to make sure it adds to the property price.</p>
+   
+      <!-- <div class="govuk-warning-text">
+        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+        <strong class="govuk-warning-text__text">
+          <span class="govuk-warning-text__assistive">Warning</span>
+          You need to select the amount that is most suitable to you. 
+        </strong>
+      </div> -->
+    </div>
+  </div>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-three-quarters">
+
+      <table class="govuk-table" id="deposit-amounts">
+        <!-- <caption class="govuk-table__caption">Your totals</caption> -->
+         <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header" style="border-bottom: 0;">Mortgage amount</th>
+            <th scope="col" class="govuk-table__header"  style="border-bottom: 0;">Equity loan </th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td scope="row" class="govuk-table__cell" >Select the  figure that is most suitable for you</td>
+            <td scope="row" class="govuk-table__cell" colspan="2" >The amount required to complete the property price</td>
+          </tr>
+          <!-- <tr class="govuk-table__row">
+            <td class="govuk-table__cell" style="padding: 0;"><span class="govuk-hint govuk-!-font-size-14">Percentage of<br>property value</span></td>
+            <td class="govuk-table__cell" style="padding: 0;"><span class="govuk-hint govuk-!-font-size-14">Current value of<br>equity loan</span></td>
+           
+          </tr> -->
+          <!-- row -->
+          <tr class="govuk-table__row"> 
+            <th class="govuk-table__header">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="changed-name" name="changed-name1" type="radio" value="yes" >
+                <label class="govuk-label govuk-radios__label" for="changed-name">
+                  <span class="govuk-heading-s">£118,400</span>
+                </label>
+              </div>
+            </th>
+            <td scope="row" class="govuk-table__cell" style="vertical-align: middle;"><p class="govuk-body">20%</p></td>
+            <td scope="row" class="govuk-table__cell" style="vertical-align: middle;"> <p class="govuk-body">£39,600</p></td>
+             </tr>
+         <!-- row -->
+         <tr class="govuk-table__row"> 
+          <th class="govuk-table__header">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="changed-name" name="changed-name1" type="radio" value="yes" >
+              <label class="govuk-label govuk-radios__label" for="changed-name">
+                <span class="govuk-heading-s">£120,820</span>
+              </label>
+            </div>
+          </th>
+          <td scope="row" class="govuk-table__cell" style="vertical-align: middle;"><p class="govuk-body">19%</p></td>
+          <td scope="row" class="govuk-table__cell" style="vertical-align: middle;"> <p class="govuk-body">£37,180</p></td>
+       
+        </tr>
+        <!-- row -->
+        <!-- <tr class="govuk-table__row"> 
+          <th class="govuk-table__header">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="changed-name" name="changed-name1" type="radio" value="yes" >
+              <label class="govuk-label govuk-radios__label" for="changed-name">
+                <span class="govuk-heading-s">£122,200</span>
+              </label>
+            </div>
+          </th>
+          <td scope="row" class="govuk-table__cell" style="vertical-align: middle;"><p class="govuk-body">18%</p></td>
+          <td scope="row" class="govuk-table__cell" style="vertical-align: middle;"> <p class="govuk-body">£34,800</p></td>
+          <td scope="row" class="govuk-table__cell" style="vertical-align: middle;"><span class="govuk-hint govuk-!-font-size-14"></span></td>
+        </tr> -->
+          
+        </tbody>
+      </table>
+
+      <!-- <button class="govuk-button govuk-!-margin-right-1" data-module="govuk-button" style="background-color:#1d70b8;">
+        View more amounts to suit your budget
+      </button> -->
+
+      <!-- <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            <a href="apply-04-11aa-form#deposit-amounts">How can I check more amounts to suit my budget?</a>
+
+          </span>
+        </summary>
+        <div class="govuk-details__text" style="border-left: 0; padding-left: 0;">
+          
+        </div>
+      </details> -->
+
+       <div><p>&nbsp;</p></div> 
+      <button class="govuk-button govuk-!-margin-right-1" data-module="govuk-button">
+        Save and continue
+      </button>
+ 
+      <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+        Save and come back later
+      </button>
+
+    </form>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+      <p>&nbsp;</p>
+
+    </div>
+  </div>
+{% endblock %}

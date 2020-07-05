@@ -1,0 +1,88 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+  {{ super() }}
+  <!-- <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">parent page</a>
+      </li>
+
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">surrent page</li>
+ 
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <a href="#" class="govuk-back-link govuk-body govuk-!-margin-bottom-9">Back</a>
+      <!-- <h1 class="govuk-heading-xl">Have you reserved a new build home with a property agent?
+      </h1> -->
+      <form method="post" novalidate="" autocomplete="off" action="apply-05-02a-buyer1-message">
+      <div class="govuk-form-group">
+        
+        <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+            <h1 class="govuk-fieldset__heading">
+              Declaration
+            </h1>
+          </legend>
+          <p  class="govuk-body">
+            I confirm that the information I have provided is correct and true.
+          </p>
+          
+        
+
+          <!-- <p  class="govuk-body">
+
+
+            
+            I understand that I  must live in the property while I have the equity loan.
+          </p>
+
+
+          
+          <p  class="govuk-body">
+            I understand that, while I have the equity loan, I cannot:
+            <ul  class="govuk-list govuk-list--bullet">
+              <li>make alterations, unless in exceptional circumstances and with written consent, as I need to pay off the loan before further large spending</li>
+
+              <li>buy another property, as I need to pay off the loan before further large spending</li>
+              <li>rent out the whole property, unless in exceptional circumstances and with written consent</li>
+
+            </ul>
+          </p>
+           -->
+         
+           
+          </fieldset>
+
+      </div>
+
+
+      <button class="govuk-button" data-module="govuk-button">
+        Accept and submit  
+      </button>
+    </form>
+     
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+      <p>&nbsp;</p>
+
+    </div>
+  </div>
+{% endblock %}

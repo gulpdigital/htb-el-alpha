@@ -1,0 +1,123 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+{{ govukBackLink({
+  href: "#",
+  text: "Back"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Account overview</h1>
+
+      <p>Track progress and get notifications. Check your documents and amend account details.</p>
+
+      <h2 class="govuk-heading-l ">Help to Buy: Equity loan <span class="govuk-caption-xl gov-margin-top-s">Scheme ID: 234560</span></h2>
+
+      <table class="govuk-table gov-margin-bottom-xxl">
+        <caption class="govuk-table__caption govuk-!-font-size-24">17 Chapman Square, London SW19 5QR</caption>
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header"></th>
+            <th scope="col" class="govuk-table__header"></th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Equity loan amount and %</th>
+            <td class="govuk-table__cell">£160,000 (40%)</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Interest start date</th>
+            <td class="govuk-table__cell">1 Aug 2022</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Completion date</th>
+            <td class="govuk-table__cell">31 Jul 2016</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+      <h2 class="govuk-heading-l">Pay back your loan</h2>
+      
+      <table class="govuk-table gov-margin-bottom-xxl">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th class="govuk-table__header" scope="col"colspan="2"></th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+            <th class="govuk-table__header" scope="col"><p class="govuk-heading-m" style="margin-bottom: 0">Paying back in full when selling your home</p></th>
+            <td class="govuk-table__cell" style="text-align: right;"><strong class="govuk-tag govuk-tag--green">STARTED</strong></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th class="govuk-table__cell">
+              <a href="redemption-04-apply-for-repayment-quote">Apply for repayment quote</a>
+            </th>
+            <td class="govuk-table__cell" style="text-align: right; min-width: 200px">
+              <strong class="govuk-tag govuk-tag--turquoise">
+                TO DO
+              </strong>      
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 class="govuk-heading-l">Manage your loan</h2>
+
+      <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                Check documents
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+            <p class='govuk-body'>View documents such as account statements and terms and conditions.</p>
+          </div>
+        </div>
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+                Change details
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+            <p class='govuk-body'>Amend account or personal details.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+      <div class="govuk-header__container gov-margin-bottom-m"></div>
+      <h3 class="govuk-heading-m">Contact us</h3>
+      <p class="govuk-body">For help and support</p>
+
+      <p>Call: 0800 123456</p>
+      <p>Email: <a href="#">repayment@homesengland.gov.uk</a></p>
+      <p>Write to:<br>PO Box 911, Newport, NP10 9PA</p>
+    </div>
+  </div>
+  </div>
+{% endblock %}

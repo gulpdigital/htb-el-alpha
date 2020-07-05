@@ -1,0 +1,97 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+{{ govukBackLink({
+  href: "#",
+  text: "Back"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Prove your indenity to continue
+      </h1>
+
+           
+<form novalidate autocomplete="off" action="#">
+	<div class="gem-c-fieldset govuk-form-group">
+		<fieldset class="govuk-fieldset">
+			<legend class="govuk-fieldset__legend">
+				<div class="gem-c-title govuk-!-margin-top-8 govuk-!-margin-bottom-8">
+					<h1 class="gem-c-title__text ">
+            How do you want to sign in?
+          </h1>
+				</div>
+			</legend>
+			<div class="govuk-grid-row">
+				<div class="govuk-grid-column-two-thirds">
+					<div class="gem-c-govspeak govuk-govspeak">
+						<p>You’ll need an account to prove your identity and complete your Self Assessment.</p>
+					</div>
+					<div class="govuk-form-group">
+						<fieldset class="govuk-fieldset radio-routes-toggle">
+							<div class="govuk-radios">
+								<div class="gem-c-radio govuk-radios__item">
+									<input type="radio" name="option" id="option-0" class="govuk-radios__input" data-action-url="">
+										<label for="option-0" class="gem-c-label govuk-label govuk-label--s govuk-radios__label">
+          Sign in with Government Gateway
+        </label>
+										<span id="label-hint-3b263da1" class="govuk-hint govuk-radios__hint">
+            You’ll have a user ID if you’ve registered for Self Assessment or filed a tax return online before.
+        </span>
+									</div>
+									<div class="gem-c-radio govuk-radios__item">
+										<input type="radio" name="option" id="option-1" class="govuk-radios__input" data-action-url="application-verify-placeholder.html">
+											<label for="option-1" class="gem-c-label govuk-label govuk-label--s govuk-radios__label">
+          Sign in with GOV.UK Verify
+        </label>
+											<span id="label-hint-2df52166" class="govuk-hint govuk-radios__hint">
+            You’ll have an account if you’ve already proved your identity with either Barclays, Digidentity, Experian, Post Office or SecureIdentity.
+        </span>
+										</div>
+										<div class="gem-c-radio govuk-radios__item">
+											<input type="radio" name="option" id="option-2" class="govuk-radios__input" data-action-url="">
+												<label for="option-2" class="gem-c-label govuk-label govuk-label--s govuk-radios__label">
+          Sign in with a digital identity from another European country
+        </label>
+												<span id="label-hint-8d6ae16a" class="govuk-hint govuk-radios__hint">
+            If you’re part of an ID scheme in a participating country, you may be able to use it here.
+        </span>
+											</div>
+											<div class="govuk-radios__divider">or</div>
+											<div class="gem-c-radio govuk-radios__item">
+												<input type="radio" name="option" id="option-4"  class="govuk-radios__input" aria-describedby="label-hint-042ab8ec" data-action-url="">
+													<label for="option-4" class="gem-c-label govuk-label govuk-label--s govuk-radios__label">
+          Create an account
+        </label>
+													<span id="label-hint-042ab8ec" class="govuk-hint govuk-radios__hint">
+            You must register before you can pay back your loan.
+        </span>
+												</div>
+											</div>
+										</fieldset>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+					<button class="govuk-button" type="submit">Continue</button>
+				</form>
+    </div>
+  </div>
+
+{% endblock %}

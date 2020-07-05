@@ -1,0 +1,98 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+  {{ super() }}
+  <!-- <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">parent page</a>
+      </li>
+
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">surrent page</li>
+ 
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l govuk-!-margin-top-7">Apply for a Help to Buy: Equity Loan</h1>
+    </div></div>
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+      
+      <p>You have been named as the second applicant for a <a href="../guidance/index.html">Help to Buy: Equity loan</a>  from the government.</p>
+      
+ <!-- <p>Check you <a href="../guidance/who-can-apply"  class="govuk-link"> meet the conditions to apply for an equity loan.</a></p> -->
+
+
+     
+
+      <h2 class="govuk-heading-m">What you need</h2>
+      <p> To complete this application, you’ll need to check and confirm the information provided by the first applicant. This includes:
+      </p>
+        <ul class="govuk-list govuk-list--bullet"> 
+        <li>income and outgoings details for both applicants</li>
+        <li>new build property details</li>
+        <li>mortgage and deposit amounts</li>
+        <li>solicitor details</li>
+        </ul>
+        <p>You’ll also need your proof of  identity details.</p>
+ 
+     
+      <a href="apply-01-01-code" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+        Continue
+       
+      </a>
+
+
+
+<p>&nbsp;</p>
+      
+     
+<h2 class="govuk-heading-s">If you cannot apply online</h2>
+<p class="govuk-body"> 
+  You can contact a Help to Buy agent in your region who can help you with making your application.</p> 
+  
+  <h2 class="govuk-heading-s">Help to Buy agent in your region</h2>
+  <p class="govuk-body"> 
+  
+  <p class="govuk-body">The north of England: 0300 790 0570 </p>
+  
+  <p class="govuk-body">The south of England: 0800 456 1188 </p>
+  
+  <p class="govuk-body">The Midlands and London: 03333 214 044 </p>
+     
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+      <aside class="app-related-items" role="complementary">
+
+        
+        <h2 class="govuk-heading-m">Related content</h2>
+        <ul class="govuk-list">
+       
+        <li><a href="../guidance/index" class="govuk-link">Help to Buy equity loans</a></li>
+        <li><a href="../guidance/how-it-works" class="govuk-link">How an equity loan works</a></li>
+
+        <li><a href="../guidance/paying-back-the-loan" class="govuk-link">How to repay an equity loan</a></li>
+
+        
+        </ul>
+
+      </aside>
+
+    </div>
+  </div>
+{% endblock %}

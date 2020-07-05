@@ -1,0 +1,147 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters">
+        <a href="#" class="govuk-back-link govuk-body govuk-!-margin-bottom-9">Back</a>
+        <h1 class="govuk-heading-l">How much you could borrow with a Help to Buy: Equity Loan</h1>
+
+    </div>
+      
+    <form method="post" novalidate="" autocomplete="off" action="#" id="examplePage">
+    <div class="govuk-grid-column-two-thirds">
+        <ul class="govuk-list example-figures-list">
+            <li class="maximum-mortgage-amount">
+                <div style="width: 69%; display: inline-block;">
+                    <p style="margin-bottom:5px;" class="govuk-heading-m mortgage-unknown">Maximum mortgage amount</p>
+                    <p class="mortgage-unknown">This is the maximum mortgage you can take out in combination with an equity loan. It's your income multiplied by 4.5</p>
+
+                    <p style="margin-bottom:5px;" class="govuk-heading-m mortgage-known">Your mortgage amount</p>
+                    <!-- <p class="govuk-!-font-size-19 standard-messaging">(4.5x your annual salary and 2.25x your overtime and bonuses)</p> -->
+                    <p class="govuk-!-font-size-19 regional-cap-exceeded">(for this purchase price amount)</p>
+
+                </div>
+                <div style="width: 29%; display: inline-block;">
+                    <p style="margin-bottom: 5px; text-align: right; font-weight: bold;" class="text-placeholder">###MAXIMUM_MORTGAGE_AMOUNT###</p>
+                    <!-- <p style="text-align: right;"><a href="#">Lower amount</a></p> -->
+                </div>
+
+                <div class="govuk-warning-text" style="margin-bottom: 50px;">
+                    <span class="govuk-warning-text__icon" aria-hidden="true" style="top:20px">!</span>
+                    <strong class="govuk-warning-text__text" style="font-size: 18px;">
+                      <span class="govuk-warning-text__assistive">Warning</span>
+                       A mortgage lender might not be willing to lend you this much, depending on your outgoings, credit score and other borrowing.    
+                    </strong>
+                </div>
+
+                <p class="warning-text mortgage-known-and-regional-cap-exceeded">The <span class="text-placeholder">###ORIGINAL_MAX_MORTGAGE_AMOUNT###</span> mortgage amount exceeds the property price limit for your selected region. You must select an amount within property price limit of <span class="text-placeholder">###REGIONAL_CAP###</span> for the <span class="text-placeholder">###REGION_NAME###</span> region.</p>
+                <p class="warning-text mortgage-unknown-and-regional-cap-exceeded">The property price limit for the <span class="text-placeholder">###REGION_NAME###</span> is <span class="text-placeholder">###REGIONAL_CAP###</span>. This is the maximum property price for this region. (Although, you might be able to get a higher mortgage amount).</p>
+
+                <!-- <div class="govuk-warning-text small">
+                    <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+                    <strong class="govuk-warning-text__text">
+                      <span class="govuk-warning-text__assistive">Warning</span>
+                      Many people will not be able to borrow this amount depending on their credit situation. Reduce this if it is too much for you.
+                    </strong>
+                </div> -->
+            </li>
+            <!-- <li>
+                <div style="width: 69%; display: inline-block;">
+                    <p class="govuk-heading-m">What you would be puttin in:</p>
+                    <p>Minimum of 80% of total purchase price (this is worked out from the maximum mortgage amount and     your deposit combined - £135,000 + £15,000)</p>
+                </div>
+                <div style="width: 29%; display: inline-block; vertical-align: top;">
+
+                    <p style="text-align: right;">£150,000</p>
+
+                </div>
+
+                <hr class="govuk-section-break govuk-section-break--visible" style="margin-bottom: 15px;">
+            </li> -->
+            <li>
+                <div style="width: 74%; display: inline-block;">
+                    <p class="govuk-heading-m">Maximum equity loan amount</p>
+                    <p>Your equity loan can be up to <span class="text-placeholder">###MAXIMUM_LOAN_PERCENTAGE###</span> of the property price</p>
+                </div>
+                <div style="width: 24%; display: inline-block; vertical-align: top;">
+                    <p style="text-align: right; font-weight: bold;" class="text-placeholder">###MAXIMUM_EL_LOAN_AMOUNT###</p>
+                </div>
+
+                <!-- <p><a href="#">Lower equity loan percentage</a></p> -->
+
+            </li>
+            <li>
+                <div style="width: 74%; display: inline-block;">
+                    <p class="govuk-heading-m standard-messaging">Maximum property price</p>
+                    <p class="govuk-heading-m regional-cap-exceeded">Maximum property price for <span class="text-placeholder">###REGION_NAME###</span></p>
+                    <p class="standard-messaging">This is your deposit + mortgage amount + equity loan amount. </p>
+                    <!-- <p class="standard-messaging">(this is worked out from the maximum mortgage amount, your deposit and EL combined - <span class="text-placeholder">###MAXIMUM_MORTGAGE_AMOUNT###</span> + <span class="text-placeholder">###DEPOSIT###</span> + <span class="text-placeholder">###MAXIMUM_EL_LOAN_AMOUNT###</span>)</p> -->
+                    <p class="regional-cap-exceeded">(based on the regional property price limit)</p>
+                </div>
+                <div style="width: 24%; display: inline-block; vertical-align: top;">
+                    <p style="text-align: right; font-weight: bold;" class="text-placeholder">###MAX_PURCHASE_PRICE###</p>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+    
+
+    <div class="govuk-grid-column-one-third" style="background-color:  #f3f2f1; padding:30px; margin-bottom: 40px;">
+        <dl class="govuk-summary-list example-figures">
+            
+            <dt>Region: <span style="font-weight: bold; display: block;" class="text-placeholder">###REGION_NAME###</span> <span style="display: block; margin-top: 15px;">Property price limit</span> </dt>
+            <dd>
+                <span class="text-placeholder">###REGIONAL_CAP###</span> 
+                <a href="form-01.html">Change</a>
+            </dd>
+            
+            <dt>Deposit</dt>
+            <dd>
+                <span class="text-placeholder">###DEPOSIT###</span> 
+                <a href="form-02.html">Change</a>
+            </dd>
+
+            <dt>Income</dt>
+            <dd>
+                <span class="text-placeholder">###INCOME###</span> 
+                <!-- <a href="form-03.html">Change</a> -->
+            </dd>
+            
+            <dt class="overtime">Overtime and bonuses</dt>
+            <dd class="overtime">
+                <span class="text-placeholder">###OVERTIME###</span> 
+                <a href="form-03.html">Change</a>
+            </dd>
+        </dl>
+
+
+
+        
+    </div>
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds" style="border-top: #b1b4b6 solid 1px; padding-top: 20px;">
+        <h2 class="govuk-heading-l">What to do next</h2>
+
+        <h3 class="govuk-heading-s">Check you understand what you'll pay</h3>
+        <p>There are monthly fees and interest charges when you take out a loan, but you do not repay the loan in monthly instalments. <a href="../guidance/what-you-need-to-pay">Find out how to repay the equity loan</a>.</p>
+
+        <h3 class="govuk-heading-s">Talk to a mortgage lender</h3>
+        <p>Make sure you get a realistic idea of how much you could borrow from a mortgage lender. An <a href="https://www.fca.org.uk/consumers/finding-adviser">independent financial advisor</a> can help you with this. </p>
+        
+
+        <h3 class="govuk-heading-s">Search for a new build home</h3>
+        <p>You can buy any new build home with a Help to Buy: Equity Loan, but the homebuilder must be registered with Help to Buy. Use <a href="https://www.helptobuy.gov.uk/equity-loan/find-helptobuy-agent/">your regional Help to Buy agent</a> to find a property or speak to a registered homebuilder.
+        </div>
+    </div>
+   
+
+     </form>
+    </div>
+  </div>
+{% endblock %}

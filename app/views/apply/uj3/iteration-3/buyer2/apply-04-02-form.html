@@ -1,0 +1,146 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+  {{ super() }}
+  <!-- <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">parent page</a>
+      </li>
+
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">surrent page</li>
+ 
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <a href="#" class="govuk-back-link govuk-body govuk-!-margin-bottom-9">Back</a>
+      <h1 class="govuk-heading-xl">What is your home ownership status?
+      </h1>
+      <span id="waste-hint" class="govuk-hint">
+        Tell us about your current home ownership situation. Select those that apply to you.
+      </span>
+
+      <form method="post" novalidate="" autocomplete="off" action="apply-04-02a-check">
+      
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset radio-routes-toggle"  aria-describedby="waste-hint2">
+     
+                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                    <h2 class="govuk-heading-s">
+                      Have you owned a home?
+                    </h2>
+                  </legend>
+                 
+                  <div class="govuk-radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="changed-name" name="changed-name1" type="radio" value="yes" >
+                      <label class="govuk-label govuk-radios__label" for="changed-name">
+                        I’ve never owned a home before
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no" >
+                      <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                        I’ve previously owned a residential property on my own or with other people
+                      </label>
+                    </div>
+                  </div>
+                  </fieldset></div>
+<div><p>&nbsp;</p></div>
+                  <div class="govuk-form-group">
+        
+                    <fieldset class="govuk-fieldset radio-routes-toggle" aria-describedby="changed-name-hint">
+                      <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                        <h2 class="govuk-heading-s">
+                          Are you married to someone that owns a home?
+                        </h2>
+                      </legend>
+                     
+                      <div class="govuk-radios">
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes" >
+                          <label class="govuk-label govuk-radios__label" for="changed-name">
+                            I’m not married
+                          </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                         
+                          <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no" >
+                          <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                            I’m  married, but my spouse does not  own a residential property
+                          </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                         
+                          <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no" >
+                          <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                            I’m married to a person who owns a residential property
+                          </label>
+                        </div>
+                      </div>
+
+
+
+
+             
+            </fieldset>
+          </div>
+         
+         
+          <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                What is a residential property?
+
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              This is a house or flat which is occupied or is intended to be occupied as a residence or living accommodation.
+            </div>
+          </details>
+
+  <div><p>&nbsp;</p></div> 
+      <button class="govuk-button govuk-!-margin-right-1" data-module="govuk-button">
+        Save and continue
+      </button>
+ 
+      <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+        Save and come back later
+      </button>
+
+    </form>
+
+   
+    </div>
+       
+
+
+
+    </form>
+
+
+
+   
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+      <p>&nbsp;</p>
+
+    </div>
+  </div>
+{% endblock %}

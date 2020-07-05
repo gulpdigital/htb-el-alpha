@@ -1,0 +1,7 @@
+#passport-issued-error {
+	display: none;
+}
+
+.govuk-form-group--error > #passport-issued-error {
+	display: block;
+}

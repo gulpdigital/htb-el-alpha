@@ -1,0 +1,207 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+  {{ super() }}
+  <!-- <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">parent page</a>
+      </li>
+
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">surrent page</li>
+ 
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <a href="#" class="govuk-back-link govuk-body govuk-!-margin-bottom-9">Back</a>
+    <!-- <h1 class="govuk-heading-xl">Have you reserved a new build home with a property agent?
+    </h1> -->
+    <form method="post" novalidate autocomplete="off" action="apply-04-12-form" class="purchase-form" >
+    <div class="govuk-form-group">
+      
+     
+          <h1 class="govuk-heading-xl">
+            About your purchase
+          </h1>
+       
+        <p class="govuk-body">We’ll use these details to check your equity loan is maintainable.</p>
+        <p  class="govuk-hint">
+          Enter the new build purchase details.
+        </p></div>
+  
+</div></div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      
+          
+      <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl"></legend>
+          
+           
+              <div class="govuk-form-group">
+                <span id="passport-issued-error" class="govuk-error-message">
+                  <span class="govuk-visually-hidden">Error:</span> Amount should not exceed £600,000
+                </span>
+
+                <label class="govuk-label" for="propertyPrice">
+                  Property price
+                </label>
+                
+                <input class="govuk-input govuk-input--width-10" id="propertyPrice" name="propertyPrice" value="£" > 
+                <!--for validation: type="number" pattern="[0-9]*" inputmode="numeric"  -->
+              </div>
+
+
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="address-county">
+                  Deposit amount 
+                </label>
+                
+                <input class="govuk-input govuk-input--width-10" id="address-county" name="address-county" type="text" value="£">
+              </div>
+
+              
+
+              
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="address-town">
+                  Amount you plan to borrow for your mortgage 
+                </label>
+                
+                <input class="govuk-input govuk-input--width-10" id="address-town" name="address-town" type="text" autocomplete="address-level2" value="£">
+              </div>
+            
+          
+          
+           
+           
+          
+            <div class="govuk-form-group">
+                <label class="govuk-label" for="address-county">
+                  Help to Buy Equity Loan requested amount
+                </label>
+                <span id="passport-issued-hint" class="govuk-hint">
+                  For example, £30,000 or 20%
+                </span>
+                <div class="govuk-form-group">
+                  <select class="govuk-select" id="sort" name="sort">
+                    <option value="0" selected>Select</option>
+                    <option value="published">20%  which equals  £39,600</option>
+                    <option value="updated" >15% which equals £29,700</option>
+                    <option value="views">10% which equals £19,800</option>
+                    <option value="comments">other amount between 10 - 20%</option>
+                  </select>
+                </div>
+            
+                <!-- <div class="govuk-date-input" id="passport-issued">
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                        Percentage of <br>total property price
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-5"  value="                   %" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric">
+                    </div>
+                  </div> 
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                        Amount
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-8" value="£" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric">
+                    </div>
+                  </div>
+                    
+                </div> 
+            </div>-->
+            
+
+<!-- test -->
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="contact-by-phone">
+    Enter the mortgage term 
+  </label>
+  <input class="govuk-input govuk-input--width-4" id="contact-by-phone" name="contact-by-phone" type="tel"> <span class="govuk-body"> years</span>
+</div>
+
+  </fieldset>
+    </div>
+
+
+
+<div class="govuk-grid-column-one-third">
+
+  <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+<div style="border: solid 5px #f3f2f1; padding:30px; margin-bottom: 40px;" >
+  <p class="govuk-body govuk-!-font-size-24">Your totals</p>
+<!-- /// -->
+<table class="govuk-table">
+  <!--<caption class="govuk-table__caption">Your totals</caption>
+   <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header">Date</th>
+      <th scope="col" class="govuk-table__header">Amount</th>
+    </tr>
+  </thead> -->
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+     
+      <td class="govuk-table__cell">Deposit</td>
+      <th scope="row" class="govuk-table__header"style="text-align: right;">£18,400</th>
+    </tr>
+    <tr class="govuk-table__row">
+      
+      <td class="govuk-table__cell">Mortgage</td>
+      <th scope="row" class="govuk-table__header"style="text-align: right;"></th>
+    </tr>
+    <tr class="govuk-table__row">
+      
+      <td class="govuk-table__cell">Equity loan</td>
+      <th scope="row" class="govuk-table__header" style="text-align: right;"> <span class="govuk-!-font-weight-regular" style="text-align: left;"> &nbsp; &nbsp; &nbsp; &nbsp;</span> </th>
+    </tr>
+    
+  </tbody>
+</table>
+<!-- /// -->
+  <span style=" text-align:right;" >
+  <p class="govuk-body govuk-!-font-weight-bold" style="color:#d4351c;"></p>
+</span>
+  <p class="govuk-body " style="color:#d4351c;"></p>
+  <p class="govuk-body " ></p>
+</div>
+</div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+
+       <div><p>&nbsp;</p></div> 
+      <button class="govuk-button govuk-!-margin-right-1" data-module="govuk-button">
+        Save and continue
+      </button>
+ 
+      <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+        Save and come back later
+      </button>
+    </form>
+    
+  </div>
+
+  
+  </div>
+{% endblock %}

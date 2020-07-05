@@ -1,0 +1,211 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+  {{ super() }}
+  <!-- <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">parent page</a>
+      </li>
+
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">surrent page</li>
+ 
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <a href="#" class="govuk-back-link govuk-body govuk-!-margin-bottom-9">Back</a>
+
+    <span class="govuk-caption-l">Section 5 of 7 </span>
+     
+    <!-- <h1 class="govuk-heading-l">Have you reserved a new build home with a property agent?
+    </h1> -->
+    <form method="post" novalidate autocomplete="off" action="apply-04-11-0-form" class="purchase-form" >
+    <div class="govuk-form-group">
+      
+     
+          <h1 class="govuk-heading-l">
+            What is the equity loan percentage you're applying for?
+          </h1>
+       
+        <!-- <p class="govuk-hint">We’ll use these details to check your equity loan is affordable.</p> -->
+       
+        
+        <p>This is the amount of your property's value that you will owe to Help to Buy.</p>
+
+        <p  class="govuk-body">
+          An equity loan can be between 5% to 20% of the property price, in the region where your new home is located.</p>
+        </div>
+  
+</div></div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      
+          
+      <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl"></legend>
+                 
+              <div class="govuk-form-group">
+  <label class="govuk-label" for="contact-by-phone">
+    Enter the equity loan percentage 
+  </label>
+  <input class="govuk-input govuk-input--width-4" id="contact-by-phone" name="contact-by-phone" type="tel"> <span class="govuk-body"> %</span>
+
+    </div>
+   
+    <div class="govuk-!-width-three-quarters govuk-!-margin-top-7">
+    <table class="govuk-table ">
+      <caption class="govuk-table__caption" style="border: 0;" >Percentage amounts</caption>
+     
+      <tr>
+        <td colspan="2"> <p>These are based on the current value; the equity loan amount rises and falls with your property value</p></td>
+      </tr>
+      
+        <tr class="govuk-table__row">
+          <td scope="col" class="govuk-table__cell govuk-!-width-one-half">Percentage of<br>home value</td>
+         
+          <td scope="col" class="govuk-table__cell">Paid to<br>homebuilder</td>
+        </tr>
+     
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header" style="border: 0;">20% </th>
+          <td class="govuk-table__cell govuk-table__cell" style="border: 0;">£39,600</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header" style="border: 0;">19% </th>
+          <td class="govuk-table__cell govuk-table__cell" style="border: 0;">£37,620</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header" style="border: 0;">18% </th>
+          <td class="govuk-table__cell govuk-table__cell" style="border: 0;">£35,640</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header" style="border: 0;">17% </th>
+          <td class="govuk-table__cell govuk-table__cell" style="border: 0;">£33,660</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header" style="border: 0;">16% </th>
+          <td class="govuk-table__cell govuk-table__cell" style="border: 0;">£31,680</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <details class="govuk-details " data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          Show amounts from 11% to 15%
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        <table class="govuk-table ">
+          
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header" style="border: 0;">15% </th>
+              <td class="govuk-table__cell govuk-table__cell" style="border: 0;">£29,700</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header" style="border: 0;">14% </th>
+              <td class="govuk-table__cell govuk-table__cell" style="border: 0;">£27,720</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header" style="border: 0;">13% </th>
+              <td class="govuk-table__cell govuk-table__cell" style="border: 0;">£25,740</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header" style="border: 0;">12% </th>
+              <td class="govuk-table__cell govuk-table__cell" style="border: 0;">£23,760</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header" style="border: 0;">11% </th>
+              <td class="govuk-table__cell govuk-table__cell" style="border: 0;">£21,780</td>
+            </tr>
+          </tbody>
+        </table>
+
+       
+      </div>
+    </details>
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          Show amounts from 5% to 10%
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        <table class="govuk-table ">
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header" style="border: 0;">10% </th>
+              <td class="govuk-table__cell govuk-table__cell" style="border: 0;">£19,800</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header" style="border: 0;">9% </th>
+              <td class="govuk-table__cell govuk-table__cell" style="border: 0;">£17,820</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header" style="border: 0;">8% </th>
+              <td class="govuk-table__cell govuk-table__cell" style="border: 0;">£15,840</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header" style="border: 0;">7% </th>
+              <td class="govuk-table__cell govuk-table__cell" style="border: 0;">£13,860</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header" style="border: 0;">6% </th>
+              <td class="govuk-table__cell govuk-table__cell" style="border: 0;">£11,880</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header" style="border: 0;">5% </th>
+              <td class="govuk-table__cell govuk-table__cell" style="border: 0;">£9,900</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </details>
+  </div>
+
+  </fieldset>
+    </div>
+  </div>
+
+
+<div class="govuk-grid-column-one-third">
+
+  <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+
+       <div><p>&nbsp;</p></div> 
+      <button class="govuk-button govuk-!-margin-right-1" data-module="govuk-button">
+        Save and continue
+      </button>
+ 
+      <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+        Save and come back later
+      </button>
+    </form>
+   
+</div>
+
+  
+  </div>
+{% endblock %}

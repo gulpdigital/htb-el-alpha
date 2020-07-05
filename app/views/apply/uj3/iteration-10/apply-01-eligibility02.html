@@ -1,0 +1,110 @@
+{% extends "layout.html" %}
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+{% block beforeContent %}
+  {{ super() }}
+  <!-- <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">parent page</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">surrent page</li>
+      
+    </ol>
+  </div> -->
+{% endblock %}
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <a href="#" class="govuk-back-link govuk-body govuk-!-margin-bottom-9">Back</a>
+      <span class="govuk-caption-xl">
+        Before you start
+      </span>
+      <!-- <h1 class="govuk-heading-xl">Have you reserved a new build home with a property agent?
+      </h1> -->
+      <form method="post" novalidate="" autocomplete="off" action="#">
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset radio-routes-toggle" aria-describedby="changed-name-hint">
+            
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h1 class="govuk-fieldset__heading">
+              Have you reserved a home with a registered homebuilder?
+              </h1>
+            </legend>
+            <p class="govuk-body">
+              You must reserve your new home with a registered Help to Buy homebuilder before applying. This can include paying a reservation fee of no more than £500.
+            </p>
+
+          
+          <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+            
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="change-name" name="reservation" type="radio" value="yes" data-aria-controls="conditional-how-contacted-conditional-2" {{ checked("reservation", "yes") }}  data-path="apply-01-eligibility03">
+              <label class="govuk-label govuk-radios__label" for="change-name">
+                Yes
+              </label>
+            </div>
+            <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-2">
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="mortgage-number">
+                  When did you reserve the property?
+                </label>
+                <br>
+                <div class="govuk-date-input" id="passport-issued">
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                        Day
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric">
+                    </div>
+                  </div>
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                        Month
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric">
+                    </div>
+                  </div>
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                        Year
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>             
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="mortgage-no" name="reservation" type="radio" value="no" data-aria-controls="conditional-how-contacted-conditional" {{ checked("reservation", "no") }}  data-path="apply-01-eligibility03a-ineligible">
+              <label class="govuk-label govuk-radios__label" for="mortgage-no">
+                No
+              </label>
+            </div>
+          </div>
+        
+          </fieldset>
+        </div>
+    
+
+
+
+
+  <button class="govuk-button" data-module="govuk-button">
+  Continue
+  </button>
+</form>
+</div>
+<div class="govuk-grid-column-one-third">
+<!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+<p>&nbsp;</p>
+</div>
+</div>
+{% endblock %}

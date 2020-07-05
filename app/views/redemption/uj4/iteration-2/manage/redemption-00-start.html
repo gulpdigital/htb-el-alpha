@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+{{ govukBackLink({
+  href: "#",
+  text: "Back"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Manage your Help to Buy equity loan
+      </h1>
+
+      <p>You can use your equity loan account to:</p>
+
+      <ul class="govuk-list govuk-list--bullet gov-padding-bottom-xl">
+        <li>set up or change a direct debit</li>
+        <li>find out how much you owe</li>
+        <li>make payments toward interest and arrears</li>
+        <li>change your name or contact details</li>
+        <li>check your property valuation and pay back your loan</li>
+      </ul>
+
+      <a href="redemption-01-start-verify.html" class="govuk-button gov-margin-bottom-xxl" data-module="govuk-button">
+        Save and continue
+      </a>
+
+      <h2 class="govuk-heading-m">Before you start</h2>
+
+      <p>TBC [to advise users to use Gov Verify that they have once verified when they applied for the loan]</p>
+
+      <h2 class="govuk-heading-m">Other ways to manage your loan</h2>
+
+      <p>[Maybe contact details to mortgage administrator?]</p>
+
+    </div>
+  </div>
+{% endblock %}

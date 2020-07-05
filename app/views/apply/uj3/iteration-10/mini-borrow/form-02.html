@@ -1,0 +1,95 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <a href="#" class="govuk-back-link govuk-body govuk-!-margin-bottom-9">Back</a>
+    <form method="post" id="deposit" novalidate autocomplete="off" action="form-03" class="purchase-form" >
+    <div class="govuk-form-group">
+
+     
+      <span class="govuk-caption-l">Question 2 of 4</span>
+          <h1 class="govuk-heading-l">
+            How much do you have available for the deposit?
+          </h1>
+          
+          <h2 class="govuk-heading-s">
+            For joint applications, enter your combined deposit amount.
+          </h2>
+       
+        <p class="govuk-body">Your deposit amount must be at least 5% of the property's price.</p>
+
+        <details class="govuk-details" data-module="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              Show deposit amount example
+            </span>
+          </summary>
+          <div class="govuk-details__text">
+            For a £200,000 property, 5% of the property price is a £10,000 deposit amount. This is the amount of money of you have available to buy your home.
+          </div>
+        </details>
+
+       </div>
+  
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      
+          
+      <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl"></legend>
+          
+           
+              <div class="govuk-form-group">
+                <span id="passport-issued-error" class="govuk-error-message">
+                  <span class="govuk-visually-hidden">Error:</span> Amount should not exceed £600,000
+                </span>
+
+                <!-- <label class="govuk-label" for="propertyPrice">
+                  What is the estimated deposit amount you have available?
+
+                </label> -->
+
+                
+                <span class="currency-prefix govuk-body" >£</span>
+                <input class="govuk-input govuk-input--width-10" id="deposit" name="deposit" type="number"  value="{{ data['deposit'] }}">
+                <!--for validation: type="number" pattern="[0-9]*" inputmode="numeric"  -->
+              </div>
+
+  </fieldset>
+    </div>
+  </div>
+
+
+<div class="govuk-grid-column-one-third">
+
+  <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+
+   
+      <button form="deposit" type="submit" class="govuk-button govuk-!-margin-right-1" data-module="govuk-button">
+        Continue
+      </button>
+ 
+   
+    </form>
+   
+</div>
+
+  
+  </div>
+{% endblock %}

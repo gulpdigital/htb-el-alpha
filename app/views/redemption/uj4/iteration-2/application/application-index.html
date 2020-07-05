@@ -1,0 +1,151 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+{{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Home",
+        href: "#"
+      },
+      {
+        text: "Housing and local services",
+        href: "#"
+      },
+      {
+        text: "Affordable home ownership schemes"
+      }
+    ]
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+        <h1 class="govuk-heading-xl">Pay back your equity loan</h1>
+
+        <p class="govuk-body">Contents</p>
+        <ul class="govuk-list govuk-list--dash">
+          <li>– <a href="application-overview">Overview</a></li>
+          <li>– <a href="application-selling">Paying back the loan in full when selling your home</a></li>
+          <li>– <a href="application-without-selling">Paying back the loan in part or in full without selling your home</a></li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full gov-margin-bottom-xxl "></div>
+    </div>  
+        
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds grey-boarder-top">
+
+      <h2 class="govuk-heading-l">Paying back the loan when selling your home</h2>
+      
+      <p>When you sell your home to pay back your equity loan you must get a property valuation from a <a href="#">RICS chartered surveyor</a> to find out how much you owe.  </p>
+
+      <p>How much you repay is based on whichever is highest: the property valuation quote provided by a RICS chartered surveyor or the final sale price as agreed on the memorandum of sale.</p>
+
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            what is a property valuation? 
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          A property valuation is an assessment of a property’s value based on factors such as the location and condition. It is carried out by a property surveyor or independently by a RICS chartered surveyor.        </div>
+      </details>
+
+      <h2 class="govuk-heading-l">How to pay back your loan in full when selling your home</h2>
+
+      <ul class="govuk-list">
+        <li class="gov-margin-bottom-xl">
+          <h3 class="govuk-heading-m">1. Get your home valued</h3> 
+          <p>You must pay for a property valuation from a <a class="govuk-link govuk-link--no-visited-state" href="#">Royal Institution of Chartered Surveyors</a>. Valuations usually take a couple of weeks from home inspection to preparing the report.</p>
+          <p>A property valuation is valid for 3 months.  If you do not sell your home within this time you will need to pay for another valuation. </p>
+          <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                Get desktop valuation after 3 months if the property is not sold 
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              <p>If your house is not sold as expected within 3 months you will need to get a desktop valuation from the surveyor who inspected your property.</p>
+              <p>The desktop valuation must be completed within 2 weeks of expiry of the original property valuation date.</p>
+              <p>The surveyor must refer back to the original valuation report and confirm it is a desktop valuation.</p>
+              <p>If the property has gone up or down in value, the surveyor must provide the final sale prices of 6 comparable properties within the past 12 months. The surveyor does not need to reinspect the property but they must sign and date the new valuation report. </p>
+            </div>
+          </details>
+        </li>
+        <li class="gov-margin-bottom-xl">
+          <h3 class="govuk-heading-m">2. Appoint a solicitor</h3>
+            <p>A solicitor carries out the legal undertakings required when paying off your loan. </p>
+            <details class="govuk-details" data-module="govuk-details">
+              <summary class="govuk-details__summary">
+                <span class="govuk-details__summary-text">
+                  How do I find a solicitor?
+                </span>
+              </summary>
+              <div class="govuk-details__text">
+                <p>You can find a solicitor who specialises in conveyancing and is registered from <a class="govuk-link govuk-link--no-visited-state" href="#">Law Society.</a> </p>
+              </div>
+            </details>
+        </li>
+        <li class="gov-margin-bottom-xl">
+          <h3 class="govuk-heading-m">3. Apply for a quote to repay </h3> 
+          <p><a class="govuk-link govuk-link--no-visited-state" href="application-intro.html">Apply online</a> or <a class="govuk-link govuk-link--no-visited-state" href="#">download an application form</a>. A £200 administration fee is payable to Help to Buy when you apply for a repayment quote. You have 8 months from receiving the quote to make a repayment or you will need to pay a further £200 admin fee to get another quote.  </p>
+        </li>
+        <li class="gov-margin-bottom-xl">
+          <h3 class="govuk-heading-m">4. Receive a repayment quote</h3> 
+          <p>The amount you repay is based on whichever is highest: The RICS property valuation or the final Memorandum of Sale. Repayment quotes are value estimates. The quote may also include any outstanding charges and daily interest calculated up to the completion date.  </p>
+        </li>
+        <li class="gov-margin-bottom-xl">
+          <h3 class="govuk-heading-m">5. Solicitor carries out legal duties</h3> 
+          <p>Your solicitor will carry out the necessary legal undertaking required when selling your home such as notifying Land Registry to remove the charge.</p>
+        </li>
+        <li class="gov-margin-bottom-xl">
+          <h3 class="govuk-heading-m">6. Receive Authority to Complete</h3> 
+          <p>Once legal undertakings have been carried out, Help to Buy sends the Authority to Complete to you and your solicitor. You send the repayment amount to your solicitor.</p>
+        </li>
+        <li class="gov-margin-bottom-xl">
+          <h3 class="govuk-heading-m">7. Repayment on the loan</h3> 
+          <p>Your solicitor transfers funds to Help to Buy. Your equity loan amount is settled and your account closed.</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="govuk-grid-column-one-third gov-margin-bottom-l">
+      <h3 class="govuk-heading-m blue-boarder-top">Related content</h3>
+      <ul class="govuk-list">
+        <li>
+          <a href="#">How to sell a home guidance</a>
+        </li>
+        <li>
+          <a href="#">Tax when you sell property</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="govuk-grid-column-one-third gov-margin-bottom-l">
+      <h3 class="govuk-heading-m blue-boarder-top">Help and support</h3>
+      <ul class="govuk-list">
+        <li>
+          <a href="#">How to sell a home guidance</a>
+        </li>
+      </ul>
+    </div>
+    
+  </div>
+{% endblock %}

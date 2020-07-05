@@ -1,0 +1,195 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+  {{ super() }}
+  <!-- <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">parent page</a>
+      </li>
+
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">surrent page</li>
+ 
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <a href="#" class="govuk-back-link govuk-body govuk-!-margin-bottom-9">Back</a>
+      
+      <!-- <span class="govuk-caption-l">Section 5 of 7  </span> -->
+      
+      <form method="post" novalidate="" autocomplete="off" action="apply-04-11c-form">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              Do you understand the equity loan you're applying for?
+            </h1>
+          </legend>
+          <p class="govuk-body govuk-!-margin-bottom-5 govuk-!-margin-top-5" ></p>
+
+          <dl class="govuk-summary-list govuk-!-margin-bottom-1" style="max-width: 600px;">
+            <div class="govuk-summary-list__row">
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body govuk-!-margin-bottom-5" style="vertical-align: top; padding-top: 0; ">Percentage of property price owed to Help to Buy</p>
+                <p>The amount you owe goes up and down with the property's market value.</p>
+
+              </dd>
+              <dt class="govuk-summary-list__key govuk-heading-l" style="text-align:right;">
+                20%
+              </dt>
+              <!-- <dd class="govuk-summary-list__actions" style="border-bottom-width:0px;">
+              </dd> -->
+            </div>
+          </dl>
+
+          <dl class="govuk-summary-list govuk-!-margin-bottom-6" style="max-width: 600px;">
+            <div class="govuk-summary-list__row">
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-summary-list govuk-!-margin-bottom-6">Current equity loan value you're borrowing</p>
+                <p>This will be paid to the builder to make up the property price.</p>
+              </dd>
+              <dt class="govuk-summary-list__key govuk-heading-m" style="text-align:right;">
+                £39,600
+              </dt>
+             
+            </div>
+          </dl>
+        
+ 
+        </fieldset>
+      </div>
+
+      <!-- <h3 class="govuk-heading-m">Repayment</h3>
+      <p class="govuk-body">You must pay back in a lump sum of 10% of the property price and then the remainder of the loan in another lump sum of 8% of the property price. </p>
+  -->
+       
+       
+
+      <!-- <h3 class="govuk-heading-m">Interest and fees </h3>
+        <h4 class="govuk-heading-s">Monthly management fees</h4>
+     <p class="govuk-body">You must pay a £1 management fee paid by direct debit each month from owning your home until the loan is repaid. </p>
+<h4 class="govuk-heading-s">Interest fees</h4>
+ 
+      <p class="govuk-body"> There is no interest to pay on the equity loan is for the first 5 years. In year 6, interest is then charged at 1.75% and increasing each year by the Consumer Price Index (CPIH) plus 2%.</p>
+       
+         
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            What is CPIH?
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+         This a rate that measures price changes (inflation) to work out the average cost of the things we buy. It takes the price changes of an item in a basket of goods (that is decided in advance) and then measures the average cost of these items.
+        </div>
+      </details> -->
+
+      <div class="govuk-form-group govuk-!-margin-bottom-7">
+        <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+          
+          <div class="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+              <label class="govuk-label govuk-checkboxes__label" for="waste">
+                I understand that the amount I'll repay changes based on what my property is worth
+              </label>
+            </div>
+       
+          </div>
+        </fieldset>
+      </div>
+      
+      <button class="govuk-button govuk-!-margin-right-1" data-module="govuk-button">
+        Save and continue
+      </button>
+ 
+      <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+        Save and come back later
+      </button>
+
+    </form>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      
+
+      <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      
+      <div style="background-color:  #f3f2f1; padding:30px; margin-bottom: 40px;" >
+        <h3 class="govuk-body ">Based on these details:</h3>
+      <!-- /// -->
+      <table class="govuk-table">
+        <!-- <caption class="govuk-table__caption govuk-!-margin-bottom-3">Based on these details:</caption> -->
+         <!-- <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Date</th>
+            <th scope="col" class="govuk-table__header">Amount</th>
+          </tr>
+        </thead> -->
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            
+            <td class="govuk-table__cell">Your deposit: 
+              <!-- <p class="govuk-body " ><a href="#">Change</a></p> -->
+            </td>
+            <th scope="row" class="govuk-table__header" style="text-align: right;">£10,000 
+             </th>
+          </tr>
+          <tr class="govuk-table__row">
+            
+            <td class="govuk-table__cell">Mortgage:           
+              <!-- <p class="govuk-body " ><a href="#">Change</a></p> -->
+            </td>
+            <th scope="row" class="govuk-table__header" style="text-align: right;">£148,400
+              </th>
+          </tr>
+          <tr class="govuk-table__row">
+            
+            <td class="govuk-table__cell">Equity loan:           
+              <!-- <p class="govuk-body " ><a href="#">Change</a></p> -->
+            </td>
+            <th scope="row" class="govuk-table__header" style="text-align: right;">£39,600
+              </th>
+          </tr>
+         
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Property price:</td>
+            <th scope="row" class="govuk-table__header" style="text-align: right;">£198,000</th>
+          </tr>
+        </tbody>
+      </table>
+      <!-- /// -->
+        <span style=" text-align:right;" >
+        <p class="govuk-body govuk-!-font-weight-bold" style="color:#d4351c;"></p>
+      </span>
+        <!-- <p class="govuk-body " style="color:#d4351c;"></p>
+        <p class="govuk-body " ><a href="#">Change</a></p> -->
+      </div>
+
+
+
+
+
+
+
+      <div></div>
+
+    </div>
+  </div>
+{% endblock %}

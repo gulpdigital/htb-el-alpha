@@ -1,0 +1,75 @@
+
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+{{ super() }}
+<!-- <div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="gov.uk">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/">parent page</a>
+    </li>
+
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">surrent page</li>
+
+  </ol>
+</div> -->
+{% endblock %}
+
+{% block content %}
+<div style="margin-left: -150px;">
+ 
+<div class="govuk-grid-row" >
+  <div class="govuk-grid-column-full">
+  <img src="{{ asset_path }}images/email-top.jpg"   src="{{ asset_path }}images/verfiy1.jpg"></div>
+</div>
+  <div class="govuk-grid-row">
+  
+    <div class="govuk-grid-column-one-quarter"><img src="{{ asset_path }}images//email-left.jpg"></div>
+    <div class="govuk-grid-column-three-quarters" style="padding: 0;">
+     
+      <div style="padding-left:25px;"><p>Subject:  Complete your Help to Buy application</p></div>
+
+<img src="{{ asset_path }}images/email-header.jpg">
+
+
+<div style="padding: 40px 100px 0 50px;">
+      
+
+  <p  class="govuk-body govuk-!-margin-bottom-7">Dear Frankie Shaw,</p>
+
+  
+      <p>Sam Trenshaj has named you as the second applicant for a joint Help to Buy: Equity Loan.</p>
+
+        <p>To complete the application, you need to confirm the details that have been provided by your joint applicant.</p>
+
+        <p>You will need the submission reference that was provided to Sam Trenshaj in the email confirmation, to complete the application.  <p>This submission reference has not been included in this email for security reasons. </p>
+       
+  <p> You must <a href="../guidance/how-it-works"  class="govuk-link"> check you understand how an equity loan works</a> before completing this application.</p>
+
+        <p><a href="apply-01-service-start">Continue to the application.</a></p>
+
+ 
+
+        <p class="govuk-body govuk-!-margin-top-7"><strong>Help to Buy team</strong></p>
+
+        <p class="govuk-body govuk-!-margin-top-9">If you have recieved this email by mistake, <a href="#">contact</a> the Help to Buy team to let them know.</p>
+
+      </div>
+
+      
+      
+
+     
+    </div>
+
+    
+  </div>
+</div>
+{% endblock %}

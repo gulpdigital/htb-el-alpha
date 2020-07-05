@@ -1,0 +1,92 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+  {{ super() }}
+  <!-- <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">parent page</a>
+      </li>
+
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">surrent page</li>
+ 
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <a href="#" class="govuk-back-link govuk-body govuk-!-margin-bottom-9">Back</a>
+      <!-- <h1 class="govuk-heading-xl">Have you reserved a new build home with a property agent?
+      </h1> -->
+     
+      <div class="govuk-form-group">
+        
+        <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              Sam Trenshaj must confirm your changes
+            </h1>
+          </legend>
+          <p  class="govuk-body govuk-!-margin-bottom-6">
+            Sam Trenshaj  needs to verify the information you have given about your joint application.
+          </p>
+          
+
+           
+          </fieldset>
+
+          <h3 class="govuk-heading-m govuk-!-margin-top-6" style="display: inline;">What your joint applicant needs to do now</h3>
+         
+          <p class="govuk-body"></p> 
+          <ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-2">
+         
+          <li>Sam Trenshaj will get an email from Help to Buy with a link to the application</li> 
+          <li>They must re-submit the application to accept the changes you've made</li>
+          <!-- <li>They must verify that the information you have put in is correct, and only then will the application be complete</li> -->
+          </ul>
+
+      </div>
+
+      <form method="post" novalidate="" autocomplete="off" action="apply-05-02-declare">
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+           
+            <!-- <div class="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                <label class="govuk-label govuk-checkboxes__label" for="waste">
+                  I understand that the application is not complete until the first applicant has confirmed, by re-submitting their application 
+                </label>
+              </div> -->
+
+
+
+
+      <button class="govuk-button govuk-!-margin-top-7" data-module="govuk-button">
+        Continue
+      </button>
+      </fieldset>
+    </form>
+     
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+      <p>&nbsp;</p>
+
+    </div>
+  </div>
+{% endblock %}

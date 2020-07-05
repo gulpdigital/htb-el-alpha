@@ -1,0 +1,112 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+{{ super() }}
+<!-- <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">parent page</a>
+      </li>
+
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">surrent page</li>
+ 
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <a href="#" class="govuk-back-link govuk-body govuk-!-margin-bottom-9">Back</a>
+    <span class="govuk-caption-xl">
+      Before you start
+    </span>
+
+
+    <form method="post" novalidate="" class="radio-routes-toggle1" autocomplete="off" action="apply-01-eligibility02">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              Check you understand the Help to Buy: Equity Loan
+            </h1>
+          </legend>
+
+<p>You must make sure you've <a href="guidance/index">read the guidance</a> before you apply for an equity loan and agree to meet these conditions.</p>
+ 
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                <h1 class="govuk-fieldset__heading">
+
+                </h1>
+              </legend>
+              <div class="govuk-checkboxes govuk-checkboxes">
+
+
+
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="organisation-4" name="organisation" type="checkbox"
+                    value="DfT">
+                  <label class="govuk-label govuk-checkboxes__label" for="organisation-4" style="margin-bottom: 20px;">
+                    The home I buy with an equity loan must be my only home -
+                    I cannot buy another residential property
+                    </span>
+
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="organisation-4" name="organisation" type="checkbox"
+                    value="DfT">
+                  <label class="govuk-label govuk-checkboxes__label" for="organisation-4" style="margin-bottom: 20px;">
+                    I cannot let out the property with an equity loan
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox"
+                    value="employment-tribunal">
+                  <label class="govuk-label govuk-checkboxes__label" for="organisation-2" style="margin-bottom: 20px;">
+                    I cannot make structural changes to the property whilst I've an equity loan
+                  </label>
+                </div>
+
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox"
+                    value="employment-tribunal">
+                  <label class="govuk-label govuk-checkboxes__label" for="organisation-2" style="margin-bottom: 20px;">
+                    The amount of equity loan I repay depends on the property's market value
+                  </label>
+                </div>
+              </div>
+
+          </div>
+
+   
+
+      </div>
+
+
+      <button class="govuk-button" data-module="govuk-button">
+        Continue
+      </button>
+      </fieldset>
+    </form>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+
+    <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+    <p>&nbsp;</p>
+
+  </div>
+</div>
+{% endblock %}

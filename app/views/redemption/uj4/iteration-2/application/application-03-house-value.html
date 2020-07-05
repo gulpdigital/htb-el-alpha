@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+{{ govukBackLink({
+  href: "#",
+  text: "Back"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <form novalidate action="application-03a-house-value.html">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset gov-margin-bottom-xxl" aria-describedby="changed-name-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                <h1 class="govuk-fieldset__heading">
+                  What does the RICS valuation state your home is worth?
+                </h1>
+              </legend>
+              <div class="govuk-form-group">
+                <label class="govuk-label gov-margin-bottom-l" for="event-name">
+                  Enter the RICS valuation
+                </label>
+                <input class="govuk-input govuk-input--width-10" id="event-name" name="event-name" type="text" value="£">
+              </div>
+
+              <details class="govuk-details" data-module="govuk-details">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    Where can I find the property's value?
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+                  The amount the RICS surveyor states your home is worth is contained in the report. You will need a PDF of the report to upload or a copy to scan and upload.</div>
+              </details>
+
+              <p>Upload RICS valuation report</p>
+
+              <div class="govuk-form-group box">
+                <label class="govuk-label" for="file-upload-1">
+                  Upload a file
+                </label>
+                <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+              </div>
+        </fieldset>
+
+        <button class="govuk-button govuk-!-margin-right-1" data-module="govuk-button">
+          Save and continue
+        </button>
+        
+        <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="application-saved.html">
+          Save as draft
+        </a>
+    </div>
+    </form> 
+    </div>
+  </div>
+{% endblock %}

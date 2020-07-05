@@ -1,0 +1,252 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+  {{ super() }}
+  <!-- <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">parent page</a>
+      </li>
+
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">surrent page</li>
+ 
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <a href="#" class="govuk-back-link govuk-body govuk-!-margin-bottom-9">Back</a>
+
+    <span class="govuk-caption-l">Section 5 of 7 </span>
+     
+    <!-- <h1 class="govuk-heading-l">Have you reserved a new build home with a property agent?
+    </h1> -->
+    <form method="post" novalidate autocomplete="off" action="apply-04-11-2-form" class="purchase-form" >
+    <div class="govuk-form-group">
+      
+     
+          <h1 class="govuk-heading-l">
+            How much equity loan do you need?
+          </h1>
+       
+        <!-- <p class="govuk-hint">We’ll use these details to check your equity loan is affordable.</p> -->
+        <p  class="govuk-body">
+          An equity loan can be between 5% to 20% of the property price, in the region where the property is located.</p></div>
+  
+</div></div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      
+          
+      <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl"></legend>
+                 
+              <div class="govuk-form-group">
+  <label class="govuk-label" for="contact-by-phone">
+    Enter the equity loan percentage 
+  </label>
+  <input class="govuk-input govuk-input--width-4" id="contact-by-phone" name="contact-by-phone" type="tel"> <span class="govuk-body"> %</span>
+
+    </div>
+   
+
+
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          Check the value of the equity loan percentages for your property price
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+
+        <p>These are based on the current value, when what the loan is worth goes up and down with the property price</p>
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Percentage of property price
+            </dt>
+            <dt class="govuk-summary-list__key">
+              Loan amount for the current property price 
+            </dt>
+           
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              5%
+            </dt>
+            <dd class="govuk-summary-list__value">
+              £9,900 
+            </dd>
+           
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              6%
+            </dt>
+            <dd class="govuk-summary-list__value">
+              £11,880
+            </dd>
+            
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              7%
+            </dt>
+            <dd class="govuk-summary-list__value">
+              £13,860
+            </dd>
+            
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              8%
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">£15,840</p>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              9%
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">£15,840</p>
+            </dd>
+          </div>
+       
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            10%
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <p class="govuk-body">£19,800</p>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            11%
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <p class="govuk-body">£15,840</p>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            12%
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <p class="govuk-body">£15,840</p>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            13%
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <p class="govuk-body">£15,840</p>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            14%
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <p class="govuk-body">£15,840</p>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            15%
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <p class="govuk-body">£15,840</p>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            16%
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <p class="govuk-body">£15,840</p>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            17%
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <p class="govuk-body">£15,840</p>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            18%
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <p class="govuk-body">£15,840</p>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            19%
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <p class="govuk-body">£15,840</p>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            20%
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <p class="govuk-body">£39,600</p>
+          </dd>
+        </div>
+        </dl>
+
+
+
+      </div>
+    </details>
+  </fieldset>
+    </div>
+  </div>
+
+
+<div class="govuk-grid-column-one-third">
+
+  <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+
+       <div><p>&nbsp;</p></div> 
+      <button class="govuk-button govuk-!-margin-right-1" data-module="govuk-button">
+        Save and continue
+      </button>
+ 
+      <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+        Save and come back later
+      </button>
+    </form>
+   
+</div>
+
+  
+  </div>
+{% endblock %}

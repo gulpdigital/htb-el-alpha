@@ -1,0 +1,164 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+  {{ super() }}
+  <!-- <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">parent page</a>
+      </li>
+
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">surrent page</li>
+ 
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <a href="#" class="govuk-back-link govuk-body govuk-!-margin-bottom-9">Back</a>
+    <!-- <h1 class="govuk-heading-xl">Have you reserved a new build home with a property agent?
+    </h1> -->
+    <form method="post" novalidate autocomplete="off" action="form-05" class="purchase-form" >
+    <div class="govuk-form-group">
+      
+     
+     
+       </div>
+     
+  
+</div></div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <span class="govuk-caption-l">Results</span>
+      <h1 class="govuk-heading-l">
+        How much you need to borrow
+      </h1>
+      
+   
+    <p class="govuk-body"> You could apply for this equity loan amount based on the information you have given to us.
+    </p>
+      <h2 class="govuk-heading-m">Loan  details</h2>
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Property location
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">London</p>
+            </dd>
+            <dd class="govuk-summary-list__actions"><a class="govuk-link" href="#">
+              Change <span class="govuk-visually-hidden">details</span>
+            </a></dd>
+          </div>
+          
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Property price
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">£198,000</p>
+            </dd>
+            <dd class="govuk-summary-list__actions"><a class="govuk-link" href="#">
+              Change <span class="govuk-visually-hidden">details</span>
+            </a></dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Deposit
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">	
+                £22,000</p>
+            </dd>
+            <dd class="govuk-summary-list__actions"><a class="govuk-link" href="#">
+              Change <span class="govuk-visually-hidden">details</span>
+            </a></dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Your gross income 
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">£35,400</p> 
+            </dd>
+            <dd class="govuk-summary-list__actions"><a class="govuk-link" href="#">
+              Change <span class="govuk-visually-hidden">details</span>
+            </a></dd>
+          </div>
+         
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Help to Buy: Equity Loan 
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">20%<br>£39,600</p>
+            </dd>
+            <dd class="govuk-summary-list__actions"><a class="govuk-link" href="#">
+              Change <span class="govuk-visually-hidden">details</span>
+            </a></dd>
+          </div>
+
+<div></div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Mortgage amount 
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">£147,200</p> 
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <!-- <a class="govuk-link" href="#">
+              Change <span class="govuk-visually-hidden">details</span>
+            </a> -->
+          </dd>
+          </div>
+          
+        </dl>
+
+        <!-- <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+          View 19% Equity Loan
+        </button> -->
+    </div>
+
+    
+  </div>
+
+
+<div class="govuk-grid-column-one-third">
+
+  <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+
+       <div><p><a href="#">Print this page</a></p></div> 
+       <div><p><a href="../apply-00-service-start.html">Return to Help to Buy guidance pages</a></p></div> 
+      <!-- <button class="govuk-button govuk-!-margin-right-1" data-module="govuk-button">
+        View results
+      </button> -->
+ 
+   
+    </form>
+   
+</div>
+
+  
+  </div>
+{% endblock %}

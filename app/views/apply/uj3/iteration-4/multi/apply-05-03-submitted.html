@@ -1,0 +1,84 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+  {{ super() }}
+  <!-- <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">parent page</a>
+      </li>
+
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">surrent page</li>
+ 
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="govuk-panel govuk-panel--confirmation">
+          <h1 class="govuk-panel__title">
+            Your form has been submitted
+          </h1>
+          <div class="govuk-panel__body">
+            Your reference number<br><strong>HDJ2123F</strong>
+
+            <div style="text-align: left;"></div>
+          </div>
+
+        </div>
+        
+        <p class="govuk-body" style="padding-top: 20px;">We have sent you a confirmation email.
+          </p>
+
+          
+
+          <p><a href="">Print or save a PDF copy</a> of this form.</p>
+
+          <h2 class="govuk-heading-m" style="padding-top: 20px;">What the 2nd applicant needs to do now</h2>
+          <p class="govuk-body"></p> 
+          <ul class="govuk-list govuk-list--bullet">
+          <li>The 2nd applicant must complete their sections in the application</li> 
+          <li>We'll send an email with a link to the 2nd applicant to continue with the application</li> 
+          <li>The 2nd applicant must use the submission reference on this page to access the application</li>
+          </ul>
+        <h2 class="govuk-heading-m" style="padding-top: 20px;">What happens next</h2>
+
+        <!-- <p class="govuk-body">
+          We will review your application and make a decision
+        </p>
+        <p class="govuk-body">
+          XXXX
+        </p> -->
+        <ul class="govuk-list govuk-list--bullet">
+         
+          <li>Your local Help to Buy agent will review your application and make a decision</li>
+          <li>You will receive a decision by email within 3 working days after receipt of both buyer's applications</li>
+          <li>You can contact your Help to Buy agent if you have any questions</li>
+        </ul>
+        <p class="govuk-body govuk-!-font-weight-bold">Help to Buy agent: The Midlands and London</p>
+        <p>Telephone number: 03333 214 044<br>
+          General enquiries: Enquiries@helptobuyagent2.org.uk</p>
+        
+
+        <p>&nbsp;</p>
+        
+        <p class="govuk-body">
+          <a href="#" class="govuk-link">What did you think of this service?</a> (takes 30 seconds)
+        </p>
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}

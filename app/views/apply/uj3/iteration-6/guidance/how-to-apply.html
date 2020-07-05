@@ -1,0 +1,148 @@
+
+      {% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="govuk-breadcrumbs govuk-!-margin-top-0 govuk-!-margin-bottom-9">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Housing and local services</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Affordable home ownership schemes</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Help to Buy equity loan</li>
+  </ol>
+</div>
+  <div class="govuk-grid-row">
+   
+    <div class=" govuk-grid-column-full">
+      <h1 class="govuk-heading-xl">Find out about a Help to Buy: Equity Loan</h1>
+
+      <ul class="govuk-list dash-list">
+        <li><a class="govuk-link" href="index">Overview</a></li>
+        <li><a class="govuk-link" href="who-can-apply">Who can apply</a></li>
+        <li><a class="govuk-link" href="how-it-works">How it works</a></li>
+        <li><a class="govuk-link" href="what-you-cannot-do">What you cannot do</a></li>
+        <li><a class="govuk-link" href="paying-back-the-loan">What you need to pay</a></li>
+        <li>How to apply</li>
+      </ul>
+  </div>
+      <div class="govuk-grid-column-two-thirds">
+      
+        <hr class="govuk-section-break govuk-section-break--visible" style="margin-bottom: 15px;">
+
+      <h2 class="govuk-heading-l">How to apply </h2>
+      <p>Follow these steps to buy a home with  an equity loan.</p> 
+            
+ <!-- <p>1. To apply you must <a href="who-can-apply">check you meet the conditions on the who can apply</a> page on the GOV.UK website.</p> -->
+ 
+  <!-- <p>1. To apply you must <a href="who-can-apply">check you meet the conditions</a> on the GOV.UK website.</p> -->
+  <!-- <ol class="govuk-list govuk-list--number">
+   
+ 
+ <li style="margin-bottom:15px;">To apply you must check you meet the conditions</a> on the <a href="who-can-apply">who can apply</a> page.</li>
+    <li style="margin-bottom:15px;">If you meet the conditions, you then need to find a home with a registered <a href="https://www.helptobuy.gov.uk/equity-loan/find-helptobuy-agent/">Help to Buy housebuilder</a>. </li>        
+      <li style="margin-bottom:15px;">After this, you must reserve a home with a house builder or an estate agent first, before you can apply for an equity loan. This usually involves paying a reservation fee of up £500.</li>   
+            
+      <li style="margin-bottom:15px;">Once you have reserved a home, you can apply on the <a href="https://htb-alpha-uj3.herokuapp.com/apply/uj3/iteration-5/apply-00-service-start">Apply for a Help to Buy: Equity Loan</a> page on the GOV.UK website.</li>
+            
+      <li style="margin-bottom:15px;">After you’ve applied, you must wait for the decision. If you’re making a joint application, the 2nd applicant must review the application before it is submitted.</li>         
+    </ol>           -->
+
+    <ul class="govuk-list">
+      <li class="gov-margin-bottom-xl">
+        <h3 class="govuk-heading-m">Find out:</h3>
+        <ol class="steps" style="max-width: none; padding-right:40px;">
+          <li style="margin-bottom:15px;"><strong>Read the guidance</strong> <br><a href="who-can-apply">Check you meet the conditions</a> and that you <a href="paying-back-the-loan">understand how it works</a>.</li>
+          <!-- <li style="margin-bottom:15px;"><strong>Plan your money</strong><br>Save for a deposit and other costs such as solicitors fees. Make sure you have a plan of how you can repay the loan.</li> -->
+          <li style="margin-bottom:15px;"><strong>Find out what  mortgage amount you can get</strong> <br>It’s recommended to see an <a href="#">independent financial adviser (IFA)</a>. You need to be approved for an equity loan first, before applying for a mortgage.</li>
+          <li style="margin-bottom:15px;"><strong>Work out your property price</strong> <br>
+             Work out the <a href="how-it-works">amount of equity loan you might get</a>, if approved.
+          </li>
+          <!-- <li style="margin-bottom:15px;"><strong>Work out how much you can spend</strong> <br>Add  your deposit and the amount of mortgage together. Then you can <a href="how-it-works">Work out the amount of equity loan you can get</a>.</li> -->
+          <li style="margin-bottom:15px;"><strong>Find a home</strong> <br>Find a new build home with a registered <a href="https://www.helptobuy.gov.uk/equity-loan/find-helptobuy-agent/">Help to Buy house builder</a>. </li>        
+            </ol>
+      
+      </li>
+      <li class="gov-margin-bottom-xl">
+        <h3 class="govuk-heading-m">Reserve and apply:</h3>
+        <ol start="5" class="steps" style="max-width: none; padding-right:40px;">
+          
+          <li style="margin-bottom:15px;"><strong>Reserve the property</strong><br>You'll need the property details for the application form. Some house builders ask for a reservation fee of up to £500, which is refundable.</li>
+          <li style="margin-bottom:15px;"><strong>Find a conveyancing solicitor</strong> <br>Your solicitor details are needed for the  application form.</li>
+          <li style="margin-bottom:15px;"><strong>Apply</strong> <br><a href="../apply-00-service-start">Apply online for a Help to Buy: Equity Loan</a>. A decision  will usually take around a week. A Help to Buy agent will get in touch with you to let you know if your application has been approved.</li>
+          </ol>
+      </li>
+      <li class="gov-margin-bottom-xl">
+        <h3 class="govuk-heading-m">After you have been approved:</h3> 
+        <ol  class="steps" start="8" style="max-width: none; padding-right:40px;">
+        <li style="margin-bottom:15px;"><strong>Apply for a mortgage </strong> <br>Your mortgage, deposit and the equity loan must add up to the exact property price.</li>
+        <li style="margin-bottom:15px;"><strong>Exchange and completion</strong> <br>Your solicitor will advise you, check the details and organise the money to be paid to the house builder and for the details to be registered with the Land Registry. Your name will be on the property deeds.</li>
+      </li>
+      </ul>
+    </ul>
+
+
+
+
+
+      <!-- <h2 class="govuk-heading-l">What you need </h2>
+<p>You will need the following: </p>
+<ul class="govuk-list govuk-list--bullet">
+  <li>new build property details </li>
+  <li>monthly income and outgoings</li>
+  <li>solicitor details</li>
+</ul> -->
+
+<nav class="gem-c-pagination" role="navigation" aria-label="Pagination">
+  <ul class="gem-c-pagination__list" data-module="track-click">
+      <li class="gem-c-pagination__item gem-c-pagination__item--previous">
+        <a href="paying-back-the-loan" class="gem-c-pagination__link" rel="prev" data-track-category="contentsClicked" data-track-action="previous" data-track-label="/get-a-child-passport" data-track-dimension="previous" data-track-dimension-index="29">
+          <span class="gem-c-pagination__link-title">
+            <svg class="gem-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
+              <path d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z"></path>
+            </svg>
+            <span class="gem-c-pagination__link-text">
+              Previous
+            </span>
+          </span>
+            <span class="gem-c-pagination__link-divider visually-hidden">:</span>
+            <span class="gem-c-pagination__link-label">What you need to pay</span>
+        </a>
+      </li>
+  </ul>
+</nav>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+      <aside class="app-related-items" role="complementary">
+
+        <h2 class="govuk-heading-m">Related content</h2>
+        <ul class="govuk-list">
+          <li><a href="#" class="govuk-link">Return to an equity loan application </a></li>
+          <li><a href="https://htb-alpha-uj3.herokuapp.com/redemption/uj4/iteration-2/application/application-overview" class="govuk-link">How to pay back your  loan</a></li>
+      <li><a href="https://www.helptobuy.gov.uk/equity-loan/find-helptobuy-agent/">Find a home you can buy with an equity loan</a></li>
+      
+        </ul>
+
+      </aside>
+
+    </div>
+
+
+</div>
+  {% endblock %}

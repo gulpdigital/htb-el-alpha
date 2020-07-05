@@ -1,0 +1,133 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-breadcrumbs govuk-!-margin-top-0 govuk-!-margin-bottom-9">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Housing and local services</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Affordable home ownership schemes</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Help to Buy equity loan</li>
+  </ol>
+</div>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h1 class="govuk-heading-xl">Find out about a Help to Buy: Equity Loan</h1>
+
+      <ul class="govuk-list dash-list">
+        <li><a class="govuk-link" href="index">Overview</a></li>
+        <li>Who can apply</li>
+        <li><a class="govuk-link" href="how-it-works">How it works</a></li>
+        <li><a class="govuk-link" href="paying-back-the-loan">What you need to pay</a></li>
+        <li><a class="govuk-link" href="what-you-cannot-do">What you cannot do</a></li>
+        <li><a class="govuk-link" href="how-to-apply">How to apply</a></li>
+      </ul>
+    </div>
+      
+      <div class="govuk-grid-column-two-thirds">
+        <hr class="govuk-section-break govuk-section-break--visible" style="margin-bottom: 15px;">
+
+
+<h2 class="govuk-heading-l">Who can apply</h2>
+<p>You must be:</p>
+<ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-7">
+  <li>a first-time buyer</li>
+  <li>aged 18 years-old or over</li>
+  <!-- <li>buying a property in England </li> -->
+</ul>
+
+
+<!-- <p>The home you buy must:</p>
+<ul class="govuk-list govuk-list--bullet">
+  <li>be a new build (this is a newly completed residential property) </li>
+  <li>be the first residential property owned (anywhere in the world) by you or any other person who is buying with you (if you’re applying in England) </li>
+  <li>be from a registered Help to Buy housebuilder</a></li>
+</ul> -->
+
+<p>If you’re buying with someone else, they must also be a first-time buyer.</p>
+        
+ <div class="govuk-inset-text">
+  A first-time buyer is someone who has never owned a residential property or land anywhere in the world.
+</div>       
+
+<p>You cannot apply if you are married to someone who owns or has owned a residential property or land anywhere in the world.</p>
+ 
+ <p>You must live in the home you buy with an equity loan. It needs to be your only place of residence.</p>
+
+
+  <nav class="gem-c-pagination" role="navigation" aria-label="Pagination">
+  <ul class="gem-c-pagination__list" data-module="track-click">
+      <li class="gem-c-pagination__item gem-c-pagination__item--previous">
+        <a href="index" class="gem-c-pagination__link" rel="prev" data-track-category="contentsClicked" data-track-action="previous" data-track-label="/get-a-child-passport" data-track-dimension="previous" data-track-dimension-index="29">
+          <span class="gem-c-pagination__link-title">
+            <svg class="gem-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
+              <path d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z"></path>
+            </svg>
+            <span class="gem-c-pagination__link-text">
+              Previous
+            </span>
+          </span>
+            <span class="gem-c-pagination__link-divider visually-hidden">:</span>
+            <span class="gem-c-pagination__link-label">Overview</span>
+        </a>
+      </li>
+      <li class="gem-c-pagination__item gem-c-pagination__item--next">
+        <a href="how-it-works" class="gem-c-pagination__link" rel="next" data-track-catehttps://github.com/gulpdigital/htb-alpha/tree/demo-branch/app/views/apply/uj3/iteration-5/guidancegory="contentsClicked" data-track-action="next" data-track-label="/get-a-child-passport/renew-a-child-passport" data-track-dimension="next" data-track-dimension-index="29">
+          <span class="gem-c-pagination__link-title">
+            <svg class="gem-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
+              <path d="m10.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+            </svg>
+            <span class="gem-c-pagination__link-text">
+              Next
+            </span>
+          </span>
+            <span class="gem-c-pagination__link-divider visually-hidden">:</span>
+            <span class="gem-c-pagination__link-label">How it works</span>
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+</div>
+
+<div class="govuk-grid-column-one-third">
+
+  <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+  <aside class="app-related-items" role="complementary">
+
+    <h2 class="govuk-heading-m">Related content</h2>
+    <ul class="govuk-list">
+    <li><a href="#" class="govuk-link">Return to an equity loan application </a></li>
+    <!-- <li><a href="https://htb-alpha-uj3.herokuapp.com/redemption/uj4/iteration-2/application/application-overview" class="govuk-link">How to pay back your  loan</a></li> -->
+<li><a href="https://www.helptobuy.gov.uk/equity-loan/find-helptobuy-agent/">Find a home you can buy with an equity loan</a></li>
+    <!-- 
+      Find a home you can buy with an equity loan - 
+      
+      <li><a href="#" class="govuk-link">Council housing</a></li>
+
+      <li><a href="#" class="govuk-link">Housing association homes</a></li>
+      
+      <li><a href="#" class="govuk-link">Right to Acquire: buying your housing association home</a></li>
+      
+      <li><a href="#" class="govuk-link">Right to Buy: buying your council home</a></li> -->
+    </ul>
+
+  </aside>
+
+</div>
+</div>
+{% endblock %}

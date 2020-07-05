@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+{{ govukBackLink({
+  href: "#",
+  text: "Back"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters">
+        <h1 class="govuk-heading-xl">Your application has been saved</h1>
+        <p>To complete and submit your application sign into your account.</p>
+        <p>We’ve also sent you an email with a link to your account.</p>
+        <p><a href="../manage/redemption-01-start-verify">>  Sign into your account</a></p>
+    </div>
+  </div>
+{% endblock %}

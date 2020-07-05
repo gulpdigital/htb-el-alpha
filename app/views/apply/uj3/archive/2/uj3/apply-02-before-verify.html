@@ -1,0 +1,94 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+  {{ super() }}
+  <!-- <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">parent page</a>
+      </li>
+
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">surrent page</li>
+ 
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <a href="#" class="govuk-back-link govuk-body govuk-!-margin-bottom-9">Back</a>
+     
+      <!-- <h1 class="govuk-heading-xl">Have you reserved a new build home with a property agent?
+      </h1> -->
+      <!-- <form method="post" novalidate="" autocomplete="off" action="https://govuk-verify.herokuapp.com/intro?requestId=apply-02-before-verify">
+       -->
+
+       <form method="post" novalidate="" autocomplete="off" action="apply-02-01-verify">
+      
+        
+        <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+            <h1 class="govuk-fieldset__heading">
+              Prove your identity to continue
+            </h1>
+          </legend>
+          
+          <p class="govuk-body">You need to verify your identity in order to apply for a Help to Buy: Equity Loan. 
+          
+            This check will not affect your credit score.</p> 
+          
+      <p>Registering with GOV.UK Verify usually takes about 15 minutes. It works best if you have:</p>
+     
+        <ul class="govuk-list govuk-list--bullet">
+<li>a UK address</li>
+<li>a valid passport or photocard driving licence</li>
+</ul>
+<p>A certified identity provider will check your identity when you register with GOV.UK Verify. They've all met security standards set by government.</p>   
+        
+          
+        </fieldset>
+      </div>
+
+
+    <button class="govuk-button" data-module="govuk-button">
+        Use GOV.UK Verify
+      </button> 
+
+
+   </form> 
+
+   
+   <details class="govuk-details" data-module="govuk-details">
+     <summary class="govuk-details__summary">
+       <span class="govuk-details__summary-text">
+        What should I do if I cannot use GOV.UK Verify to prove my identity?
+
+       </span>
+     </summary>
+     <div class="govuk-details__text">
+      You can contact the Verify team to ask for assistance on the <a href="https://www.signin.service.gov.uk/feedback?">Feedback page</a> on GOV.UK
+
+       
+    </div>
+   </details>
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+      <p>&nbsp;</p>
+
+    </div>
+  </div>
+{% endblock %}

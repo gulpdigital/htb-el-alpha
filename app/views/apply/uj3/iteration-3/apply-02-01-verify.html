@@ -1,0 +1,38 @@
+
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+{{ super() }}
+<!-- <div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="gov.uk">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/">parent page</a>
+    </li>
+
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">surrent page</li>
+
+  </ol>
+</div> -->
+{% endblock %}
+
+{% block content %}
+<div style="margin-top: -50px;">
+<div class="govuk-grid-row" >
+  <div class="govuk-grid-column-full">
+  
+
+  <a href="apply-02-02-verify"> <img src="{{ asset_path }}images/verify-page.jpg"></a> 
+      
+
+     
+  </div>
+  </div>
+</div>
+{% endblock %}

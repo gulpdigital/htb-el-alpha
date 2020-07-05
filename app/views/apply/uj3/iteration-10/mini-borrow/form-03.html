@@ -1,0 +1,107 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <a href="#" class="govuk-back-link govuk-body govuk-!-margin-bottom-9">Back</a>
+    <form method="post" id="income" novalidate autocomplete="off" action="form-04" class="purchase-form" >
+    <div class="govuk-form-group">
+      <span class="govuk-caption-l">Question 3 of 4</span>
+          <h1 class="govuk-heading-l">
+            How much is your annual salary?
+          </h1>
+          
+          <h2 class="govuk-heading-s">
+            For joint applications, enter your combined income amount.
+          </h2>
+
+       
+        <!-- <details class="govuk-details" data-module="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              Show example
+            </span>
+          </summary>
+          <div class="govuk-details__text">
+            
+If your combined income is 40k, then your overall borrowing can be no more than 4.5 x 40k, which is £180k. However depending on circumstances, your bank may not be willing to lend to this degree.
+          </div>
+        </details> -->
+
+       </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      
+          
+      <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl"></legend>
+          
+           
+              <div class="govuk-form-group">
+                <span id="passport-issued-error" class="govuk-error-message">
+                  <span class="govuk-visually-hidden">Error:</span> Amount should not exceed £600,000
+                </span>
+
+                <label class="govuk-label" for="salary">
+                  Annual salary before tax
+
+                </label>
+                <span class="currency-prefix govuk-body" >£</span>
+                <input class="govuk-input govuk-input--width-10" id="salary" name="salary" value="{{ data['salary'] }}">
+                <!--for validation: type="number" pattern="[0-9]*" inputmode="numeric"  -->
+              </div>
+
+              <div class="govuk-form-group">
+                <span id="passport-issued-error" class="govuk-error-message">
+                  <span class="govuk-visually-hidden">Error:</span> Amount should not exceed £600,000
+                </span>
+
+                <label class="govuk-label" for="overtime">
+                  Overtime and bonuses
+
+                </label>
+                <span class="govuk-hint">Only 50% of this amount is used for an equity loan calculation.</span>
+                <span class="currency-prefix govuk-body" >£</span>
+                <input class="govuk-input govuk-input--width-10" id="overtime" name="overtime" value="{{ data['overtime'] }}">
+                <!--for validation: type="number" pattern="[0-9]*" inputmode="numeric"  -->
+               
+              </div>
+              
+             
+      
+             </div>    
+             
+
+  </fieldset>
+    </div>
+
+
+<div class="govuk-grid-column-one-third">
+
+  <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+
+      <button form="income" type="submit" class="govuk-button govuk-!-margin-right-1" data-module="govuk-button">
+        Continue
+      </button>
+ 
+   
+    </form>
+   
+</div>
+
+  
+  </div>
+{% endblock %}

@@ -1,0 +1,328 @@
+
+.gem-c-pagination__link {
+	font-family: "nta", Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
+}
+
+@media print {
+	.govuk-link,
+	.gem-c-notice__title a,
+	.gem-c-pagination__link,
+	.gem-c-related-navigation__section-link,
+	.gem-c-share-links__link,
+	.gem-c-step-nav-header__title,
+	.gem-c-step-nav-related__link,
+	.gem-c-subscription-links .gem-c-subscription-links__link,
+	.gem-c-translation-nav__link,
+	.app-c-header-notice__link {
+		font-family: sans-serif
+	}
+}
+
+.govuk-link:focus,
+.gem-c-notice__title a:focus,
+.gem-c-pagination__link:focus,
+.gem-c-related-navigation__section-link:focus,
+.gem-c-share-links__link:focus,
+.gem-c-step-nav-header__title:focus,
+.gem-c-step-nav-related__link:focus,
+.gem-c-subscription-links .gem-c-subscription-links__link:focus,
+.gem-c-translation-nav__link:focus,
+.app-c-header-notice__link:focus {
+	outline: 3px solid transparent;
+	color: #0b0c0c;
+	background-color: #ffdd00;
+	box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
+	text-decoration: none
+}
+
+.govuk-link:link,
+.gem-c-notice__title a:link,
+.gem-c-pagination__link:link,
+.gem-c-related-navigation__section-link:link,
+.gem-c-share-links__link:link,
+.gem-c-step-nav-header__title:link,
+.gem-c-step-nav-related__link:link,
+.gem-c-subscription-links .gem-c-subscription-links__link:link,
+.gem-c-translation-nav__link:link,
+.app-c-header-notice__link:link {
+	color: #1d70b8
+}
+
+.govuk-link:visited,
+.gem-c-notice__title a:visited,
+.gem-c-pagination__link:visited,
+.gem-c-related-navigation__section-link:visited,
+.gem-c-share-links__link:visited,
+.gem-c-step-nav-header__title:visited,
+.gem-c-step-nav-related__link:visited,
+.gem-c-subscription-links .gem-c-subscription-links__link:visited,
+.gem-c-translation-nav__link:visited,
+.app-c-header-notice__link:visited {
+	color: #4c2c92
+}
+
+.govuk-link:hover,
+.gem-c-notice__title a:hover,
+.gem-c-pagination__link:hover,
+.gem-c-related-navigation__section-link:hover,
+.gem-c-share-links__link:hover,
+.gem-c-step-nav-header__title:hover,
+.gem-c-step-nav-related__link:hover,
+.gem-c-subscription-links .gem-c-subscription-links__link:hover,
+.gem-c-translation-nav__link:hover,
+.app-c-header-notice__link:hover {
+	color: #003078
+}
+
+.govuk-link:active,
+.gem-c-notice__title a:active,
+.gem-c-pagination__link:active,
+.gem-c-related-navigation__section-link:active,
+.gem-c-share-links__link:active,
+.gem-c-step-nav-header__title:active,
+.gem-c-step-nav-related__link:active,
+.gem-c-subscription-links .gem-c-subscription-links__link:active,
+.gem-c-translation-nav__link:active,
+.app-c-header-notice__link:active {
+	color: #0b0c0c
+}
+
+.govuk-link:focus,
+.gem-c-notice__title a:focus,
+.gem-c-pagination__link:focus,
+.gem-c-related-navigation__section-link:focus,
+.gem-c-share-links__link:focus,
+.gem-c-step-nav-header__title:focus,
+.gem-c-step-nav-related__link:focus,
+.gem-c-subscription-links .gem-c-subscription-links__link:focus,
+.gem-c-translation-nav__link:focus,
+.app-c-header-notice__link:focus {
+	color: #0b0c0c
+}
+
+.govuk-link:link:focus,
+.gem-c-notice__title a:link:focus,
+.gem-c-pagination__link:link:focus,
+.gem-c-related-navigation__section-link:link:focus,
+.gem-c-share-links__link:link:focus,
+.gem-c-step-nav-header__title:link:focus,
+.gem-c-step-nav-related__link:link:focus,
+.gem-c-subscription-links .gem-c-subscription-links__link:link:focus,
+.gem-c-translation-nav__link:link:focus,
+.app-c-header-notice__link:link:focus {
+	color: #0b0c0c
+}
+
+@media print {
+	[href^="/"].govuk-link::after,
+	.gem-c-notice__title a[href^="/"]::after,
+	[href^="/"].gem-c-pagination__link::after,
+	[href^="/"].gem-c-related-navigation__section-link::after,
+	[href^="/"].gem-c-share-links__link::after,
+	[href^="/"].gem-c-step-nav-header__title::after,
+	[href^="/"].gem-c-step-nav-related__link::after,
+	.gem-c-subscription-links [href^="/"].gem-c-subscription-links__link::after,
+	[href^="/"].gem-c-translation-nav__link::after,
+	[href^="/"].app-c-header-notice__link::after,
+	[href^="http://"].govuk-link::after,
+	.gem-c-notice__title a[href^="http://"]::after,
+	[href^="http://"].gem-c-pagination__link::after,
+	[href^="http://"].gem-c-related-navigation__section-link::after,
+	[href^="http://"].gem-c-share-links__link::after,
+	[href^="http://"].gem-c-step-nav-header__title::after,
+	[href^="http://"].gem-c-step-nav-related__link::after,
+	.gem-c-subscription-links [href^="http://"].gem-c-subscription-links__link::after,
+	[href^="http://"].gem-c-translation-nav__link::after,
+	[href^="http://"].app-c-header-notice__link::after,
+	[href^="https://"].govuk-link::after,
+	.gem-c-notice__title a[href^="https://"]::after,
+	[href^="https://"].gem-c-pagination__link::after,
+	[href^="https://"].gem-c-related-navigation__section-link::after,
+	[href^="https://"].gem-c-share-links__link::after,
+	[href^="https://"].gem-c-step-nav-header__title::after,
+	[href^="https://"].gem-c-step-nav-related__link::after,
+	.gem-c-subscription-links [href^="https://"].gem-c-subscription-links__link::after,
+	[href^="https://"].gem-c-translation-nav__link::after,
+	[href^="https://"].app-c-header-notice__link::after {
+		content: " (" attr(href) ")";
+		font-size: 90%;
+		word-wrap: break-word
+	}
+}
+
+.gem-c-pagination {
+	display: block;
+	margin: 70px 0 50px
+}
+
+.gem-c-pagination__list {
+	margin: 0;
+	padding: 0
+}
+
+.gem-c-pagination__item {
+	font-family: "nta", Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.25;
+	list-style: none
+}
+
+@media print {
+	.gem-c-pagination__item {
+		font-family: sans-serif
+	}
+}
+
+@media (min-width: 40.0625em) {
+	.gem-c-pagination__item {
+		font-size: 16px;
+		line-height: 1.25
+	}
+}
+
+@media print {
+	.gem-c-pagination__item {
+		font-size: 14pt;
+		line-height: 1.25
+	}
+}
+
+.gem-c-pagination__item:first-child {
+	margin-bottom: 20px
+}
+
+.gem-c-pagination__link {
+	display: block;
+	text-decoration: none;
+	padding-bottom: 20px
+}
+
+.gem-c-pagination__link:hover,
+.gem-c-pagination__link:active,
+.gem-c-pagination__link:visited {
+	color: #1d70b8
+}
+
+.gem-c-pagination__link:hover,
+.gem-c-pagination__link:active {
+	background-color: #f3f2f1
+}
+
+.gem-c-pagination__link:focus {
+	outline: 3px solid transparent;
+	color: #0b0c0c;
+	background-color: #ffdd00;
+	box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
+	text-decoration: none
+}
+
+.gem-c-pagination__link:focus .gem-c-pagination__link-title {
+	border-top-color: transparent
+}
+
+.gem-c-pagination__link:focus .gem-c-pagination__link-icon {
+	fill: #0b0c0c
+}
+
+.gem-c-pagination__link-title {
+	display: block;
+	border-top: 1px solid #b1b4b6;
+	padding-top: 15px
+}
+
+.gem-c-pagination__link-divider {
+	position: absolute !important;
+	width: 1px !important;
+	height: 1px !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	overflow: hidden !important;
+	clip: rect(0 0 0 0) !important;
+	-webkit-clip-path: inset(50%) !important;
+	clip-path: inset(50%) !important;
+	border: 0 !important;
+	white-space: nowrap !important
+}
+
+.gem-c-pagination__link-text {
+	font-family: "nta", Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.25;
+	margin-left: 10px
+}
+
+@media print {
+	.gem-c-pagination__link-text {
+		font-family: sans-serif
+	}
+}
+
+@media (min-width: 40.0625em) {
+	.gem-c-pagination__link-text {
+		font-size: 19px;
+		line-height: 1.3157894737
+	}
+}
+
+@media print {
+	.gem-c-pagination__link-text {
+		font-size: 14pt;
+		line-height: 1.15
+	}
+}
+
+.gem-c-pagination__link-icon {
+	font-family: "nta", Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.25;
+	display: inline-block;
+	margin-bottom: 1px;
+	height: .482em;
+	width: .63em;
+	fill: #626a6e
+}
+
+@media print {
+	.gem-c-pagination__link-icon {
+		font-family: sans-serif
+	}
+}
+
+@media (min-width: 40.0625em) {
+	.gem-c-pagination__link-icon {
+		font-size: 24px;
+		line-height: 1.25
+	}
+}
+
+@media print {
+	.gem-c-pagination__link-icon {
+		font-size: 18pt;
+		line-height: 1.25
+	}
+}
+
+.gem-c-pagination__link-label {
+	display: inline-block;
+	margin-top: .1em;
+	text-decoration: underline;
+	margin-left: 25px
+}
+
+@media (min-width: 40.0625em) {
+	.gem-c-pagination__link-label {
+		margin-left: 30px
+	}
+}
+

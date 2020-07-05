@@ -1,0 +1,840 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+  {{ super() }}
+  <!-- <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">parent page</a>
+      </li>
+
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">surrent page</li>
+ 
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <a href="#" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-three-quarters">
+
+        <h1 class="govuk-heading-l">Check your answers </h1>
+
+        <h2 class="govuk-heading-m">Your identity and home ownership information</h2>
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Name</br>
+              Date of birth</br></br>
+              Address
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Sam Trenshaj</br>
+              24 August 1982</br></br>
+              15 High Street </br> Birmingham</br>BM19 34Q
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <!-- <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> name</span>
+              </a> -->
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Home ownership 
+            </dt>
+            <dd class="govuk-summary-list__value">
+              
+              <p class="govuk-body govuk-!-font-size-16">You have never owned a residential property or land anywhere in the world</p>
+                <p class="govuk-body govuk-!-font-size-16">Your are not married to someone who has owned a residential property or land anywhere in the world</p>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> contact details</span>
+              </a>
+            </dd>
+          </div>
+          <!-- <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              NI number 
+            </dt>
+            <dd class="govuk-summary-list__value">
+              
+              <p class="govuk-body">NW 902035 D</p>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> contact details</span>
+              </a>
+            </dd>
+          </div> -->
+        </dl>
+
+        <h2 class="govuk-heading-m">Contact</h2>
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key govuk-!-width-one-half">
+              Your email
+            </dt>
+            <dd class="govuk-summary-list__value">
+              
+              <p class="govuk-body">sam.trenshaj@example.com</p>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="apply-04-03-form">
+                Change<span class="govuk-visually-hidden"> contact details</span>
+              </a>
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Your phone number
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">07700 900457</p>
+              
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="apply-04-03-form">
+                Change<span class="govuk-visually-hidden"> contact details</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              2nd applicant's name
+            </dt>
+            <dd class="govuk-summary-list__value">
+              
+              <p class="govuk-body">Frankie Shaw</p>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="apply-04-03-form">
+                Change<span class="govuk-visually-hidden"> contact details</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              2nd applicant's email
+            </dt>
+            <dd class="govuk-summary-list__value">
+              
+              <p class="govuk-body">frankie.shaw@example.com</p>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="apply-04-03-form">
+                Change<span class="govuk-visually-hidden"> contact details</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              2nd applicant's phone number
+            </dt>
+            <dd class="govuk-summary-list__value">
+              
+              <p class="govuk-body">	
+                07509 282340</p>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="apply-04-03-form">
+                Change<span class="govuk-visually-hidden"> contact details</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+        <h2 class="govuk-heading-m">Homebuilder details</h2>
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key govuk-!-width-one-half">
+            Homebuilder code 
+          </dt>
+          <dd class="govuk-summary-list__value">
+            HTB-HHBC-9874  
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Change <span class="govuk-visually-hidden">Developer</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Homebuilder name 
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Happy Home Building Company  
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Change <span class="govuk-visually-hidden">Developer</span>
+            </a>
+          </dd>
+        </div>
+        </dl>
+
+        <h2 class="govuk-heading-m">New build details</h2>
+          <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key govuk-!-width-one-half"> 
+                 Expected purchase<br>completion date
+              </dt>
+              <dd class="govuk-summary-list__value">
+                3 August 2021
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change <span class="govuk-visually-hidden">purchase completion</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Expected build<br>completion date
+              </dt>
+              <dd class="govuk-summary-list__value">
+                24 August 2020
+                
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change <span class="govuk-visually-hidden">build completion</span>
+                </a>
+              </dd>
+            </div>
+           
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key"> 
+              Plot number
+            </dt>
+            <dd class="govuk-summary-list__value">
+              502135326
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change <span class="govuk-visually-hidden">previous application number</span>
+              </a>
+            </dd>
+          </div>
+          
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Address
+            </dt>
+            <dd class="govuk-summary-list__value">
+              72 Guild Street<br>Birmingham<br>SE23 6FH
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change <span class="govuk-visually-hidden">new build address</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Local authority
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Birmingham City
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change <span class="govuk-visually-hidden">Property details</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Property type</br>
+              Ownership type
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Flat</br>
+              Leasehold
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change <span class="govuk-visually-hidden">Property details</span>
+              </a>
+            </dd>
+          </div>
+
+          <!-- <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+             Number of 
+              bedrooms
+            </dt>
+            <dd class="govuk-summary-list__value">
+              
+              3
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">bedroom number</span>
+              </a>
+            </dd>
+          </div> -->
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Service/estate charge 
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">£350 per year</p>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">service charge</span>
+              </a>
+            </dd>
+          </div>
+          
+        </dl>
+
+       
+
+          <!-- <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Number of children
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">1</p>
+              
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="apply-04-03-form">
+                Change<span class="govuk-visually-hidden">  details</span>
+              </a>
+            </dd>
+          </div> -->
+          
+
+
+
+        
+
+        <h2 class="govuk-heading-m">Your income</h2>
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key govuk-!-width-one-half">
+              Annual salary (before tax)
+              <span class="govuk-hint govuk-!-font-size-16">This cannot include child tax credits or child benefit amounts</span>
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">£25,000 per year</p>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">annual salary</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key ">
+              Annual overtime, bonuses and commissions
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">£0 per year</p> 
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change <span class="govuk-visually-hidden">income</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key ">
+               Monthly income 
+              <span class="govuk-hint govuk-!-font-size-16">Disability allowance, Guaranteed maintenance income or any other monthly income.<br> Cannot include child tax credits or child benefit </span>
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">£0 per month</p> 
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change <span class="govuk-visually-hidden">income</span>
+              </a>
+            </dd>
+          </div>
+          </dl>
+
+          <h2 class="govuk-heading-m">Your outgoings</h2>
+          <dl class="govuk-summary-list govuk-!-margin-bottom-9">       
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key govuk-!-width-one-half">
+                Total outstanding<br>
+credit card balances
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">£320 total</p>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change <span class="govuk-visually-hidden">monthly outgoings</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key govuk-!-width-one-half">
+                Total salary deductions 
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">£310 per month</p>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change <span class="govuk-visually-hidden">monthly outgoings</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Student loan<br>repayments 
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">£0 per month</p> 
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change <span class="govuk-visually-hidden">outgoings</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Loan/hire purchase<br>
+payments 
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">£0 per month</p> 
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change <span class="govuk-visually-hidden">outgoings</span>
+                </a>
+              </dd>
+            </div>
+        </dl>
+
+        <h2 class="govuk-heading-m">Frankie Shaw's income</h2>
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key govuk-!-width-one-half">
+              Annual salary (before tax)
+              <span class="govuk-hint govuk-!-font-size-16">This cannot include child tax credits or child benefit amounts</span>
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">£33,000 per year</p>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">annual salary</span>
+              </a>
+            </dd>
+          </div>
+
+          
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key ">
+              Annual overtime, bonuses and commissions
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">£0 per year</p> 
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change <span class="govuk-visually-hidden">income</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key ">
+               Monthly income 
+              <span class="govuk-hint govuk-!-font-size-16">Disability allowance, Guaranteed maintenance income or any other monthly income.<br> Cannot include child tax credits or child benefit </span>
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">£0 per month</p> 
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change <span class="govuk-visually-hidden">income</span>
+              </a>
+            </dd>
+          </div>
+          
+          </dl>
+
+          <h2 class="govuk-heading-m">Frankie Shaw's outgoings</h2>
+          <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key govuk-!-width-one-half">
+                Total outstanding<br>
+credit card balances
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">£550 total</p>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change <span class="govuk-visually-hidden">monthly outgoings</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key govuk-!-width-one-half">
+                Total salary deductions 
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">£240 per month</p>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change <span class="govuk-visually-hidden">monthly outgoings</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Student loan<br>repayments 
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">£0 per month</p> 
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change <span class="govuk-visually-hidden">outgoings</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Loan/hire purchase<br>
+payments 
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">£0 per month</p> 
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change <span class="govuk-visually-hidden">outgoings</span>
+                </a>
+              </dd>
+            </div>
+        </dl>
+
+        <h2 class="govuk-heading-m">Purchase details</h2>
+        
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+         
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key govuk-!-width-one-quarter">
+              Your joint deposit
+            </dt>
+            <dd class="govuk-summary-list__value govuk-!-width-one-quarter" ></dd>
+            <dd class="govuk-summary-list__value govuk-!-width-one-quarter">
+              <p class="govuk-body" style="text-align: right;">£10,000</p>
+            </dd>
+            <dd class="govuk-summary-list__actions govuk-!-width-one-quarter">
+              <a class="govuk-link" href="#">
+                Change <span class="govuk-visually-hidden">deposit</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Mortgage 
+            </dt>
+            <dd class="govuk-summary-list__value" ></dd>
+            <dd class="govuk-summary-list__value" style="text-align: right;">
+              <p class="govuk-body">£148,400</p> 
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change <span class="govuk-visually-hidden">amount</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Equity Loan<br>
+              <span class="govuk-body govuk-!-font-size-16">(amount you're applying for)</span>
+            </dt>
+            <dd class="govuk-summary-list__value" >
+              <p class="govuk-body">20%</p>
+            </dd>
+            <dd class="govuk-summary-list__value" style="text-align: right;">
+              <p class="govuk-body">£39,600</p>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change <span class="govuk-visually-hidden">change amount</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Property price
+            </dt>
+            <dd class="govuk-summary-list__value" ></dd>
+            <dd class="govuk-summary-list__value" style="text-align: right;">
+              <p class="govuk-body">£198,000</p>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> price details</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Mortgage term
+            </dt>
+            <dd class="govuk-summary-list__value">
+              25 years
+            </dd>
+            <dd class="govuk-summary-list__value" ></dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change <span class="govuk-visually-hidden">purchase details</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+
+        <h2 class="govuk-heading-m">Other adults living in the property, apart from the owners</h2>
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key govuk-!-width-one-half">
+              Number of adults of 18 years and over
+            </dt>
+            <dd class="govuk-summary-list__value">
+              
+              <p class="govuk-body">1</p>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="apply-04-03-form">
+                Change<span class="govuk-visually-hidden"> adults</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Adult's name<br>
+              Date of birth
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">Amy Shaw<br>2 May 2001</p>
+              
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="apply-04-03-form">
+                Change<span class="govuk-visually-hidden">  details</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+
+          <h2 class="govuk-heading-m">Household information</h2>
+
+          <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key govuk-!-width-one-half">
+                Number of children under 18
+              </dt>
+              <dd class="govuk-summary-list__value">
+                
+                <p class="govuk-body">0</p>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="apply-04-03-form">
+                  Change<span class="govuk-visually-hidden"> adults</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Number of bedrooms
+              </dt>
+              <dd class="govuk-summary-list__value">
+                
+                <p class="govuk-body">3</p>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="apply-04-03-form">
+                  Change<span class="govuk-visually-hidden"> adults</span>
+                </a>
+              </dd>
+            </div>
+            </dl>
+
+        <h2 class="govuk-heading-m">Your conveyancing solicitor</h2>
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key govuk-!-width-one-third">
+              Full name
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Prita Piyala
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">solicitors details</span>
+              </a>
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key govuk-!-width-one-third">
+              Email
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Prita.Piyala@BCS-solicitors.legal.uk
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">email details</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key govuk-!-width-one-third">
+             
+              Phone number
+            </dt>
+            <dd class="govuk-summary-list__value">
+             01145 6667 99983
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">solicitors details</span>
+              </a>
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+            
+            Company</br>
+              Address
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">
+                Birmingham Central Solicitors<br>55 Central Place</br>Birmingham</br>BM2 4AQ</p>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change <span class="govuk-visually-hidden">solicitors address</span>
+              </a>
+            </dd>
+          </div>
+      </dl>
+
+      <h2 class="govuk-heading-m">Your mortgage advisor</h2>
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key govuk-!-width-one-third">
+            Full name
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Jason Hinckle
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Change<span class="govuk-visually-hidden">mortgage advisor details</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key govuk-!-width-one-third">
+            Email
+          </dt>
+          <dd class="govuk-summary-list__value">
+            J.Hinckle@BCE-IFA-estates.co.uk
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Change<span class="govuk-visually-hidden">email details</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key govuk-!-width-one-third">
+           
+            Phone number
+          </dt>
+          <dd class="govuk-summary-list__value">
+           01145 2267 44985
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Change<span class="govuk-visually-hidden">solicitors details</span>
+            </a>
+          </dd>
+        </div>
+
+
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Company<br>Address
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <p class="govuk-body">
+              Birmingham Central Estates</br>
+              48 Central Place</br>Birmingham</br>BM2 4AN</p>
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Change <span class="govuk-visually-hidden">mortgage advisor address</span>
+            </a>
+          </dd>
+        </div>
+    </dl>
+
+        <form method="post" novalidate="" autocomplete="off" action="apply-05-02-declare">
+      
+
+        <!-- <form action="/form-handler" method="post" novalidate> -->
+
+          <input type="hidden" name="answers-checked" value="true">
+
+          <button class="govuk-button" data-module="govuk-button">
+            Save and continue
+          </button>
+          <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+            Save and come back later
+          </button>
+        </form>
+        
+  
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}

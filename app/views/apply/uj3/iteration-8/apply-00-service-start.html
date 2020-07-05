@@ -1,0 +1,122 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+  {{ super() }}
+  <!-- <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">parent page</a>
+      </li>
+
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">surrent page</li>
+ 
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">Apply for a Help to Buy: Equity Loan</h1>
+
+      
+      <p>You could get help to buy your first home with a Help to Buy: Equity loan from the government.</p>
+      
+      <h2 class="govuk-heading-l">Who can apply</h2>
+ <p> You need to <a href="guidance/who-can-apply"  class="govuk-link"> meet the conditions to apply for an equity loan.</a></p>
+<p>Homebuyers based in England can apply for this scheme. There are different schemes for homebuyers in <a href="https://www.mygov.scot/help-to-buy/overview/">Scotland</a> and <a href="https://gov.wales/buying-selling-property
+        ">Wales</a>.</p>
+
+      <h2 class="govuk-heading-l">When to apply</h2>
+      <p>You must reserve a home and pay a reservation fee with a house builder or agent before you can apply for an equity loan.</p>
+       
+
+      <h2 class="govuk-heading-l">What you need</h2>
+      <p>To complete your application, you’ll need:
+      </p>
+        <ul class="govuk-list govuk-list--bullet"> 
+        <li>proof of ID (passport, driving licence)</li>
+        <li>new build property address or plot details</li>
+        <li>annual salary income details</li>
+        <li>monthly outgoings (loans, hire purchases, student loans, credit card balances)</li>
+        <li>solicitor details</li>
+        </ul>
+        <p>If you’re making a joint application, with another person, they must provide:</p>
+        <ul class="govuk-list govuk-list--bullet"> 
+        <li>proof of ID (passport, driving licence)</li>
+        <li>annual income details</li>
+        <li>monthly outgoings (loans, hire purchases, student loans, credit card balances)</li>
+        </ul>
+ 
+      <h2 class="govuk-heading-l">How does it work</h2>
+      <p>An equity loan is based on a percentage of the property's market value.</p> 
+         <p>When it comes to repaying an equity loan, the repayments you make are based on what the home is worth.</p>  
+           <p>This means the equity loan percentage you owe can go up and down. <a href="guidance/index"  class="govuk-link">Find out more about an equity loan</a> to understand how it works.</p>   
+
+      
+      <h2 class="govuk-heading-l">How to apply</h2>
+      <p>Complete the online form to apply for an equity loan.</p>
+      
+
+      <a href="apply-01-eligibility02" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">
+        Start now
+        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
+          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
+        </svg>
+      </a>
+
+<div><p class="govuk-body"><a href="#">Return to an application</a> you've already started.</p></div>
+
+<p>&nbsp;</p>
+      
+     
+<h2 class="govuk-heading-m">If you cannot apply online</h2>
+<p class="govuk-body"> 
+  You can contact a Help to Buy agent in your region who can help you with making your application.</p> 
+  
+  <h2 class="govuk-heading-m">Help to Buy agent in your region</h2>
+  <p class="govuk-body"> 
+  
+  <p class="govuk-body">The north of England: 0300 790 0570 </p>
+  
+  <p class="govuk-body">The south of England: 0800 456 1188 </p>
+  
+  <p class="govuk-body">The Midlands and London: 03333 214 044 </p>
+     
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+      <aside class="app-related-items" role="complementary">
+
+        
+        <h2 class="govuk-heading-m">Related content</h2>
+        <ul class="govuk-list">
+        <li><a href="#" class="govuk-link">Return to an equity loan application </a></li>
+        <li><a href="guidance/index" class="govuk-link">Help to Buy equity loans</a></li>
+        <li><a href="#" class="govuk-link">Pay your equity loan</a></li>
+
+        <li><a href="#" class="govuk-link">Council housing</a></li>
+
+          <li><a href="#" class="govuk-link">Housing association homes</a></li>
+          
+          <li><a href="#" class="govuk-link">Right to Acquire: buying your housing association home</a></li>
+          
+          <li><a href="#" class="govuk-link">Right to Buy: buying your council home</a></li>
+        </ul>
+
+      </aside>
+
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,109 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+  {{ super() }}
+  <!-- <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">parent page</a>
+      </li>
+
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">surrent page</li>
+ 
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">Apply for a Help to Buy: Equity Loan</h1>
+
+      
+      <p>You can get help from the government by applying for a Help To Buy: Equity Loan when buying your first home.</p>
+
+      <h2 class="govuk-heading-l">Who can apply</h2>
+      <p>Homebuyers based in England can apply for this scheme. There are different schemes for homebuyers in <a href="https://www.mygov.scot/help-to-buy/overview/">Scotland</a> and <a href="https://gov.wales/buying-selling-property
+        ">Wales</a>.</p>
+        <p><a href="https://www.gov.uk/affordable-home-ownership-schemes/help-to-buy-equity-loan"  class="govuk-link">Check you meet the conditions to apply for an equity loan.</a></p>
+        
+      
+
+      <h2 class="govuk-heading-l">What you need</h2>
+      <p>To complete your application, you’ll need:
+      </p>
+        <ul class="govuk-list govuk-list--bullet"> 
+        <li>proof of ID (passport, driving licence)</li>
+        <li>new build property details</li>
+        <li>monthly income and outgoings</li>
+        <li>solicitor details</li>
+        </ul>
+        <p>If you’re making a joint application, with another person, they must provide:</p>
+        <ul class="govuk-list govuk-list--bullet"> 
+          <li>proof of ID (passport, driving licence)</li>
+          <li>monthly income and outgoings</li>
+         
+          </ul>
+      <h2 class="govuk-heading-l">How to apply</h2>
+      <p>Complete the online form to apply for an equity loan.</p>
+      
+
+      <a href="uj3/apply-01-eligibility01" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">
+        Start now
+        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
+          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
+        </svg>
+      </a>
+
+<div><p class="govuk-body"><a href="#">Return to an application</a> you've already started.</p></div>
+
+<p>&nbsp;</p>
+      
+<h2 class="govuk-heading-m">Cannot apply online</h2>
+<p class="govuk-body"> 
+  If you are unable to make application online, you can contact a Help to Buy agent in your region. The Help to Buy agent can assist you in making your application.</p> 
+  
+  <p class="govuk-body">Help to Buy agent: </p>
+  
+  <p class="govuk-body">The north of England 0300 790 0570 </p>
+  
+  <p class="govuk-body">The south of England 0800 456 1188 </p>
+  
+  <p class="govuk-body">The Midlands and London 03333 214 044 </p>
+     
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+      <aside class="app-related-items" role="complementary">
+
+        
+        <h2 class="govuk-heading-m">Related content</h2>
+        <ul class="govuk-list">
+        <li><a href="#" class="govuk-link">Return to an equity loan application </a></li>
+        <li><a href="#" class="govuk-link">Pay your equity loan</a></li>
+
+        <li><a href="#" class="govuk-link">Council housing</a></li>
+
+          <li><a href="#" class="govuk-link">Housing association homes</a></li>
+          
+          <li><a href="#" class="govuk-link">Right to Acquire: buying your housing association home</a></li>
+          
+          <li><a href="#" class="govuk-link">Right to Buy: buying your council home</a></li>
+        </ul>
+
+      </aside>
+
+    </div>
+  </div>
+{% endblock %}

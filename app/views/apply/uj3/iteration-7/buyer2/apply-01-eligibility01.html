@@ -1,0 +1,117 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+  {{ super() }}
+  <!-- <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">parent page</a>
+      </li>
+
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">surrent page</li>
+ 
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <a href="#" class="govuk-back-link govuk-body govuk-!-margin-bottom-9">Back</a>
+      <span class="govuk-caption-xl">
+        Before you start
+      </span>
+      <!-- <h1 class="govuk-heading-xl">Do you meet the conditions to apply for an equity loan?</h1> -->
+      
+      <form method="post" novalidate="" class="radio-routes-toggle1" autocomplete="off" action="apply-02-before-verify">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              Do you meet the conditions to apply for an equity loan?
+            </h1>
+          </legend>
+          <p class="govuk-body">You must meet the conditions to apply for an equity loan. Select all that apply.</p>
+          
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                <h1 class="govuk-fieldset__heading">
+                  
+                </h1>
+              </legend>
+              <div class="govuk-checkboxes govuk-checkboxes">
+               
+                
+               
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="organisation-4" name="organisation" type="checkbox" value="DfT">
+                  <label class="govuk-label govuk-checkboxes__label" for="organisation-4">
+                    I'm a first-time home buyer<br> 
+                    <span class="govuk-body" style="margin-bottom: 20px;">I don't own, or have not previously owned, a residential property or land anywhere in the world
+                   </span> </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="organisation-4" name="organisation" type="checkbox" value="DfT">
+                  <label class="govuk-label govuk-checkboxes__label" for="organisation-4" style="margin-bottom: 20px;">
+                    I'm not married to a person who owns, or has previously owned a residential property or land anywhere in the world
+                  </label>
+                </div>
+               
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="organisation-3" name="organisation" type="checkbox" value="MOD">
+                  <label class="govuk-label govuk-checkboxes__label" for="organisation-3" style="margin-bottom: 20px;">
+                    I'm 18 years-old or over
+                  </label>
+                </div>
+                <!-- <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
+                  <label class="govuk-label govuk-checkboxes__label" for="organisation">
+                    The property I'm buying is a new build home
+                  </label>
+                  <details class="govuk-details" data-module="govuk-details" style="margin: 10px 0 30px 20px;">
+                    <summary class="govuk-details__summary">
+                      <span class="govuk-details__summary-text">
+                        New build home definition
+                      </span>
+                    </summary>
+                 
+                    <div class="govuk-details__text">
+                  <p>A home that .... </p>
+                  </div>  
+                  </details>
+                </div> -->
+              </div>
+           
+          </div>
+
+       
+          
+      </div>
+
+
+      <button class="govuk-button" data-module="govuk-button">
+        Continue
+      </button>
+    </fieldset>
+    </form>
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+      <p>&nbsp;</p>
+
+    </div>
+  </div>
+{% endblock %}

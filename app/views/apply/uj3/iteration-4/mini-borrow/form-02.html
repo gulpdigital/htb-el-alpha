@@ -1,0 +1,121 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+  {{ super() }}
+  <!-- <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">parent page</a>
+      </li>
+
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">surrent page</li>
+ 
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <a href="#" class="govuk-back-link govuk-body govuk-!-margin-bottom-9">Back</a>
+    <!-- <h1 class="govuk-heading-xl">Have you reserved a new build home with a property agent?
+    </h1> -->
+    <form method="post" novalidate autocomplete="off" action="form-03" class="purchase-form" >
+    <div class="govuk-form-group">
+      
+     
+      <span class="govuk-caption-l">Question 2 of 5</span>
+          <h1 class="govuk-heading-l">
+            Estimated  property price
+          </h1>
+          
+       
+        <!-- <p class="govuk-body">What is the estimated deposit amount you have available?
+        </p> -->
+       </div>
+  
+</div></div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      
+          
+      <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl"></legend>
+          
+           
+              <div class="govuk-form-group">
+                <span id="passport-issued-error" class="govuk-error-message">
+                  <span class="govuk-visually-hidden">Error:</span> Amount should not exceed £600,000
+                </span>
+
+                <!-- <label class="govuk-label" for="propertyPrice">
+                  What is the estimated deposit amount you have available?
+
+                </label> -->
+               
+                <input class="govuk-input govuk-input--width-10" id="propertyPrice" name="propertyPrice" value="£" > 
+                <!--for validation: type="number" pattern="[0-9]*" inputmode="numeric"  -->
+              </div>
+
+              <p  class="govuk-body">
+                
+              </p>
+              
+              
+              <!-- <div class="govuk-warning-text">
+                <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+                <strong class="govuk-warning-text__text">
+                  <span class="govuk-warning-text__assistive">Warning</span>
+                  <span class="govuk-body">We may need to change this to match with the equity loan amount you need to borrow.
+ </span>
+                </strong>
+              </div> -->
+
+              
+             
+            
+          
+         
+           
+          
+           
+             
+
+  </fieldset>
+    </div>
+  </div>
+
+
+<div class="govuk-grid-column-one-third">
+
+  <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+
+       <div><p>&nbsp;</p></div> 
+      <button class="govuk-button govuk-!-margin-right-1" data-module="govuk-button">
+        Continue
+      </button>
+ 
+   
+    </form>
+   
+</div>
+
+  
+  </div>
+{% endblock %}

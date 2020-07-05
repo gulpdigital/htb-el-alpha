@@ -1,0 +1,299 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+  {{ super() }}
+  <!-- <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">parent page</a>
+      </li>
+
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">surrent page</li>
+ 
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <a href="#" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-three-quarters">
+
+        <h1 class="govuk-heading-xl">Check your answers given by your fellow applicant</h1>
+
+        
+<p class="govuk-body">If there is anything wrong, you will need to ask you fellow applicant to change the details and re-submit.</p>
+        
+
+        
+
+        <h2 class="govuk-heading-m">New build details</h2>
+          <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key"> 
+                 Purchase completion 
+              </dt>
+              <dd class="govuk-summary-list__value">
+                3 August 2021
+              </dd>
+             
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Build completion 
+              </dt>
+              <dd class="govuk-summary-list__value">
+                24 August 2020
+                
+              </dd>
+              
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Developer 
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Happy Home Building Company  
+              </dd>
+              
+            </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key"> 
+              Plot number
+            </dt>
+            <dd class="govuk-summary-list__value">
+              502135326
+            </dd>
+           
+          </div>
+          
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Address
+            </dt>
+            <dd class="govuk-summary-list__value">
+              72 Guild Street<br>Birmingham<br>SE23 6FH
+            </dd>
+            
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Property type</br>
+              Tenure
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Flat</br>
+              Leasehold
+            </dd>
+           
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+             Number of 
+              bedrooms
+            </dt>
+            <dd class="govuk-summary-list__value">
+              
+              3
+            </dd>
+            
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Service/ estate charge 
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">£350 per year</p>
+            </dd>
+          </div>
+          
+        </dl>
+
+        <h2 class="govuk-heading-m">Residents (not including owners)</h2>
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Number of adults
+            </dt>
+            <dd class="govuk-summary-list__value">
+              
+              <p class="govuk-body">1</p>
+            </dd>
+           
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Number of children
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">1</p>
+            </dd> 
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Adult name<br>
+              Date of birth
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">Amy Shaw<br>2 May 2001</p>
+              
+            </dd>
+            
+          </div>
+        </dl>
+
+        <h2 class="govuk-heading-m">Purchase details</h2>
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Property price
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">£198,000</p>
+            </dd>
+           
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Deposit
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">	
+                £22,360</p>
+            </dd>
+           
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Mortgage  
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">£140,000</p> 
+            </dd>
+           
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Help to Buy: Equity Loan 
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">18%<br>	
+                £35,640</p>
+              
+            </dd>
+            
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Mortgage term
+            </dt>
+            <dd class="govuk-summary-list__value">
+              25 years
+            </dd>
+            
+          </div>
+        </dl>
+
+        
+
+        <h2 class="govuk-heading-m">Your conveyancing solicitor</h2>
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Full name</br>
+              
+              Company
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Prita Piyala</br>
+              
+              Birmingham Central Solicitors
+            </dd>
+            
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Address
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">55 Central Place</br>Birmingham</br>BM2 4AQ</p>
+            </dd>
+           
+          </div>
+      </dl>
+
+      <h2 class="govuk-heading-m">Your mortgage advisor</h2>
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Full name</br>
+            
+            Company
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Jason Hinckle</br>
+            
+            Birmingham Central Estates
+          </dd>
+         
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Address
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <p class="govuk-body">48 Central Place</br>Birmingham</br>BM2 4AN</p>
+          </dd>
+          
+        </div>
+    </dl>
+
+        
+      
+
+        <!-- <form action="/form-handler" method="post" novalidate> -->
+
+          <input type="hidden" name="answers-checked" value="true">
+
+          <button class="govuk-button govuk-button--warning" data-module="govuk-button">
+            These details are incorrect
+          </button>
+<br>
+<form method="post" novalidate="" autocomplete="off" action="apply-04-03-form">
+          <button class="govuk-button" data-module="govuk-button">
+            Confirm details are correct
+          </button>
+
+         
+
+        </form>
+        <div><p>&nbsp;</p></div> 
+  <div><p class="govuk-body govuk-!-margin-bottom-5"><a href="apply-04-02-save-exit">Save and exit</a></p></div>
+  
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}

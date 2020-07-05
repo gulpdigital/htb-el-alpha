@@ -1,0 +1,46 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <a href="#" class="govuk-back-link govuk-body govuk-!-margin-bottom-9">Back</a>
+
+      <form method="post" novalidate="" autocomplete="off" action="mini-borrow/form-01">
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+              <h1 class="govuk-fieldset__heading">
+                Check how much you could borrow with a Help to Buy: Equity Loan
+              </h1>
+            </legend>
+
+
+            <p>Use this service to check the maximum:</p>
+
+            <ul class="govuk-list govuk-list--bullet">
+              <li>equity loan amount you could get</li>
+              <li>mortgage amount you would need to use along with this equity loan amount</li>
+            </ul>
+
+            <p>This helps you to understand:</p>
+
+            <ul class="govuk-list govuk-list--bullet">
+              <li>the maximum house price you could buy with an equity loan</li>
+
+            </ul>
+
+            <button class="govuk-button govuk-!-margin-right-1" data-module="govuk-button">
+              Continue
+            </button>
+          
+            </fieldset>
+          </div>
+    </form>
+  </div>
+  </div>
+{% endblock %}

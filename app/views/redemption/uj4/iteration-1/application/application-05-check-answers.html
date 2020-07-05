@@ -1,0 +1,218 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+{{ govukBackLink({
+  href: "#",
+  text: "Back"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+        <h1 class="govuk-heading-xl">Check your answers before sending your application</h1>
+    </div>
+
+
+    <div class="govuk-grid-column-two-thirds">
+        <p class="gov-margin-bottom-xxl">Your application will be submitted once you pay administration fee. You need your payment card details.</p>
+    </div>
+
+   
+        <div class="govuk-grid-column-one-third">
+            <div class="box-blue">
+                <p class="govuk-heading-xl">£200.00</p>
+                <p>Admin fee for your application</p>
+            </div>
+        </div>
+  </div>
+
+  <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">  
+
+        <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <h2 class="govuk-heading-m">Personal details</h2>
+
+        <dl class="govuk-summary-list gov-margin-bottom-xxl">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Name
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Amy Sunday
+              </dd>
+              <dd class="govuk-summary-list__actions">
+               
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Home address
+              </dt>
+              <dd class="govuk-summary-list__value">
+                17 Chapman Square
+                London
+                SW19 5QR
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Contact address
+              </dt>
+              <dd class="govuk-summary-list__value">
+                17 Chapman Square</br>
+                London</br>
+                SW19 5QR</br>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change<span class="govuk-visually-hidden"> contact information</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Contact details
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">07700 900457</p>
+                <p class="govuk-body">amy.sunday@example.com</p>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change<span class="govuk-visually-hidden"> contact details</span>
+                </a>
+              </dd>
+            </div>
+          </dl>
+
+          <h2 class="govuk-heading-m">Repayment details</h2>
+
+          <dl class="govuk-summary-list gov-margin-bottom-xxl">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Repayment type
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Repaying in full by selling your home
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change<span class="govuk-visually-hidden"> name</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Completion date
+              </dt>
+              <dd class="govuk-summary-list__value">
+                31 Apr 2020
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change<span class="govuk-visually-hidden"> date of birth</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Market valuation
+              </dt>
+              <dd class="govuk-summary-list__value">
+                £300,000<br>rics-filename.pdf
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change<span class="govuk-visually-hidden"> contact information</span>
+                </a>
+              </dd>
+            </div>
+          </dl>
+
+
+          <h2 class="govuk-heading-m">Solicitor’s details</p>
+
+
+            <dl class="govuk-summary-list gov-margin-bottom-xxl">
+                <div class="govuk-summary-list__row">
+                  <dt class="govuk-summary-list__key">
+                    Name
+                  </dt>
+                  <dd class="govuk-summary-list__value">
+                    Sarah Philips
+                  </dd>
+                  <dd class="govuk-summary-list__actions">
+                    <a class="govuk-link" href="#">
+                      Change<span class="govuk-visually-hidden"> name</span>
+                    </a>
+                  </dd>
+                </div>
+                <div class="govuk-summary-list__row">
+                  <dt class="govuk-summary-list__key">
+                    Company name
+                  </dt>
+                  <dd class="govuk-summary-list__value">
+                    Alexander JLO
+                  </dd>
+                  <dd class="govuk-summary-list__actions">
+                    <a class="govuk-link" href="#">
+                      Change<span class="govuk-visually-hidden"> date of birth</span>
+                    </a>
+                  </dd>
+                </div>
+                <div class="govuk-summary-list__row">
+                  <dt class="govuk-summary-list__key">
+                    Home address
+                  </dt>
+                  <dd class="govuk-summary-list__value">
+                    72 Guild street<br>
+                    London<br>
+                    SE23 6FH<br>           
+                  <dd class="govuk-summary-list__actions">
+                    <a class="govuk-link" href="#">
+                      Change<span class="govuk-visually-hidden"> contact information</span>
+                    </a>
+                  </dd>
+                </div>
+                <div class="govuk-summary-list__row">
+                  <dt class="govuk-summary-list__key">
+                    Contact details
+                  </dt>
+                  <dd class="govuk-summary-list__value">
+                    <p class="govuk-body">07700 900457</p>
+                    <p class="govuk-body">sarah.philips@example.com</p>
+                  </dd>
+                  <dd class="govuk-summary-list__actions">
+                    <a class="govuk-link" href="#">
+                      Change<span class="govuk-visually-hidden"> contact details</span>
+                    </a>
+                  </dd>
+                </div>
+              </dl>
+
+          <h2 class="govuk-heading-m">Now send your application</h2>
+
+          <p>By submitting this application you are confirming that, to the best of
+            your knowledge, the details you are providing are correct.</p>
+
+        <a href="https://products.payments.service.gov.uk/pay/65a29bdb4f1148b99218a84ce8b153e2" class="govuk-button">Accept and continue</a>
+      
+    </div>
+  </div>
+{% endblock %}

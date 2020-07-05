@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+{{ govukBackLink({
+  href: "#",
+  text: "Back"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <form novalidate action="redemption-06a-change-name">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset gov-margin-bottom-xxl" aria-describedby="changed-name-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                <h1 class="govuk-fieldset__heading">
+                    What is your new name?
+                </h1>
+              </legend>
+
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="title">
+                    Title
+                </label>
+                <select class="govuk-select" name="title" id="title">
+                  <option value=""></option>
+                  <option value="Mr">Mr</option>
+                  <option value="Mrs">Mrs</option>
+                  <option value="Miss">Miss</option>
+                  <option value="Ms">Ms</option>
+                  <option value="Dr">Dr</option>
+                </select>
+              </div>
+
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="address-line-1">
+                    First name
+                </label>
+                <input class="govuk-input govuk-!-width-two-thirds" id="address-line-1" name="address-line-1" type="text">
+              </div>
+            
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="address-town">
+                    Middle name
+                </label>
+                <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text">
+              </div>
+            
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="address-county">
+                    Last name
+                </label>
+                <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text">
+              </div>
+        </fieldset>
+
+       
+        <button class="govuk-button" data-module="govuk-button">
+          Save and continue
+        </button>
+
+        <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="application-saved.html">
+          Save as draft
+        </a>
+      
+    </div>
+    </form> 
+    </div>
+  </div>
+{% endblock %}

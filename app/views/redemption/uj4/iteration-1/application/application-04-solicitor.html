@@ -1,0 +1,113 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+{{ govukBackLink({
+  href: "#",
+  text: "Back"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <form novalidate action="application-05-check-answers.html">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset gov-margin-bottom-xxl" aria-describedby="changed-name-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                <h1 class="govuk-fieldset__heading">
+                    Who is your solicitor?
+                </h1>
+              </legend>
+
+              <h2 class="govuk-heading-l">Solicitor contact details</h2>
+            
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="address-line-1">
+                    Full name
+                </label>
+                <input class="govuk-input govuk-!-width-two-thirds" id="address-line-1" name="address-line-1" type="text">
+              </div>
+            
+          
+            
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="address-town">
+                    Company name
+                </label>
+                <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text">
+              </div>
+            
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="address-county">
+                    Email address
+                </label>
+                <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text">
+              </div>
+            
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="address-postcode">
+                Phone number
+                </label>
+                <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text">
+              </div>
+
+
+              <h2 class="govuk-heading-l">Solicitor address</h2>
+
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="address-line-1">
+                  Building and street <span class="govuk-visually-hidden">line 1 of 2</span>
+                </label>
+                <input class="govuk-input govuk-!-width-two-thirds" id="address-line-1" name="address-line-1" type="text">
+              </div>
+            
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="address-line-2">
+                  <span class="govuk-visually-hidden">Building and street line 2 of 2</span>
+                </label>
+                <input class="govuk-input govuk-!-width-two-thirds" id="address-line-2" name="address-line-2" type="text">
+              </div>
+            
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-!-width-two-thirds" for="address-town">
+                  Town or city
+                </label>
+                <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text">
+              </div>
+            
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="address-county">
+                  County
+                </label>
+                <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text">
+              </div>
+            
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="address-postcode">
+                  Postcode
+                </label>
+                <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text">
+              </div>
+        </fieldset>
+
+       
+        <button class="govuk-button" data-module="govuk-button">
+          Save and continue
+        </button>
+      
+    </div>
+    </form> 
+    </div>
+  </div>
+{% endblock %}

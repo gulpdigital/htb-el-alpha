@@ -1,0 +1,189 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+  {{ super() }}
+  <!-- <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">parent page</a>
+      </li>
+
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">surrent page</li>
+ 
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <a href="#" class="govuk-back-link govuk-body govuk-!-margin-bottom-9">Back</a>
+      
+      <form method="post" novalidate="" autocomplete="off" action="apply-04-14-form">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+            <h1 class="govuk-fieldset__heading">
+              Confirm Equity Loan details 
+            </h1>
+          </legend>
+          <p class="govuk-body govuk-!-margin-bottom-5 govuk-!-margin-top-5" >Calculated based on the property price , your mortgage and your deposit amount</p>
+
+          <dl class="govuk-summary-list govuk-!-margin-bottom-1" style="max-width: 520px;">
+            <div class="govuk-summary-list__row">
+              <dd class="govuk-summary-list__value" >
+                <p class="govuk-body govuk-!-margin-bottom-5" style="vertical-align: top; padding-top: 0;">Percentage of property price that Homes England will be owed</p>
+
+              </dd>
+              <dt class="govuk-summary-list__key govuk-heading-l" style="text-align:right;">
+                18%
+              </dt>
+              <!-- <dd class="govuk-summary-list__actions" style="border-bottom-width:0px;">
+              </dd> -->
+            </div>
+          </dl>
+
+          <dl class="govuk-summary-list govuk-!-margin-bottom-6" style="max-width: 520px;">
+            <div class="govuk-summary-list__row">
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-summary-list govuk-!-margin-bottom-6">Current value of Equity loan  that you will be borrowing</p>
+              </dd>
+              <dt class="govuk-summary-list__key govuk-heading-m" style="text-align:right;">
+                £35,640
+              </dt>
+              <!-- <dd class="govuk-summary-list__actions" style="text-align:left; border-bottom-width:0px;">
+                <a class="govuk-link" href="#">
+                  Change<span class="govuk-visually-hidden"> </span>
+                </a>
+              </dd> -->
+            </div>
+          </dl>
+          <!-- <dl class="govuk-summary-list govuk-!-margin-bottom-1">
+            <div class="govuk-summary-list__row">
+              <dd class="govuk-summary-list__value">
+                Remainder to meet property price
+              </dd>
+              <dt class="govuk-summary-list__key">
+                £58,000
+              </dt>
+              <dd class="govuk-summary-list__actions" style="align:left">
+              </dd>
+            </div>
+          </dl> -->
+ 
+        </fieldset>
+      </div>
+
+     
+
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Show example if my property price changes
+
+          </span>
+        </summary>
+        <div class="govuk-details__text" >
+          <p class="govuk-body">If your property price increases by 10% it would be worth £217,800.</p>
+          
+          
+          
+          <p class="govuk-body">When it comes to repay Homes England, You have chosen an 18% Equity loan, so you will need to pay 18% of the new price.</p>
+          
+          
+          
+          <p class="govuk-body">In this case 18% of £217,800 is £39,204, so this is the amount of Equity loan you would need to repay Homes England when coming to redeem, excluding fees.</p>
+          
+          
+          <p class="govuk-body">Conversely, if the property were to decrease in value by 10%, it would be worth £178,200 and you would repay £32,076 to Homes England, excluding fees.</p>
+          
+          
+          
+          
+          
+          
+          </div>
+        </details>
+       
+
+       <div><p>&nbsp;</p></div> 
+      <button class="govuk-button govuk-!-margin-right-1" data-module="govuk-button">
+        Save and continue
+      </button>
+ 
+      <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+        Save and come back later
+      </button>
+
+    </form>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      
+
+      <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <div style="background-color:  #f3f2f1; padding:30px; margin-bottom: 40px;" >
+        <!-- <p class="govuk-body govuk-!-font-size-24">Your totals</p> -->
+      <!-- /// -->
+      <table class="govuk-table">
+        <caption class="govuk-table__caption govuk-!-margin-bottom-3">Based on these details:</caption>
+         <!-- <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Date</th>
+            <th scope="col" class="govuk-table__header">Amount</th>
+          </tr>
+        </thead> -->
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+           
+            <td class="govuk-table__cell">Property price:</td>
+            <th scope="row" class="govuk-table__header" style="text-align: right;">£198,000</th>
+          </tr>
+          <tr class="govuk-table__row">
+            
+            <td class="govuk-table__cell">Mortgage:</td>
+            <th scope="row" class="govuk-table__header" style="text-align: right;">£140,000</th>
+          </tr>
+          <tr class="govuk-table__row">
+            
+            <td class="govuk-table__cell">Your deposit:</td>
+            <th scope="row" class="govuk-table__header" style="text-align: right;">£22,360 </th>
+          </tr>
+          
+        </tbody>
+      </table>
+      <!-- /// -->
+        <span style=" text-align:right;" >
+        <p class="govuk-body govuk-!-font-weight-bold" style="color:#d4351c;"></p>
+      </span>
+        <p class="govuk-body " style="color:#d4351c;"></p>
+        <p class="govuk-body " ><a href="#">Change</a></p>
+      </div>
+
+
+
+
+
+
+
+      <div></div>
+
+    </div>
+  </div>
+{% endblock %}

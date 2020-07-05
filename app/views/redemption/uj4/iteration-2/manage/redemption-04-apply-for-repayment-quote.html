@@ -1,0 +1,187 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+{{ govukBackLink({
+  href: "#",
+  text: "Back"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+        <h1 class="govuk-heading-xl">Apply for a repayment quote</h1>
+    </div>
+
+
+    <div class="govuk-grid-column-two-thirds">
+        <p>You are applying for a full repayment quote with selling your home.  You will be able to sumit your application once you answer all questions.</p>
+    </div>
+  </div>
+
+  <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">  
+
+        <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <h2 class="govuk-heading-m">Personal details</h2>
+
+        <dl class="govuk-summary-list gov-margin-bottom-xxl">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Name
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Amy Sunday
+              </dd>
+              <dd class="govuk-summary-list__actions">
+               
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Home address
+              </dt>
+              <dd class="govuk-summary-list__value">
+                17 Chapman Square<br />
+                London<br />
+                SW19 5QR
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Contact details
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">07700 900457</p>
+                <p class="govuk-body">amy.sunday@example.com</p>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                
+              </dd>
+            </div>
+          </dl>
+
+          <h2 class="govuk-heading-m">Repayment details</h2>
+
+          <dl class="govuk-summary-list gov-margin-bottom-xxl">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Repayment type
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Repaying in full when selling your home
+              </dd>
+              <dd class="govuk-summary-list__actions" style="width: 150px">
+                
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Estimated completion date
+              </dt>
+              <dd class="govuk-summary-list__value">
+                31 Apr 2020
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="../application/application-01-completion-date">
+                  Change<span class="govuk-visually-hidden"> completion date</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Valuation
+              </dt>
+              <dd class="govuk-summary-list__value">
+                
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="../application/application-03-house-value">
+                  Answer question<span class="govuk-visually-hidden"> about the valuation</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Selling price
+              </dt>
+              <dd class="govuk-summary-list__value">
+               
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="../application/application-03a-house-value">
+                  Answer question<span class="govuk-visually-hidden"> about the selling price</span>
+                </a>
+              </dd>
+            </div>
+          </dl>
+
+
+          <h2 class="govuk-heading-m">Solicitor’s details</p>
+
+
+            <dl class="govuk-summary-list gov-margin-bottom-xxl">
+                <div class="govuk-summary-list__row">
+                  <dt class="govuk-summary-list__key">
+                    Name
+                  </dt>
+                  <dd class="govuk-summary-list__value">
+                    
+                  </dd>
+                  <dd class="govuk-summary-list__actions" style="width: 150px;">
+                    <a class="govuk-link" href="../application/application-04-solicitor">
+                      Answer question
+                    </a>
+                  </dd>
+                </div>
+                <div class="govuk-summary-list__row">
+                  <dt class="govuk-summary-list__key">
+                    Company name
+                  </dt>
+                  <dd class="govuk-summary-list__value">
+                    
+                  </dd>
+                  <dd class="govuk-summary-list__actions">
+                    
+                  </dd>
+                </div>
+                <div class="govuk-summary-list__row">
+                  <dt class="govuk-summary-list__key">
+                    Company address
+                  </dt>
+                  <dd class="govuk-summary-list__value">
+                    
+                  <dd class="govuk-summary-list__actions">
+                    
+                  </dd>
+                </div>
+                <div class="govuk-summary-list__row">
+                  <dt class="govuk-summary-list__key">
+                    Contact details
+                  </dt>
+                  <dd class="govuk-summary-list__value">
+                    
+                  </dd>
+                  <dd class="govuk-summary-list__actions">
+                    
+                  </dd>
+                </div>
+              </dl>
+    </div>
+  </div>
+{% endblock %}

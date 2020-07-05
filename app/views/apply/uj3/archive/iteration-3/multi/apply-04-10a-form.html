@@ -1,0 +1,134 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+  {{ super() }}
+  <!-- <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">parent page</a>
+      </li>
+
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">surrent page</li>
+ 
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <a href="#" class="govuk-back-link govuk-body govuk-!-margin-bottom-9">Back</a>
+      <!-- <h1 class="govuk-heading-xl">Have you reserved a new build home with a property agent?
+      </h1> -->
+      <form method="post" novalidate="" autocomplete="off" action="apply-04-12-form">
+      <div class="govuk-form-group">
+        
+        <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+            <h1 class="govuk-fieldset__heading govuk-!-margin-bottom-4">
+              Enter the details of the adult living in the property who is not  a buyer 
+            </h1>
+          </legend>
+          <p class="govuk-body">We’ll need these for the certificate of occupancy.
+
+          </p>
+          <!-- <span id="changed-name-hint" class="govuk-hint">
+            Enter the number of adults and children. For example, 4.
+
+          </span> -->
+        
+          
+          
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="address-postcode">
+              First name
+            </label>
+            <input class="govuk-input govuk-!-width-two-thirds" id="address-postcode" name="address-postcode" type="text" autocomplete="postal-code">
+          </div>
+            
+      
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="address-postcode">
+                Last name
+              </label>
+              <input class="govuk-input govuk-!-width-two-thirds" id="address-postcode" name="address-postcode" type="text" autocomplete="postal-code">
+            </div>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="address-postcode">
+                Date of birth
+              </label>
+              <span id="passport-issued-hint" class="govuk-hint">
+                For example, 12 11 1996
+              </span>
+              <div class="govuk-date-input" id="passport-issued">
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                      Day
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric">
+                  </div>
+                </div>
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                      Month
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric">
+                  </div>
+                </div>
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                      Year
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric">
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          </fieldset>
+
+      </div>
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            What is a certificate of occupancy?
+
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          This certificate is issued for adults who will not a have a charge on the property they are living in.
+        </div>
+      </details>
+
+       <div><p>&nbsp;</p></div> 
+      <button class="govuk-button govuk-!-margin-right-1" data-module="govuk-button">
+        Save and continue
+      </button>
+ 
+      <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+        Save and come back later
+      </button>
+    </form>
+   
+
+    <div class="govuk-grid-column-one-third">
+
+      <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+      <p>&nbsp;</p>
+
+    </div>
+  </div>
+{% endblock %}

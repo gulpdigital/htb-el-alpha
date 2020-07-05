@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+<a href="../manage/redemption-03-account-overview.html" class="govuk-back-link noBack">Go to your account overview</a>
+{% endblock %}
+
+
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+     
+      <div class="govuk-inset-text">
+      Your payment of £200 was successfull.<br>
+      A confirmation email has been sent to <a href="#">name@email.com</a></div>
+
+      <div class="govuk-panel govuk-panel--confirmation gov-margin-bottom-xxxl">
+        <h1 class="govuk-panel__title">
+          Application complete
+        </h1>
+        <div class="govuk-panel__body">
+          APPLICATION REFERENCE <br><strong>ABCD1234</strong>
+        </div>
+      </div>
+
+      <p>You can continue to check your application updates in <a href="../manage/redemption-03-account-overview.html">your loan account overview</a>.</p>
+
+      <h1 class="govuk-heading-xl">What happens next</h1>
+
+      <ul class="govuk-list govuk-list--number">
+        <li>A repayment quote will be sent to you and your solicitor in 5 working days.</li>
+        <li>Your solicitor carries out legal undertakings such as making sure the completion date is correct and your repayment quote is based on the right property valuation.</li>
+        <li>An Authority to Complete will be sent to you and your solicitor once the legal undertakings have been carried out.</li>
+        <li>You send the repayment for the amount quoted to your solicitor.</li>
+        <li>Your solicitor transfers the funds to Homes England and your equity loan amount is recalculated. If you repay in full your equity loan will be settled and your account closed.</li>
+      </ul>
+
+      <h3 class="govuk-heading-l">Contact us</h3>
+
+      <p>Any changes in your circumstance, please contact us on 0800 123456 or email to <a href="#">repayment@homesengland.gov.uk</a>. Make sure your application reference number in hand.</p>
+
+    </div>
+  </div>
+{% endblock %}

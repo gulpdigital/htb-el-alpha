@@ -1,0 +1,155 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+  {{ super() }}
+  <!-- <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">parent page</a>
+      </li>
+
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">surrent page</li>
+ 
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters">
+      <a href="#" class="govuk-back-link govuk-body govuk-!-margin-bottom-9">Back</a>
+      <span class="govuk-caption-l">Section 5 of 7  </span>
+      
+      <form method="post" novalidate="" autocomplete="off" action="apply-04-10-form">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              Do you understand what repaying the equity loan means?
+            </h1>
+          </legend>
+          <p class="govuk-body govuk-!-margin-bottom-5 govuk-!-margin-top-4" > The equity loan amount you repay changes with the property price.</p>
+
+          <div >
+            <h2 class="govuk-heading-m govuk-!-margin-top-7">When the property's market value goes up or down</h2>
+            <p class="govuk-body">If your property value goes up by 5%, then the amount you owe will also go up by 5%.</p>
+            <p class="govuk-body"> If your property value goes down by 5%, the amount you owe will go down by 5%.</p>
+              
+            <h2 class="govuk-heading-s govuk-!-margin-top-7" >Example if your property price changes</h2>
+            <!-- <p class="govuk-body">You've selected an 18% equity loan, this means you would have to pay 18% of the value of property  at the time you want to pay back the loan.</p>
+            <p class="govuk-body"> As 18% of £217,800 is £39,204, excluding fees, this is the equity loan amount you would have to repay Homes England when paying back the loan.</p> -->
+            <!-- <h2 class="govuk-heading-m">When your property price decreases</h2> -->
+            <!-- <p class="govuk-body">If the property's value goes up by 10%, would have to repay £39,204 to Homes England, excluding fees.</p>
+            <p class="govuk-body">If the property's value goes down by 10%, would have to repay £32,076 to Homes England, excluding fees.</p>
+             -->
+          
+             <p class="govuk-body">Your current equity loan value is <strong>£39,600</strong> </p>
+             
+            <table class="govuk-table">
+              <!-- <caption class="govuk-table__caption">Property price change</caption> -->
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell govuk-!-width-one-half">Market value change:</td>
+                  <td class="govuk-table__cell govuk-!-width-one-half">Amount you would owe<br>(excluding fees)</td>
+                </tr>
+                <!-- <tr class="govuk-table__row">
+                  <th scope="col" class="govuk-table__header">Property price change</th>
+                  <th scope="col" class="govuk-table__header">Amount you would owe </th>
+                </tr> -->
+              </thead>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  
+                  <td class="govuk-table__cell" >If the property value goes up by 5%</td>
+                  <th scope="row" class="govuk-table__header" ><span class="govuk-!-font-size-24">£41,580</span></th>
+                </tr>
+                <!-- <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell" style="border-bottom: 0;">1st repayment of 10%: <strong>£19,900</strong></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">2nd repayment of 8%: <strong>£17,500</strong></td>
+                </tr> -->
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" >If the property value goes down by 5% </td>
+                  <th scope="row" class="govuk-table__header"><span class="govuk-!-font-size-24">£37,620</span></th>
+                </tr>
+                <!-- <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell" style="border-bottom: 0;">1st repayment of 10%: <strong>£17,400</strong></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">2nd repayment of 8%: <strong>£15,000</strong></td>
+                </tr> -->
+              </tbody>
+            </table>
+          
+          </div>
+ 
+        </fieldset>
+      </div>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+          
+          <div class="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+              <label class="govuk-label govuk-checkboxes__label" for="waste">
+                Yes, I understand that the amount I'll repay changes based on what my property is worth
+              </label>
+            </div>
+
+            <div class="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                <label class="govuk-label govuk-checkboxes__label" for="waste">
+                  Yes, I understand I must repay the loan in full, or in portions of 10% of the property's value, or whatever is the remaining percentage
+                </label>
+              </div>
+           
+       
+              
+          </div>
+        </fieldset>
+      </div>
+       
+
+       <div><p>&nbsp;</p></div> 
+      <button class="govuk-button govuk-!-margin-right-1" data-module="govuk-button">
+        Save and continue
+      </button>
+ 
+      <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+        Save and come back later
+      </button>
+
+    </form>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      
+
+      <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      
+     
+      <!-- /// -->
+       
+      </div>
+
+      <div></div>
+
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,113 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+  {{ super() }}
+  <!-- <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">parent page</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">surrent page</li>
+ 
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters">
+      <a href="#" class="govuk-back-link govuk-body govuk-!-margin-bottom-9">Back</a>
+      <span class="govuk-caption-l">Section 5 of 7  </span>
+     
+      
+      <form method="post" novalidate="" autocomplete="off" action="apply-04-11b-form">
+      <!-- <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              The amounts entered are over the property price
+            </h1>
+          </legend>
+      
+        
+         
+        </fieldset>
+      </div>
+
+      <p class="govuk-body">You must enter the right amounts that add up to the exact property price.</p> 
+      
+      <p class="govuk-body">You need to change the one of the amounts entered to make sure it adds to the property price.</p> -->
+   
+      <div class="govuk-form-group govuk-form-group--error">
+        <fieldset class="govuk-fieldset" aria-describedby="nationality-hint nationality-error">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+            Correct the amount you've entered
+            </h1>
+          </legend>
+          <p  class="govuk-body" style="margin: 30px 0;">
+             The amounts you've entered has gone over the property's value by £240.00. You'll need to select lower deposit and mortgage amounts.
+          </p>
+          <span id="nationality-error" class="govuk-error-message">Select the amounts you need to change to match the exact property value
+            <span class="govuk-visually-hidden">Error:</span> 
+          </span>
+          <div class="govuk-radios">
+            <div class="govuk-radios__item"  style="margin: 40px 0;">
+              <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+              <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                Deposit:  lower your deposit amount by £240 to £19,760
+              </label>
+            </div>
+            <div class="govuk-radios__item" style="margin: 40px 0;">
+              <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+              <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                Mortgage:  lower your mortgage amount by £240 to £122,760
+              </label>
+            </div>
+            <!-- <div class="govuk-radios__item"  style="margin: 40px 0;">
+              <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+              <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                Equity loan reduce to 19% <p style="margin: 10px 0;">You will need to increase your mortgage and deposit if you select this option.</p>
+              </label>
+            </div> -->
+          </div>
+        </fieldset>
+      </div>
+
+
+     
+    </div>
+  </div>
+
+   
+
+       <div><p>&nbsp;</p></div> 
+      <button class="govuk-button govuk-!-margin-right-1" data-module="govuk-button">
+        Save and continue
+      </button>
+ 
+      <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+        Save and come back later
+      </button>
+
+    </form>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+      <p>&nbsp;</p>
+
+    </div>
+  </div>
+{% endblock %}

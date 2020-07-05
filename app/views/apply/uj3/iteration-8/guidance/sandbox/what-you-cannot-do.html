@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+<h2 class="govuk-heading-l">What you cannot do </h2>
+<p>When you apply for an equity loan you cannot: </p>
+<ul class="govuk-list govuk-list--bullet">
+  <li>sublet your home without written consent. only be agreed in exceptional circumstances, such if you are a member of the armed forces </li>
+  <li>rent out your home and buy a second home </li>
+  <li>make any alterations to the property without written consent </li>
+</ul>
+ 
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Home improvement Rrestrictions
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    Any improvements made without written consent such as general maintenance, which increases the property’s value means Help to Buy are entitled a percertange of the full property value.
+  </div>
+</details>
+
+
+<h2 class="govuk-heading-l">Can I use a Help to Buy ISA </h2>
+<ul class="govuk-list govuk-list--bullet">
+  <li>You can use a Help to Buy ISA to buy any home worth up to £250,000 (or up to £450,000 in London). You can use a Help to Buy ISA with any mortgage, it does not have to be a Help to Buy mortgage. </li>
+</ul>
+</div>
+</div>
+{% endblock %}

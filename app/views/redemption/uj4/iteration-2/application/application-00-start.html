@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+{{ govukBackLink({
+  href: "#",
+  text: "Back"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <form novalidate action="#">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset gov-margin-bottom-xxl radio-routes-toggle" aria-describedby="changed-name-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+            <h1 class="govuk-fieldset__heading gov-margin-bottom-xxl">
+            Are your contact and home addresses the same?
+            </h1>
+          </legend>
+        <div class="govuk-radios govuk-radios--inline">
+        <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes" data-action-url="application-01-completion-date.html"">
+        <label class="govuk-label govuk-radios__label" for="changed-name">
+        Yes
+        </label>
+        </div>
+        <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no" data-action-url="application-00a-start.html">
+        <label class="govuk-label govuk-radios__label" for="changed-name-2">
+        No
+        </label>
+        </div>
+        </div>
+        </fieldset>
+
+        <button class="govuk-button" data-module="govuk-button">
+          Save and continue
+        </button>
+      </form> 
+    </div>
+    </div>
+  </div>
+{% endblock %}

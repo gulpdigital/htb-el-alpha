@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+{{ govukBackLink({
+  href: "#",
+  text: "Back"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Why did you change your name?
+      </h1>
+
+	<form novalidate autocomplete="off" action="">
+		<div class="gem-c-fieldset govuk-form-group">
+			<fieldset class="govuk-fieldset">
+				<div class="govuk-grid-row">
+					<div class="govuk-grid-column-two-thirds">
+						<div class="govuk-form-group">
+							<fieldset class="govuk-fieldset radio-routes-toggle">
+								<div class="govuk-radios">
+									<div class="gem-c-radio govuk-radios__item">
+										<input type="radio" name="option" id="option-0" class="govuk-radios__input" data-action-url="">
+										<label for="option-0" class="gem-c-label govuk-label govuk-label--s govuk-radios__label">
+											Marriage or civil partnership
+										</label>
+									</div>
+									<div class="gem-c-radio govuk-radios__item">
+										<!--input type="radio" name="option" id="option-1" class="govuk-radios__input" data-action-url="https://govuk-verify.herokuapp.com/intro?requestId=redemption-01-start-verify"-->
+										<input type="radio" name="option" id="option-1" class="govuk-radios__input" data-action-url="redemption-verify-placeholder">
+										<label for="option-1" class="gem-c-label govuk-label govuk-label--s govuk-radios__label">
+											Divorce or dissolved civil partnership
+										</label>
+									</div>
+									<div class="gem-c-radio govuk-radios__item">
+										<input type="radio" name="option" id="option-2" class="govuk-radios__input" data-action-url="">
+										<label for="option-2" class="gem-c-label govuk-label govuk-label--s govuk-radios__label">
+											Deed poll or Statutory Declaration
+										</label>
+									</div>
+									<div class="gem-c-radio govuk-radios__item">
+										<input type="radio" name="option" id="option-4"  class="govuk-radios__input" aria-describedby="label-hint-042ab8ec" data-action-url="">
+										<label for="option-4" class="gem-c-label govuk-label govuk-label--s govuk-radios__label">
+											Other
+										</label>
+									</div>
+								</div>
+							</fieldset>
+						</div>
+						<div class="govuk-form-group">
+							<label class="govuk-label" for="more-detail">
+								Explain why you changed your name
+							</label>
+							<textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+							<p>You will need to provide evidence of your change of name. You can upload a document on the next page.</p>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+		</div>
+		<button class="govuk-button" type="submit">Save and continue</button>
+	</form>
+</div>
+</div>
+
+{% endblock %}

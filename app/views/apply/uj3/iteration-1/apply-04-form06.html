@@ -1,0 +1,249 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+  {{ super() }}
+  <!-- <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">parent page</a>
+      </li>
+
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">surrent page</li>
+ 
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <a href="#" class="govuk-back-link govuk-body govuk-!-margin-bottom-9">Back</a>
+      <!-- <h1 class="govuk-heading-xl">Have you reserved a new build home with a property agent?
+      </h1> -->
+      <form method="post" novalidate="" autocomplete="off" action="apply-04-form07">
+      <div class="govuk-form-group">
+        
+        <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+            <h1 class="govuk-fieldset__heading govuk-!-margin-bottom-4">
+              About your new build home
+            </h1>
+          </legend>
+          
+
+          <p  class="govuk-body">We’ll use these to check if your application can be approved.
+          </p>
+          <!-- <p  class="govuk-hint">Enter the details about the new build. 
+          </p> -->
+          
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+              <label class="govuk-label" for="address-county">
+                Property type
+              </label>
+              </legend>
+              
+              <div class="govuk-radios govuk-radios--inline">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+                  <label class="govuk-label govuk-radios__label" for="changed-name">
+                    House 
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+                  <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                    Flat
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+              <label class="govuk-label" for="address-county">
+                Tenure
+              </label>
+              </legend>
+              
+              <div class="govuk-radios govuk-radios--inline">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+                  <label class="govuk-label govuk-radios__label" for="changed-name">
+                    Freehold
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+                  <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                     Leasehold
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+
+          <!-- vertical -->
+            <!-- <div class="govuk-form-group">
+              <label class="govuk-label" for="address-county">
+                Property type
+              </label>
+              <div class="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                    House
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                    Flat
+                  </label>
+                </div>
+              </div>
+            </div>
+            
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="address-county">
+                Tenure
+              </label>
+              <div class="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                    Freehold
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                    Leasehold
+                  </label>
+                </div>
+              </div>
+            </div> -->
+             <!-- end vertical -->
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="address-postcode">
+                Number of bedrooms
+              </label>
+              <input class="govuk-input govuk-input--width-5" id="address-postcode" name="address-postcode" type="text" autocomplete="postal-code">
+            </div>
+<!-- start build date -->
+<div class="govuk-form-group">
+  <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+    <label class="govuk-label">
+      Expected build completion date
+    </label>
+  </legend>
+  <span id="passport-issued-hint" class="govuk-hint">
+    For example, 12 9 2022
+  </span>
+  <div class="govuk-date-input" id="passport-issued">
+    <div class="govuk-date-input__item">
+      <div class="govuk-form-group">
+        <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+          Day
+        </label>
+        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric">
+      </div>
+    </div>
+    <div class="govuk-date-input__item">
+      <div class="govuk-form-group">
+        <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+          Month
+        </label>
+        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric">
+      </div>
+    </div>
+    <div class="govuk-date-input__item">
+      <div class="govuk-form-group">
+        <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+          Year
+        </label>
+        <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric">
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- end build date -->           
+<!-- start completion date -->
+  <div class="govuk-form-group">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+      <label class="govuk-label">
+        Expected purchase completion date
+      </label>
+    </legend>
+    <span id="passport-issued-hint" class="govuk-hint">
+      For example, 12 11 2022
+    </span>
+    <div class="govuk-date-input" id="passport-issued">
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+            Day
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric">
+        </div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+            Month
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric">
+        </div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+            Year
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric">
+        </div>
+      </div>
+    </div>
+
+</div>
+<!-- end completion dates -->
+
+    
+           
+          
+           
+
+          
+          </fieldset>
+
+      </div>
+
+
+      <button class="govuk-button" data-module="govuk-button">
+        Save and continue
+      </button>
+    </form>
+     
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+      <p>&nbsp;</p>
+
+    </div>
+  </div>
+{% endblock %}

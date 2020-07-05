@@ -1,0 +1,173 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters">
+    
+      <form method="post" id="location" novalidate="" autocomplete="off" action="form-02">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+            <span class="govuk-caption-l">Question 1 of 4</span>
+            <h1 class="govuk-fieldset__heading">
+              Where is the property you are buying?
+            </h1>
+          </legend>        
+      </div>
+
+
+
+
+      <table class="govuk-table" id="deposit-amounts">
+        <!-- <caption class="govuk-table__caption">Your totals</caption> -->
+         <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header" ></th>
+            <td scope="col" class="govuk-table__cell"  style="text-align:right"><span class="govuk-!-font-size-19">Property price limit</span></td>
+            <td scope="col" class="govuk-table__cell"   style="text-align:right">Maximum equity loan amount</br><span class="govuk-hint govuk-!-font-size-16">(percentage of property price)</span></td>
+           
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          
+         <!-- row -->
+         <tr class="govuk-table__row"> 
+          <th class="govuk-table__header">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="east" name="location" type="radio" value="east" {{ checked("location", "east") }}>
+              <label class="govuk-label govuk-radios__label" for="east">
+                <span class="govuk-heading-s">East</span>
+              </label>
+            </div>
+          </th>
+          <td scope="row" class="govuk-table__cell" style="vertical-align: middle; text-align: right;"><p class="govuk-body">	£407,400
+          </p></td>
+          <td scope="row" class="govuk-table__cell" style="vertical-align: middle; text-align: right;"> <p class="govuk-body">20%</p></td>
+        </tr>
+         <!-- row -->
+         <tr class="govuk-table__row"> 
+          <th class="govuk-table__header">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input"  id="east_midlands" name="location" type="radio" value="east_midlands" {{ checked("location", "east_midlands") }}>
+              <label class="govuk-label govuk-radios__label" for="changed-name">
+                <span class="govuk-heading-s">East Midlands</span>
+              </label>
+            </div>
+          </th>
+          <td scope="row" class="govuk-table__cell" style="vertical-align: middle; text-align: right;"><p class="govuk-body">£261,900</p></td>
+          <td scope="row" class="govuk-table__cell" style="vertical-align: middle; text-align: right;"> <p class="govuk-body">20%</p></td>
+        </tr>
+          <!-- row -->
+        <tr class="govuk-table__row"> 
+          <th class="govuk-table__header">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input"  id="london" name="location" type="radio" value="london" {{ checked("location", "london") }}>
+              <label class="govuk-label govuk-radios__label" for="london">
+                <span class="govuk-heading-s">London</span>
+              </label>
+            </div>
+          </th>
+          <td scope="row" class="govuk-table__cell" style="vertical-align: middle; text-align: right;"><p class="govuk-body">£600,000</p></td>
+          <td scope="row" class="govuk-table__cell" style="vertical-align: middle; text-align: right;"> <p class="govuk-body">40%</p></td>
+        </tr>
+         <!-- row -->
+         <tr class="govuk-table__row"> 
+          <th class="govuk-table__header">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="north_east" name="location" type="radio" value="north_east" {{ checked("location", "north_east") }}>
+              <label class="govuk-label govuk-radios__label" for="north_east">
+                <span class="govuk-heading-s">North East</span>
+              </label>
+            </div>
+          </th>
+          <td scope="row" class="govuk-table__cell" style="vertical-align: middle; text-align: right;"><p class="govuk-body">£186,100</p></td>
+          <td scope="row" class="govuk-table__cell" style="vertical-align: middle; text-align: right;"> <p class="govuk-body">20%</p></td>
+        </tr>
+         <!-- row -->
+         <tr class="govuk-table__row"> 
+          <th class="govuk-table__header">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="north_west" name="location" type="radio" value="north_west" {{ checked("location", "north_west") }}>
+              <label class="govuk-label govuk-radios__label" for="north_west">
+                <span class="govuk-heading-s">North West</span>
+              </label>
+            </div>
+          </th>
+          <td scope="row" class="govuk-table__cell" style="vertical-align: middle; text-align: right;"><p class="govuk-body">£224,400</p></td>
+          <td scope="row" class="govuk-table__cell" style="vertical-align: middle; text-align: right;"> <p class="govuk-body">20%</p></td>
+        </tr>
+         <!-- row -->
+         <tr class="govuk-table__row"> 
+          <th class="govuk-table__header">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="south_east" name="location" type="radio" value="south_east" {{ checked("location", "south_east") }}>
+              <label class="govuk-label govuk-radios__label" for="south_east">
+                <span class="govuk-heading-s">South East</span>
+              </label>
+            </div>
+          </th>
+          <td scope="row" class="govuk-table__cell" style="vertical-align: middle; text-align: right;"><p class="govuk-body">£437,600</p></td>
+          <td scope="row" class="govuk-table__cell" style="vertical-align: middle; text-align: right;"> <p class="govuk-body">20%</p></td>
+        </tr>
+         <!-- row -->
+         <tr class="govuk-table__row"> 
+          <th class="govuk-table__header">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="south_west" name="location" type="radio" value="south_west" {{ checked("location", "south_west") }}>
+              <label class="govuk-label govuk-radios__label" for="south_west">
+                <span class="govuk-heading-s">East Midlands</span>
+              </label>
+            </div>
+          </th>
+          <td scope="row" class="govuk-table__cell" style="vertical-align: middle; text-align: right;"><p class="govuk-body">£349,000</p></td>
+          <td scope="row" class="govuk-table__cell" style="vertical-align: middle; text-align: right;"> <p class="govuk-body">20%</p></td>
+        </tr>
+         <!-- row -->
+         <tr class="govuk-table__row"> 
+          <th class="govuk-table__header">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="west_midlands" name="location" type="radio" value="west_midlands" {{ checked("location", "west_midlands") }}>
+              <label class="govuk-label govuk-radios__label" for="west_midlands">
+                <span class="govuk-heading-s">West Midlands</span>
+              </label>
+            </div>
+          </th>
+          <td scope="row" class="govuk-table__cell" style="vertical-align: middle; text-align: right;"><p class="govuk-body">£255,600</p></td>
+          <td scope="row" class="govuk-table__cell" style="vertical-align: middle; text-align: right;"> <p class="govuk-body">20%</p></td>
+        </tr>
+         <!-- row -->
+         <tr class="govuk-table__row"> 
+          <th class="govuk-table__header">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input"  id="yorkshire_and_the_humber" name="location" type="radio" value="yorkshire_and_the_humber" {{ checked("location", "yorkshire_and_the_humber") }}>
+              <label class="govuk-label govuk-radios__label" for="yorkshire_and_the_humber-name">
+                <span class="govuk-heading-s">Yorkshire and The Humber</span>
+              </label>
+            </div>
+          </th>
+          <td scope="row" class="govuk-table__cell" style="vertical-align: middle; text-align: right;"><p class="govuk-body">£228,100</p></td>
+          <td scope="row" class="govuk-table__cell" style="vertical-align: middle; text-align: right;"> <p class="govuk-body">20%</p></td>
+        </tr>
+        </tbody>
+      </table>
+
+
+      
+
+       <div><p>&nbsp;</p></div> 
+      <button form="location" type="submit" class="govuk-button govuk-!-margin-right-1" data-module="govuk-button">
+        Continue
+      </button>
+ 
+     
+    </fieldset>
+    </form>
+
+    </div>
+  </div>
+{% endblock %}

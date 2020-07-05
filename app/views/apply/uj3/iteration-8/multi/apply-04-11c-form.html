@@ -1,0 +1,464 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+  {{ super() }}
+  <!-- <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">parent page</a>
+      </li>
+
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">surrent page</li>
+ 
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters">
+      <a href="#" class="govuk-back-link govuk-body govuk-!-margin-bottom-9">Back</a>
+      <span class="govuk-caption-l">  </span>
+      
+      <form method="post" novalidate="" autocomplete="off" action="apply-04-11d-form">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              Do you understand how to repay the Help to Buy equity loan? 
+            </h1>
+          </legend>
+          <p class="govuk-body govuk-!-margin-bottom-5 govuk-!-margin-top-4" ><a href="#">Printable version</a></p>
+
+          <p>The amount you repay will be a percentage of your property's current market value (what your home is worth).</p>
+
+          <p>You'll need to get a RICS registered surveyor to carry out a valuation to determine how much your property is worth at the time you repay.</p>
+          <p>You can choose to repay in part or in full at any point.</p>
+        
+            <!-- <li>when you can afford to, you can repay in full in one lump sum</li>
+            <li>you can also pay part of the equity amount you have borrowed. Your first repayment must be at least 10% of the value of your house at a time</li> -->
+          
+          </ul>
+          <p>You cannot make monthly payments to repay the equity loan; you  pay a lump sum when you can afford it.</p>
+          <h2 class="govuk-heading-m govuk-!-margin-top-7" >Repaying your equity loan in full  </h2>
+          <p>You must repay  in full:</p>
+
+
+
+          <ul  class="govuk-list govuk-list--bullet">
+           
+            <li>when you sell your home</li>
+            <li>if you pay off your mortgage  or reach the end of the mortgage term</li>
+            <li>after 25 years</li>
+            </ul>
+<!-- <p>When you sell your home you must repay the loan in full.</p>
+
+  <p>The amount you repay will be a percentage of your property's current market value (what your home is worth). The percentage is the portion of the market value you borrowed when taking the Help to Buy: Equity Loan.</p> -->
+  
+  <p>To start the process of repaying the equity loan, you'll need to get a RICS valuation. The amount you will need to repay will be based on the selling price or the property valuation (whichever is higher). </p>
+          <div class="govuk-tabs govuk-!-margin-bottom-0" data-module="govuk-tabs">
+            <!-- <h2 class="govuk-tabs__title">
+              Examples
+            </h2> -->
+            <!-- <ul class="govuk-tabs__list1">
+              <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                <a class="govuk-tabs__tab" href="#past-day1">
+                 Market value rises by 5%
+                </a>
+              </li>
+              <li class="govuk-tabs__list-item">
+                <a class="govuk-tabs__tab" href="#past-week1">
+                 Market value falls by 5%
+                </a>
+              </li>
+              
+            </ul> -->
+            <div class="govuk-tabs__panel" style="border-top: 1px solid grey;">
+
+              <h4 class="govuk-heading-s">Example</h4>
+             
+              <table class="govuk-table  govuk-!-margin-bottom-0 govuk-!-margin-top-0">
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row">
+                    <td scope="row" class="govuk-table__cell govuk-!-width-one-half"></td>
+                   
+                    <td class="govuk-table__cell govuk-table__cell--numeric govuk-!-width-one-quarter"><strong>Market rises<br>by 5%</strong> </td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric govuk-!-width-one-quarter"><strong>Market falls<br>by 5%</strong></td>
+                    
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td scope="row" class="govuk-table__cell" >Property selling price or RICS valuation (whichever is higher)</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric" >£207,900</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric" >£188,100</td>
+                  </tr>
+                 
+                  <!-- <tr class="govuk-table__row">
+                    <td scope="row" class="govuk-table__cell" style=" padding-top: 30px;">Original equity loan amount:</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric" style=" padding-top: 30px; "><strong>£39,600</strong></td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric" style=" padding-top: 30px; "><strong>£39,600</strong></td>
+                  </tr> -->
+                  <tr class="govuk-table__row">
+                    <td scope="row" class="govuk-table__cell" style="border: 0;">Equity loan amount you would owe:
+                   <!-- <p class="govuk-!-margin-bottom-0">This can be paid in a maximum of 2 lump sums</p> -->
+                 
+                 </td>
+                   
+                    <td class="govuk-table__cell govuk-table__cell--numeric" style="border: 0;"><strong>£41,580</strong></td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric" style="border: 0;"><strong>£37,620</strong></td>
+                    
+                  </tr>
+                 
+                </tbody>
+              </table>
+          
+            </div>
+            <div class="govuk-tabs__panel govuk-tabs__panel--hidden" >
+              <table class="govuk-table govuk-!-margin-bottom-0">
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row">
+                    <td scope="row" class="govuk-table__cell govuk-!-width-three-quarters">Description</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric govuk-!-width-one-quarter">Amount</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td scope="row" class="govuk-table__cell" style="border: 0; padding-top: 30px;">Original equity loan amount:</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric" style="border: 0; padding-top: 30px;"><strong>£39,600</strong></td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td scope="row" class="govuk-table__cell" style="border: 0;">>Equity loan amount you would owe with 5% decrease:
+                   </td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric" style="border: 0;"><strong>£37,620</strong></td>
+                  </tr>
+                
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+
+          <h2 class="govuk-heading-m govuk-!-margin-top-7" >Repaying your equity loan in part  </h2>
+
+          <p >To repay the loan you could re-mortgage or use savings.</p>
+          <p>Even when you make partial repayment, you  need to get a RICS valuation.  </p>
+          <p>There are costs associated with repaying, such as fees for getting a  valuation, solicitor fees and an equity loan administration fee.</p> 
+
+         
+
+       
+
+             <!-- <p class="govuk-body govuk-!-margin-bottom-5" style="vertical-align: top; padding-top: 0; ">The first   repayment must be a minimum of 10% of the property's valuation at the time you repay.</p> -->
+             
+             
+             <!-- <p >More about <a href="https://htb-alpha-uj3.herokuapp.com/redemption/uj4/iteration-2/application/application-overview" target="_blank">the process and fees</a> to repay your equity loan.</p> -->
+            
+            
+
+           
+            <!-- <p class="govuk-body govuk-!-margin-top-6 govuk-!-font-size-19">The minimum repayment you can make is 10% of the property's value. </p>
+            <p>You can make sure these funds are available by re-mortgaging your home, using savings, or by selling the property.</p>
+               -->
+           
+              
+            <h2 class="govuk-heading-s govuk-!-margin-top-7" >Example partial repayment </h2>
+          
+           
+              
+             <p class=" govuk-!-margin-bottom-7">This table shows the what the repayments would be with a 5% change in market value. Property prices may change from year to year and the example below is for illustration purposes only.</p>
+             <!-- <p class="govuk-body">Your current equity loan value is <strong>£39,600</strong> </p> -->
+
+             <!-- <h4 class="govuk-heading-m">Examples</h4>  -->
+
+
+             <div class="govuk-tabs govuk-!-margin-bottom-9" data-module="govuk-tabs">
+              <h2 class="govuk-tabs__title">
+                Example
+              </h2>
+              <ul class="govuk-tabs__list">
+                <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                  <a class="govuk-tabs__tab" href="#past-day">
+                    First repayment
+                  </a>
+                </li>
+                <li class="govuk-tabs__list-item">
+                  <a class="govuk-tabs__tab" href="#past-week">
+                    Second and final repayment
+                  </a>
+                </li>
+                
+              </ul>
+              
+              <div class="govuk-tabs__panel" id="past-day">
+            
+                <!-- <p>You must get your home valued to know what your repayment amount will be. This table shows the what the repayments would be with a 5% change up or down.</p> -->
+               
+                <table class="govuk-table">
+              
+                  <thead class="govuk-table__head">
+                    
+                    <tr class="govuk-table__row">
+                      <th class="govuk-table__header govuk-!-width-one-third"></th>
+                      <th scope="row" class="govuk-table__header govuk-table__cell--numeric" ><strong>Market value <br>rises by 5%</strong></th>
+                      <th scope="row" class="govuk-table__header govuk-table__cell--numeric" ><strong>Market value <br>falls by 5%</strong></th>
+                    </tr>
+                   
+                  </thead>
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                      <td scope="row" class="govuk-table__cell" >Property value </td>
+                      <td class="govuk-table__cell govuk-table__cell--numeric" >£207,900</td>
+                      <td class="govuk-table__cell govuk-table__cell--numeric" >£188,100</td>
+                    </tr>
+                    <!-- <tr class="govuk-table__row">
+                      <td scope="row" class="govuk-table__cell" >Equity loan value (20%) </td>
+                      <td class="govuk-table__cell govuk-table__cell--numeric" >£41,580</td>
+                      <td class="govuk-table__cell govuk-table__cell--numeric" >£37,620</td>
+                    </tr> -->
+                    <tr class="govuk-table__row">
+                      <td scope="row" class="govuk-table__cell">First repayment of 10%
+                        <br> <span class="govuk-hint govuk-!-font-size-16 govuk-!-margin-0">(must be at least 10%)</span></td>
+                        <td scope="row" class="govuk-table__cell govuk-table__cell--numeric"><strong> £20,790</strong></td>
+                        <td scope="row" class="govuk-table__cell govuk-table__cell--numeric"><strong>£18,810</strong></td>
+                    </tr>
+                   
+                    </tbody>
+                </table>
+            
+              </div>
+              <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
+                <table class="govuk-table govuk-!-margin-bottom-2">
+                  <p>This example shows how much you would repay if the property value changes further from the purchase  price.</p>
+                  <table class="govuk-table">
+              
+                   
+                  
+                      <thead class="govuk-table__head">
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell govuk-!-width-one-third"></td>
+                        <th scope="row" class="govuk-table__header govuk-table__cell--numeric" ><strong>Market value rises<br>by further 5%</strong></th>
+                        <th scope="row" class="govuk-table__header govuk-table__cell--numeric" ><strong>Market value falls<br>by further 5%</strong></th>
+                      </tr>
+                      </thead>
+                      <tbody class="govuk-table__body">
+                      <tr class="govuk-table__row">
+                        <td scope="row" class="govuk-table__cell" >Property value </td>
+                        <td class="govuk-table__cell govuk-table__cell--numeric" >£218,295</td>
+                        <td class="govuk-table__cell govuk-table__cell--numeric" >£178,695</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <td scope="row" class="govuk-table__cell" >Remaining   and final repayment amount
+                          <br> <span class="govuk-hint govuk-!-font-size-16 govuk-!-margin-0">(10% of property value)</span></td>
+                        <td class="govuk-table__cell govuk-table__cell--numeric" ><strong>£21,829</strong></td>
+                        <td class="govuk-table__cell govuk-table__cell--numeric" ><strong>£17,869</strong></td>
+                      </tr>
+                      <!-- <tr class="govuk-table__row">
+                        <td scope="row" class="govuk-table__cell">Final repayment 
+                         </td>
+                          <td scope="row" class="govuk-table__cell govuk-table__cell--numeric">£22,050</td>
+                          <td scope="row" class="govuk-table__cell govuk-table__cell--numeric">£18,050</td>
+                      </tr> -->
+                    
+                   
+                    </tbody>
+                  </table>
+            
+              </div>
+             
+             
+            </div>
+             <!-- <div class="govuk-tabs govuk-!-margin-bottom-0" data-module="govuk-tabs">
+             
+               <ul class="govuk-tabs__list">
+                 <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                   <a class="govuk-tabs__tab" href="#past-day">
+                    Market value rises by 5%
+                   </a>
+                 </li>
+                 <li class="govuk-tabs__list-item">
+                   <a class="govuk-tabs__tab" href="#past-week">
+                    Market value falls by 5%
+                   </a>
+                 </li>
+                 
+               </ul>
+               <div class="govuk-tabs__panel" id="past-day">
+                
+                 <table class="govuk-table govuk-!-margin-bottom-0">
+                   <tbody class="govuk-table__body">
+                     <tr class="govuk-table__row">
+                       <td scope="row" class="govuk-table__cell govuk-!-width-three-quarters">Description</td>
+                      
+                       <td class="govuk-table__cell govuk-table__cell--numeric govuk-!-width-one-quarter">Amount</td>
+                       
+                     </tr>
+                     <tr class="govuk-table__row">
+                       <td scope="row" class="govuk-table__header" style="border: 0; padding-top: 30px;">Original equity loan amount </td>
+                       <td class="govuk-table__cell govuk-table__cell--numeric" style="border: 0; padding-top: 30px; "><strong>£39,600</strong></td>
+                     </tr>
+                     <tr class="govuk-table__row">
+                       <td scope="row" class="govuk-table__cell" style="border: 0;"><strong>Equity loan amount you would owe with 5% increase:</strong>
+                    
+                    
+                    </td>
+                      
+                       <td class="govuk-table__cell govuk-table__cell--numeric" style="border: 0;"><strong>£41,580</strong></td>
+                       
+                     </tr>
+                     <tr class="govuk-table__row">
+                       <td scope="row" class="govuk-table__cell" style="border: 0;"><strong>Minimum first repayment amount:</strong>
+                        <p class="govuk-!-margin-bottom-0">10% of the home's market valuation at the time you repay</p>
+                         </td>
+                       <td class="govuk-table__cell govuk-table__cell--numeric" style="border: 0; font-size: 24px;"><strong>£20,790</strong></td>
+                     </tr>
+                      <tr class="govuk-table__row">
+                        <td scope="row" class="govuk-table__cell" colspan="2" style="border: 0; padding: 0; margin:0;">
+                          <p class="govuk-!-margin-bottom-0">There are other fees when you repay to consider, such as getting a property valuation and Help to Buy administration fee of £200.</p>
+                          </td>
+                     </tr>
+                   </tbody>
+                 </table>
+             
+               </div>
+               <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
+               
+                 <table class="govuk-table govuk-!-margin-bottom-0">
+                   <tbody class="govuk-table__body">
+                     <tr class="govuk-table__row">
+                       <td scope="row" class="govuk-table__cell govuk-!-width-three-quarters">Description</td>
+                      
+                       <td class="govuk-table__cell govuk-table__cell--numeric govuk-!-width-one-quarter">Amount</td>
+                       
+                     </tr>
+                     <tr class="govuk-table__row">
+                       <td scope="row" class="govuk-table__header" style="border: 0; padding-top: 30px;">Original equity loan amount </td>
+                       <td class="govuk-table__cell govuk-table__cell--numeric" style="border: 0; padding-top: 30px;"><strong>£39,600</strong></td>
+                     </tr>
+                     <tr class="govuk-table__row">
+                       <td scope="row" class="govuk-table__cell" style="border: 0;"><strong>Equity loan amount you would owe with 5% decrease:</strong>
+                      <p class="govuk-!-margin-bottom-0">This can be paid in a maximum of 2 lump sums</p></td>
+                      
+                       <td class="govuk-table__cell govuk-table__cell--numeric" style="border: 0;"><strong>£37,620</strong></td>
+                       
+                     </tr>
+                     <tr class="govuk-table__row">
+                       <td scope="row" class="govuk-table__cell" style="border: 0;"><strong>Minimum first repayment amount:</strong>
+                        <p class="govuk-!-margin-bottom-0">10% of the home's market valuation at the time you repay</p>
+                         </td>
+                       <td class="govuk-table__cell govuk-table__cell--numeric" style="border: 0; font-size: 24px;"><strong>£18,810</strong></td>
+                     </tr>
+                      <tr class="govuk-table__row">
+                        <td scope="row" class="govuk-table__cell" colspan="2" style="border: 0; padding: 0; margin:0;">
+                          <p class="govuk-!-margin-bottom-0">There are other fees when you repay to consider, such as getting a property valuation and Help to Buy administration fee of £200.</p>
+                          </td>
+                     </tr>
+                    
+                   </tbody>
+                 </table>
+             
+               </div>
+              
+              
+             </div>
+        -->
+       
+       
+       
+             <!-- end tabs -->
+             
+            <!-- <table class="govuk-table">
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell govuk-!-width-one-half">Market value change:</td>
+                  <td class="govuk-table__cell govuk-!-width-one-half">Amount you would owe<br>(excluding fees)</td>
+                </tr> 
+              </thead>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  
+                  <td class="govuk-table__cell" >If the property value goes up by 5%</td>
+                  <th scope="row" class="govuk-table__header" ><span class="govuk-!-font-size-24">£41,580</span></th>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell" style="border-bottom: 0;">1st repayment of 10%: <strong>£19,900</strong></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">2nd repayment of 8%: <strong>£17,500</strong></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" >If the property value goes down by 5% </td>
+                  <th scope="row" class="govuk-table__header"><span class="govuk-!-font-size-24">£37,620</span></th>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell" style="border-bottom: 0;">1st repayment of 10%: <strong>£17,400</strong></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">2nd repayment of 8%: <strong>£15,000</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div> -->
+ 
+        </fieldset>
+      </div>
+
+      <div class="govuk-form-group govuk-!-margin-bottom-9">
+        <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+          
+          <div class="govuk-checkboxes">
+            
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+              <label class="govuk-label govuk-checkboxes__label" for="waste">
+                I understand if I sell the home, repay my mortgage in full,  reach the end of my mortage term or within 25 years I must repay the equity loan in full
+              </label>
+            </div>
+          
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                <label class="govuk-label govuk-checkboxes__label" for="waste">
+                  I understand if paying in part, I must pay in portions of at least 10% of the home's value
+                </label>
+              </div>
+              <!-- <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                <label class="govuk-label govuk-checkboxes__label" for="waste">
+                  I understand that I need to raise the money to pay the loan back
+                </label>
+              </div> -->
+       
+              
+          </div>
+        </fieldset>
+      </div>
+       
+
+       
+      <button class="govuk-button govuk-!-margin-right-1 " data-module="govuk-button">
+        Save and continue
+      </button>
+ 
+      <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+        Save and come back later
+      </button>
+
+    </form>
+
+    </div>
+
+    <div class="govuk-grid-column-one-quarter">
+
+      
+
+       
+      </div>
+
+      <div></div>
+
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,75 @@
+
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+{{ super() }}
+<!-- <div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="gov.uk">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/">parent page</a>
+    </li>
+
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">surrent page</li>
+
+  </ol>
+</div> -->
+{% endblock %}
+
+{% block content %}
+<div style="margin-left: -150px;">
+ 
+<div class="govuk-grid-row" >
+  <div class="govuk-grid-column-full">
+  <img src="{{ asset_path }}images/email-top.jpg"   src="{{ asset_path }}images/verfiy1.jpg"></div>
+</div>
+  <div class="govuk-grid-row">
+  
+    <div class="govuk-grid-column-one-quarter"><img src="{{ asset_path }}images//email-left.jpg"></div>
+    <div class="govuk-grid-column-three-quarters" style="padding: 0;">
+     
+      <div style="padding-left:25px;"><p>Subject:  Complete your Help to Buy application</p></div>
+
+<img src="{{ asset_path }}images/email-header.jpg">
+
+
+<div style="padding: 40px 0 0 180px;">
+      
+
+  <p>Dear Frankie Shaw,</p>
+
+  <p>&nbsp;</p>
+      <p>You have been listed as the second applicant for a Help to Buy Equity Loan.</p>
+
+        <p>You need to complete your part of the application.</p>
+
+        <p>You will need to enter the reference number that your fellow applicant has on their submission receipt.
+        </p>
+
+
+        <p><a href="buyer2/apply-01-service-start" target="blank">Complete the application</a></p>
+
+        <p>&nbsp;</p>
+
+        <p>Homes England team</p>
+
+
+
+      </div>
+
+      
+      
+
+     
+    </div>
+
+    
+  </div>
+</div>
+{% endblock %}

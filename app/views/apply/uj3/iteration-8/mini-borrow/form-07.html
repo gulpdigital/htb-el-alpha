@@ -1,0 +1,189 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+  {{ super() }}
+  <!-- <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">parent page</a>
+      </li>
+
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">surrent page</li>
+ 
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters"> 
+              <h1 class="govuk-heading-l" style="margin-bottom: 50px;"> Example Equity Loan monthly charges</h1>
+  </div>
+</div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+          <p >The first 5 years of the Equity Loan are interest-free. After that the interest is 1.75% of the loan amount and each year after the 6th year, the Equity Loan interest increases by CPI (Consumer Price Index) plus 2%.</p>
+
+
+          <div class="govuk-warning-text" style="margin-top: 50px;">
+            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+            <strong class="govuk-warning-text__text" style="vertical-align: top;">
+              <span class="govuk-warning-text__assistive" >Warning</span>
+              Example shows interest calculation based on Consumer Price Index (CPI) of 2.5%, but CPI is variable, so could be more or less than this.
+<br><br>
+The figures do not include the mortgage interest payments you will need to make in addition to the Equity Loan.
+            </strong>
+          </div>
+
+        </div>
+      
+      <div class="govuk-grid-column-one-third">
+        <div style="background-color:  #f3f2f1; padding:30px; margin-bottom: 0px;" >
+          <p>Based on:</p>
+          <p>Equity Loan amount:</p>
+          <p class="govuk-!-font-weight-bold">£30,000</p>
+          <p><a href="#">Change</a></p>
+
+        
+  </div>
+        <p>&nbsp;</p>
+  
+      </div>
+  </div>
+
+
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+              
+              <h4 class="govuk-heading-s"></h4>
+          <table class="govuk-table">
+            
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header govuk-!-width-three-quarters">Fees and interest details</th>
+                
+                <th scope="col" class="govuk-table__header govuk-!-width-one-quarter govuk-table__header--numeric">Monthly payments</th>
+              </tr>
+            </thead>
+           
+            <tbody class="govuk-table__body">
+             
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header" style="border-bottom: 0;">Years 1 to 5</th>
+                <td class="govuk-table__cell" style="border-bottom: 0;"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">No interest payments</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">Management fee</td>
+                <td class="govuk-table__cell  govuk-table__cell--numeric">£1.00</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell" style="border-bottom: solid #b1b4b6 3px;"></td>
+                <th class="govuk-table__header govuk-table__header--numeric"  style="border-bottom: solid #b1b4b6 3px;">Total: £1.00</th>
+              </tr>
+              <!-- row -->
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header"style="border-bottom: 0;">Year 6</th>
+                <td class="govuk-table__cell govuk-table__cell--numeric" style="border-bottom: 0;"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">1.75% = £525 per year</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">£43.83</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">Management fee</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">£1.00</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell" style="border-bottom: solid #b1b4b6 3px;"></td>
+                <td class="govuk-table__header govuk-table__header--numeric" style="border-bottom: solid #b1b4b6 3px;">Total: £44.83</td>
+              </tr>
+               <!-- row -->
+               <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header"style="border-bottom: 0;">Year 7</th>
+                <td class="govuk-table__cell govuk-table__cell--numeric" style="border-bottom: 0;"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">1.75% + 2.5% CPI + 2% = 1.83%
+
+                  = £549 per year</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">£45.75</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">Management fee</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">£1.00</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell" style="border-bottom: solid #b1b4b6 3px;"></td>
+                <td class="govuk-table__header govuk-table__header--numeric" style="border-bottom: solid #b1b4b6 3px;">Total: 46.75</td>
+              </tr>
+               <!-- row -->
+               <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header"style="border-bottom: 0;">Year 8</th>
+                <td class="govuk-table__cell govuk-table__cell--numeric" style="border-bottom: 0;"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">1.83% (Previous interest rate) + 2.5% CPI + 2% = 1.91% = £573 per year</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">£47.75</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">Management fee</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">£1.00</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell" style="border-bottom: solid #b1b4b6 3px;"></td>
+                <td class="govuk-table__header govuk-table__header--numeric" style="border-bottom: solid #b1b4b6 3px;">Total: £48.75</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </fieldset>
+        <p class="govuk-body">The interest will keep increasing inline with CPI+2% for 25 years or until your mortgage ends. After 25 years you must pay off the full amount or request an extension.
+        </p>
+
+        <p class="govuk-body">
+          Note: Your 6th year starts on the next 1st April 5 years after you buy your house, except if you buy in January-March it starts the following April after that.</p>
+      
+
+      <div><p class="govuk-body"><a href="#">Print this page</a></p></div>
+
+      <!-- <button class="govuk-button" data-module="govuk-button">
+        Paying off your loan
+      </button> -->
+
+    </form>
+    
+    </div>
+    <div class="govuk-grid-column-one-third">
+      <aside class="app-related-items" role="complementary">
+
+        <h2 class="govuk-heading-m">Related content</h2>
+        <ul class="govuk-list">
+       
+        <li><a href="../guidance/paying-back-the-loan.html" class="govuk-link">Paying back your equity loan</a></li>
+        <li><a href="../guidance/index.html" class="govuk-link">What an equity loan is</a></li>
+        <li><a href="../guidance/who-can-apply.html" class="govuk-link">Who can apply</a></li>
+        <li><a href="../guidance/how-to-apply.html" class="govuk-link">How to apply</a></li>
+        <li><a href="#" class="govuk-link">Return to an equity loan application </a></li>
+       
+        </ul>
+
+      </aside>
+      <!-- <h4 class="govuk-heading-s">Related links</h4> -->
+
+
+</div>
+    
+  </div>
+{% endblock %}

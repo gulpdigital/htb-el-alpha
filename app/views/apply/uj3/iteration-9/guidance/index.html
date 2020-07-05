@@ -1,0 +1,119 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block content %}
+<div class="govuk-breadcrumbs govuk-!-margin-top-0 govuk-!-margin-bottom-9">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Housing and local services</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Affordable home ownership schemes</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Help to Buy: Equity Loan</li>
+  </ol>
+</div>
+  <div class="govuk-grid-row">
+
+   
+    <div class=" govuk-grid-column-full">
+      <h1 class="govuk-heading-xl">Find out about a Help to Buy: Equity Loan</h1>
+
+      <ul class="govuk-list dash-list">
+        <li>Overview</li>
+        <li><a class="govuk-link" href="who-can-apply">Who can apply</a></li>
+        <li><a class="govuk-link" href="how-it-works">How it works</a></li>
+        <li><a class="govuk-link" href="what-you-need-to-pay">What you need to pay</a></li>
+        <li><a class="govuk-link" href="what-you-cannot-do">What you cannot do</a></li>
+        <li><a class="govuk-link" href="how-to-apply">How to apply</a></li>
+      </ul>
+
+    </div>
+      <div class="govuk-grid-column-two-thirds">
+
+      <hr class="govuk-section-break govuk-section-break--visible" style="margin-bottom: 15px;">
+
+      <h2 class="govuk-heading-l">Overview of an equity loan</h2>
+
+      <!-- <p>This is a government loan you can use towards the cost of new home, to help you to get on the property ladder.</p>
+      <p>An equity loan is:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>based on a percentage of the property’s purchase price</li>
+        <li>a loan amount that you must pay back</li>
+        <li>used together with a deposit and mortgage to make up amount needed for property's purchase price</li>
+      </ul> -->
+      
+      <p> With a Help to Buy: Equity Loan you can get help from the government to buy your first home.</p> 
+         
+         <h3 class="govuk-heading-m">What is an equity loan</h3>
+      
+        <p>A Help to Buy: Equity loan allows first-time buyers to borrow a percentage of the property’s market value (what it is worth). This reduces the mortgage amount you need.</p>
+        
+<p>When repaying an equity loan, you pay back this percentage of the property’s value. This can be when you sell the property, or within 25 years.</p>
+        
+<p>There is also a monthly interest fee and monthly management fee you need to pay.</p>
+     
+        <h3 class="govuk-heading-m">Property you can buy</h3>
+       <p> With an equity loan, the home you buy must be:</p> 
+      <ul class="govuk-list govuk-list--bullet">
+        <li>a new build. This is a newly built home that has not been lived in before </li>
+        <li>from a registered Help to Buy house builder</li>
+     </ul>
+        
+      <p>Homebuyers can use an equity loan to buy a home in England (there are different schemes for <a href="#">Wales</a> and <a href="#">Scotland</a>).</p> 
+       <p>An equity loan is different to the <a href="https://www.gov.uk/affordable-home-ownership-schemes/shared-ownership-scheme">shared ownership</a> scheme.</p> 
+   
+      <nav class="gem-c-pagination" role="navigation" aria-label="Pagination">
+        <ul class="gem-c-pagination__list" data-module="track-click">
+            <li class="gem-c-pagination__item gem-c-pagination__item--next">
+              <a href="who-can-apply" class="gem-c-pagination__link" rel="next" data-track-category="contentsClicked" data-track-action="next" data-track-label="/get-a-child-passport/renew-a-child-passport" data-track-dimension="next" data-track-dimension-index="29">
+                <span class="gem-c-pagination__link-title">
+                  <svg class="gem-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
+                    <path d="m10.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+                  </svg>
+                  <span class="gem-c-pagination__link-text">
+                    Next
+                  </span>
+                </span>
+                  <span class="gem-c-pagination__link-divider visually-hidden">:</span>
+                  <span class="gem-c-pagination__link-label">Who can apply</span>
+              </a>
+            </li>
+        </ul>
+      </nav>
+  
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+      <aside class="app-related-items" role="complementary">
+
+        <h2 class="govuk-heading-m">Related content</h2>
+        <ul class="govuk-list">
+          <li><a href="#" class="govuk-link">Return to an equity loan application </a></li>
+          <!-- <li><a href="https://htb-alpha-uj3.herokuapp.com/redemption/uj4/iteration-2/application/application-overview" class="govuk-link">How to pay back your  loan</a></li> -->
+      <li><a href="https://www.helptobuy.gov.uk/equity-loan/find-helptobuy-agent/">Find a home you can buy with an equity loan</a></li>
+       
+       
+       <li><a href="#" class="govuk-link">Shared Ownership overview</a></li>
+        <!--  <li><a href="#" class="govuk-link">Housing association homes</a></li>
+          
+          <li><a href="#" class="govuk-link">Right to Acquire: buying your housing association home</a></li>
+          
+          <li><a href="#" class="govuk-link">Right to Buy: buying your council home</a></li> -->
+        </ul>
+
+      </aside>
+
+    </div>
+  </div>
+{% endblock %}

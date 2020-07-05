@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+<a href="../manage/redemption-03-account-overview.html" class="govuk-back-link noBack">Go to your account overview</a>
+{% endblock %}
+
+
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+     
+      <div class="govuk-inset-text">
+      Your £200 payment was successful.<br>
+      A confirmation email has been sent to <a href="#">name@email.com</a>
+      </div>
+
+      <div class="govuk-panel govuk-panel--confirmation gov-margin-bottom-xl">
+        <h1 class="govuk-panel__title">
+          Application reference
+        </h1>
+        <div class="govuk-panel__body">
+          <strong>ABCD1234</strong>
+        </div>
+      </div>
+
+      <p class="gov-margin-bottom-xl">Check the progression of your application in your <a href="../manage/redemption-03-account-overview.html">loan account overview</a>.</p>
+
+      <h2 class="govuk-heading-l">What happens next</h2>
+
+      <h3 class="govuk-heading-m">Your repayment quote is estimated</h3>
+
+      <p>Help to Buy send the repayment estimate to your solicitor.</p>
+
+      <h3 class="govuk-heading-m">You receive the quote</h3>
+
+      <p>Your solicitor sends you the quote based on the property valuation or the final sale price including daily interest and any charges.</p>
+
+      <h3 class="govuk-heading-m">You agree to repay in full</h3>
+
+      <p>You instruct your solicitor to carry out the legal undertaking. Your solicitor notifies Help to Buy at least 15 days before your estimated completion date.</p>
+
+      <h3 class="govuk-heading-m">You receive Authority to Complete (ATC)</h3>
+
+      <p>Help to Buy send you an ATC including the final repayment quote within 5 days of hearing from your solicitor.</p>
+
+      <h3 class="govuk-heading-m">Your loan is repaid</h3>
+
+      <p>When your house is sold, your solicitor transfers the funds to Help to Buy and your equity loan is settled.</p>
+
+      <h3 class="govuk-heading-m">Contact us</h3>
+
+      <p>If your circumstances change contact us on 0800 123456 or email <a href="">repayment@homesengland.gov.uk</a>.</p>
+      
+    </div>
+  </div>
+{% endblock %}

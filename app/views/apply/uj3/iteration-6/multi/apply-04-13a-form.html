@@ -1,0 +1,110 @@
+
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+  {{ super() }}
+  <!-- <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">parent page</a>
+      </li>
+
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">surrent page</li>
+ 
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <a href="#" class="govuk-back-link govuk-body govuk-!-margin-bottom-9">Back</a>
+      <span class="govuk-caption-l">Section 4 of 7  </span>
+     
+      <!-- <h1 class="govuk-heading-l">Have you reserved a new build home with a property agent?
+      </h1> -->
+      <form method="post" novalidate="" autocomplete="off" action="apply-04-11-form">
+      <div class="govuk-form-group">
+        
+        <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              Enter Frankie Shaw's outgoings
+            </h1>
+          </legend>
+
+          <p class="govuk-body">
+          </p>
+
+          <p class="govuk-hint">
+          Only fill in the boxes that apply to their circumstances.
+          </p>
+          
+             
+          
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="address-town">
+              Total outstanding credit card balances   
+            </label>
+            <input class="govuk-input govuk-!-width-one-quarter" id="address-town" name="address-town" type="text" autocomplete="address-level2" value="£"> <span class="govuk-body"> total</span>
+          </div>
+          
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="address-town">
+              Total salary deductions   
+              <p class="govuk-hint">For example, childcare vouchers, pension</p>
+            </label>
+            <input class="govuk-input govuk-!-width-one-quarter" id="address-town" name="address-town" type="text" autocomplete="address-level2" value="£"> <span class="govuk-body"> per month</span>
+          </div>
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="address-town">
+                Student loan repayments  
+              </label>
+              <input class="govuk-input govuk-!-width-one-quarter" id="address-town" name="address-town" type="text" autocomplete="address-level2" value="£"> <span class="govuk-body"> per month</span>
+            </div>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="address-town">
+                Loan/hire purchase payments  
+              </label>
+              <input class="govuk-input govuk-!-width-one-quarter" id="address-town" name="address-town" type="text" autocomplete="address-level2" value="£"> <span class="govuk-body"> per month</span>
+            </div>
+            
+            
+          
+           
+
+           
+          </fieldset>
+
+      </div>
+
+
+       <div><p>&nbsp;</p></div> 
+      <button class="govuk-button govuk-!-margin-right-1" data-module="govuk-button">
+        Save and continue
+      </button>
+ 
+      <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+        Save and come back later
+      </button>
+    </form>
+   
+
+    <div class="govuk-grid-column-one-third">
+
+      <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+      <p>&nbsp;</p>
+
+    </div>
+  </div>
+{% endblock %}

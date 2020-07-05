@@ -1,0 +1,99 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+{{ govukBackLink({
+  href: "#",
+  text: "Back"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <form novalidate action="application-04-solicitor.html">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset gov-margin-bottom-xxl" aria-describedby="changed-name-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                <h1 class="govuk-fieldset__heading">
+                    How much is your home currently worth?
+                </h1>
+              </legend>
+              <div class="govuk-form-group">
+                <label class="govuk-label gov-margin-bottom-l" for="event-name">
+                    What does the RICS valuation state your home is worth?
+                </label>
+                <input class="govuk-input govuk-input--width-10" id="event-name" name="event-name" type="text" value="£">
+              </div>
+
+              <details class="govuk-details" data-module="govuk-details">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    Where can I find the property’s value?
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+                  The property valuation states the curent value of your property. This can usually be found on page 2 of the report.  Property valuations are valid for 3 months.                 </div>
+              </details>
+
+              <p>Upload RICS valuation report</p>
+
+              <div class="govuk-form-group box">
+                <label class="govuk-label" for="file-upload-1">
+                  Upload a file
+                </label>
+                <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+              </div>
+
+              <!---- 2 ------>
+
+              <div class="govuk-form-group">
+                <label class="govuk-label gov-margin-bottom-l" for="event-name-1">
+                    What is the selling price?
+                </label>
+                <input class="govuk-input input-width-medium" id="event-name-1" name="event-name" type="text" value="£">
+              </div>
+
+              <details class="govuk-details" data-module="govuk-details">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    What is the final selling price?
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+                  This is the amount that the buyer paid for your home. The amount is also stated on the Memorandum of Sale.
+                </div>
+              </details>
+
+              <p>Upload memorendum of sale</p>
+
+              <div class="govuk-form-group box">
+                <label class="govuk-label" for="file-upload-1">
+                  Upload a file
+                </label>
+                <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+              </div>
+
+
+        </fieldset>
+
+       
+        <button class="govuk-button" data-module="govuk-button">
+          Save and continue
+        </button>
+      
+    </div>
+    </form> 
+    </div>
+  </div>
+{% endblock %}

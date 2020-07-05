@@ -1,0 +1,113 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Page title - to be dynamic from routes - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+  {{ super() }}
+  <!-- <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">parent page</a>
+      </li>
+
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">surrent page</li>
+ 
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <a href="#" class="govuk-back-link govuk-body govuk-!-margin-bottom-9">Back</a>
+    <span class="govuk-caption-l">Section 5 of 7  </span>
+      
+    <!-- <h1 class="govuk-heading-xl">Have you reserved a new build home with a property agent?
+    </h1> -->
+    <form method="post" novalidate autocomplete="off" action="apply-04-11-0-form" class="purchase-form" >
+    <div class="govuk-form-group">
+      
+     
+          <h1 class="govuk-heading-l">
+            Enter the property price
+          </h1>
+       
+        <!-- <p class="govuk-body">We’ll use these details to check your equity loan is affordable.</p> -->
+        <!-- <p  class="govuk-hint"> 
+          Enter the new build pricing and mortgage details.
+        </p></div> -->
+  
+</div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      
+          
+      <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l"></legend>
+          
+           
+              <div class="govuk-form-group">
+                <span id="passport-issued-error" class="govuk-error-message">
+                  <span class="govuk-visually-hidden">Error:</span> Amount should not exceed £600,000
+                </span>
+
+                <label class="govuk-label" for="propertyPrice">
+                  
+                </label>
+                
+                <input class="govuk-input govuk-input--width-10" id="propertyPrice" name="propertyPrice" value="£" > 
+                <!--for validation: type="number" pattern="[0-9]*" inputmode="numeric"  -->
+              </div>
+
+
+              
+              
+
+              
+              
+            
+          
+              
+           
+          
+           
+             
+
+  </fieldset>
+    </div>
+  </div>
+
+
+<div class="govuk-grid-column-one-third">
+
+  <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+
+       <div><p>&nbsp;</p></div> 
+      <button class="govuk-button govuk-!-margin-right-1" data-module="govuk-button">
+        Save and continue
+      </button>
+ 
+      <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+        Save and come back later
+      </button>
+    </form>
+   
+</div>
+
+  
+  </div>
+{% endblock %}
